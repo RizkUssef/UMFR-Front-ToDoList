@@ -201,7 +201,7 @@
 }
 
 @mixin aside{
-    width: 15vw;
+    width: 20vw;
     min-height: 100vh;
     background-color: map-get($side, "bgColor");
     @include flexDiv(column,baseline,flex-start);
@@ -387,12 +387,26 @@
         border-radius: 50px;
         background-color: map-get($side, "hrColor");
     }
+
+    @media screen and (min-width: 1500px) and (max-width: 2000px) {
+        width: 15vw;
+    }
 }
 
 @mixin rightSideFromProfile{
-    width:80vw;
+    @include allBodyRightSideWidthResponsive;
     @include flexDiv(column,baseline,space-between);
-    height: 60vh;
+
+}
+
+@mixin allBodyRightSideWidthResponsive{
+    width: 70vw;
+    @media screen and (min-width: 1200px) and (max-width: 1500px) {
+        width: 75vw;
+    }
+    @media screen and (min-width: 1500px) and (max-width: 2000px) {
+        width: 80vw;
+    }
 }
 
 @mixin profile{
@@ -513,14 +527,22 @@
 
 @mixin contantAll{
     @include flexDiv(row,baseline,flex-start);
+    @media screen and (min-width: 1500px) and (max-width: 2000px) {
+    @include flexDiv(row,baseline,flex-start);
+        
+    }
     flex-wrap: wrap;
     gap: 50px;
     margin-bottom: 50px;
 }
 
 @mixin ele($borderColor,$taskNameColor,$cheackBtnColor,$timeColor,$ltColor,$ltBgColor,$ltBorderColor,$createdAtColor,$spanColor){
-    min-width: 320px;
-    max-width: 320px;
+    min-width: 250px;
+    max-width: 250px;
+    @media screen and (min-width: 1500px) and (max-width: 2000px) {
+        min-width: 320px;
+        max-width: 320px;   
+    }
     border-radius: 15px;
     border: 1px solid $borderColor;
     padding: 15px;
@@ -641,7 +663,11 @@
 @mixin addSectionLink{
     align-self: flex-end;
     width: fit-content;
-    margin-right: 74px;
+    @media screen and (min-width: 1500px) and (max-width: 2000px) {
+        margin-right: 74px;
+    }
+    margin-right: 27px;
+
     margin-bottom: 100px;
     a{
         @include links(20px,8px,20px);

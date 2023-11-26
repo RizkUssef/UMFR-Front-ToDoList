@@ -1050,7 +1050,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .createSection .side {
-  width: 15vw;
+  width: 20vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -1253,13 +1253,27 @@ body::-webkit-scrollbar {
   border-radius: 50px;
   background-color: #7F7A63;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .createSection .side {
+    width: 15vw;
+  }
+}
 .createSection .rightSide {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   flex-direction: column;
-  height: 60vh;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .createSection .rightSide {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .createSection .rightSide {
+    width: 80vw;
+  }
 }
 .createSection .rightSide .profile {
   align-self: flex-end;
@@ -1363,7 +1377,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .createTag .side {
-  width: 15vw;
+  width: 20vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -1566,13 +1580,27 @@ body::-webkit-scrollbar {
   border-radius: 50px;
   background-color: #7F7A63;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .createTag .side {
+    width: 15vw;
+  }
+}
 .createTag .rightSide {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   flex-direction: column;
-  height: 60vh;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .createTag .rightSide {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .createTag .rightSide {
+    width: 80vw;
+  }
 }
 .createTag .rightSide .profile {
   align-self: flex-end;
@@ -1676,7 +1704,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .createList .side {
-  width: 15vw;
+  width: 20vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -1879,13 +1907,27 @@ body::-webkit-scrollbar {
   border-radius: 50px;
   background-color: #7F7A63;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .createList .side {
+    width: 15vw;
+  }
+}
 .createList .rightSide {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   flex-direction: column;
-  height: 60vh;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .createList .rightSide {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .createList .rightSide {
+    width: 80vw;
+  }
 }
 .createList .rightSide .profile {
   align-self: flex-end;
@@ -2005,7 +2047,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .inbox .side {
-  width: 15vw;
+  width: 20vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -2208,14 +2250,28 @@ body::-webkit-scrollbar {
   border-radius: 50px;
   background-color: #7F7A63;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .inbox .side {
+    width: 15vw;
+  }
+}
 .inbox .rightSide {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   flex-direction: column;
-  height: 60vh;
   margin-left: 300px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .inbox .rightSide {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .inbox .rightSide {
+    width: 80vw;
+  }
 }
 .inbox .rightSide .profile {
   align-self: flex-end;
@@ -2237,12 +2293,22 @@ body::-webkit-scrollbar {
   box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
 }
 .inbox .rightSide .allBody {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: normal;
   justify-content: normal;
   flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .inbox .rightSide .allBody {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .inbox .rightSide .allBody {
+    width: 80vw;
+  }
 }
 .inbox .rightSide .allBody .head {
   display: flex;
@@ -2367,12 +2433,26 @@ body::-webkit-scrollbar {
   gap: 50px;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .inbox .rightSide .allBody .secContant {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
 .inbox .rightSide .allBody .secContant .ele {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid #433E26;
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .inbox .rightSide .allBody .secContant .ele {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .inbox .rightSide .allBody .secContant .ele .top {
   display: flex;
@@ -2450,8 +2530,13 @@ body::-webkit-scrollbar {
   align-self: flex-end;
   width: -moz-fit-content;
   width: fit-content;
-  margin-right: 74px;
+  margin-right: 27px;
   margin-bottom: 100px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .inbox .rightSide .allBody .addSection {
+    margin-right: 74px;
+  }
 }
 .inbox .rightSide .allBody .addSection a {
   text-decoration: none;
@@ -2488,7 +2573,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .list .side {
-  width: 15vw;
+  width: 20vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -2691,14 +2776,28 @@ body::-webkit-scrollbar {
   border-radius: 50px;
   background-color: #7F7A63;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .list .side {
+    width: 15vw;
+  }
+}
 .list .rightSide {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   flex-direction: column;
-  height: 60vh;
   margin-left: 300px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .list .rightSide {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .list .rightSide {
+    width: 80vw;
+  }
 }
 .list .rightSide .profile {
   align-self: flex-end;
@@ -2720,12 +2819,22 @@ body::-webkit-scrollbar {
   box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
 }
 .list .rightSide .allBody {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: normal;
   justify-content: normal;
   flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .list .rightSide .allBody {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .list .rightSide .allBody {
+    width: 80vw;
+  }
 }
 .list .rightSide .allBody .head {
   display: flex;
@@ -2850,12 +2959,26 @@ body::-webkit-scrollbar {
   gap: 50px;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .list .rightSide .allBody .listContant {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
 .list .rightSide .allBody .listContant .ele {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid #433E26;
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .list .rightSide .allBody .listContant .ele {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .list .rightSide .allBody .listContant .ele .top {
   display: flex;
@@ -2930,11 +3053,17 @@ body::-webkit-scrollbar {
   color: rgba(127, 122, 99, 0.5);
 }
 .list .rightSide .allBody .listContant .eleWait {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid #433E26;
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .list .rightSide .allBody .listContant .eleWait {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .list .rightSide .allBody .listContant .eleWait .top {
   display: flex;
@@ -3009,11 +3138,17 @@ body::-webkit-scrollbar {
   color: rgba(127, 122, 99, 0.5);
 }
 .list .rightSide .allBody .listContant .eleCompleted {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid #265073;
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .list .rightSide .allBody .listContant .eleCompleted {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .list .rightSide .allBody .listContant .eleCompleted .top {
   display: flex;
@@ -3088,11 +3223,17 @@ body::-webkit-scrollbar {
   color: rgba(38, 80, 115, 0.5);
 }
 .list .rightSide .allBody .listContant .eleDeleted {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid rgba(134, 43, 13, 0.92);
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .list .rightSide .allBody .listContant .eleDeleted {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .list .rightSide .allBody .listContant .eleDeleted .top {
   display: flex;
@@ -3170,8 +3311,13 @@ body::-webkit-scrollbar {
   align-self: flex-end;
   width: -moz-fit-content;
   width: fit-content;
-  margin-right: 74px;
+  margin-right: 27px;
   margin-bottom: 100px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .list .rightSide .allBody .addSection {
+    margin-right: 74px;
+  }
 }
 .list .rightSide .allBody .addSection a {
   text-decoration: none;
@@ -3208,7 +3354,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .tag .side {
-  width: 15vw;
+  width: 20vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -3411,14 +3557,28 @@ body::-webkit-scrollbar {
   border-radius: 50px;
   background-color: #7F7A63;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .tag .side {
+    width: 15vw;
+  }
+}
 .tag .rightSide {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   flex-direction: column;
-  height: 60vh;
   margin-left: 300px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .tag .rightSide {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .tag .rightSide {
+    width: 80vw;
+  }
 }
 .tag .rightSide .profile {
   align-self: flex-end;
@@ -3440,12 +3600,22 @@ body::-webkit-scrollbar {
   box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
 }
 .tag .rightSide .allBody {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: normal;
   justify-content: normal;
   flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .tag .rightSide .allBody {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .tag .rightSide .allBody {
+    width: 80vw;
+  }
 }
 .tag .rightSide .allBody .head {
   display: flex;
@@ -3570,12 +3740,26 @@ body::-webkit-scrollbar {
   gap: 50px;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .tag .rightSide .allBody .tagContant {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
 .tag .rightSide .allBody .tagContant .ele {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid #433E26;
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .tag .rightSide .allBody .tagContant .ele {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .tag .rightSide .allBody .tagContant .ele .top {
   display: flex;
@@ -3650,11 +3834,17 @@ body::-webkit-scrollbar {
   color: rgba(127, 122, 99, 0.5);
 }
 .tag .rightSide .allBody .tagContant .eleWait {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid #433E26;
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .tag .rightSide .allBody .tagContant .eleWait {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .tag .rightSide .allBody .tagContant .eleWait .top {
   display: flex;
@@ -3729,11 +3919,17 @@ body::-webkit-scrollbar {
   color: rgba(127, 122, 99, 0.5);
 }
 .tag .rightSide .allBody .tagContant .eleCompleted {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid #265073;
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .tag .rightSide .allBody .tagContant .eleCompleted {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .tag .rightSide .allBody .tagContant .eleCompleted .top {
   display: flex;
@@ -3808,11 +4004,17 @@ body::-webkit-scrollbar {
   color: rgba(38, 80, 115, 0.5);
 }
 .tag .rightSide .allBody .tagContant .eleDeleted {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid rgba(134, 43, 13, 0.92);
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .tag .rightSide .allBody .tagContant .eleDeleted {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .tag .rightSide .allBody .tagContant .eleDeleted .top {
   display: flex;
@@ -3890,8 +4092,13 @@ body::-webkit-scrollbar {
   align-self: flex-end;
   width: -moz-fit-content;
   width: fit-content;
-  margin-right: 74px;
+  margin-right: 27px;
   margin-bottom: 100px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .tag .rightSide .allBody .addSection {
+    margin-right: 74px;
+  }
 }
 .tag .rightSide .allBody .addSection a {
   text-decoration: none;
@@ -3928,7 +4135,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .todayPage .side {
-  width: 15vw;
+  width: 20vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -4131,14 +4338,28 @@ body::-webkit-scrollbar {
   border-radius: 50px;
   background-color: #7F7A63;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .todayPage .side {
+    width: 15vw;
+  }
+}
 .todayPage .rightSide {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   flex-direction: column;
-  height: 60vh;
   margin-left: 300px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .todayPage .rightSide {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .todayPage .rightSide {
+    width: 80vw;
+  }
 }
 .todayPage .rightSide .profile {
   align-self: flex-end;
@@ -4160,12 +4381,22 @@ body::-webkit-scrollbar {
   box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
 }
 .todayPage .rightSide .allBody {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: normal;
   justify-content: normal;
   flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .todayPage .rightSide .allBody {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .todayPage .rightSide .allBody {
+    width: 80vw;
+  }
 }
 .todayPage .rightSide .allBody .head {
   display: flex;
@@ -4290,12 +4521,26 @@ body::-webkit-scrollbar {
   gap: 50px;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .todayPage .rightSide .allBody .todayInnerContant {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
 .todayPage .rightSide .allBody .todayInnerContant .ele {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid #433E26;
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .todayPage .rightSide .allBody .todayInnerContant .ele {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .todayPage .rightSide .allBody .todayInnerContant .ele .top {
   display: flex;
@@ -4370,11 +4615,17 @@ body::-webkit-scrollbar {
   color: rgba(127, 122, 99, 0.5);
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleWait {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid #433E26;
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .todayPage .rightSide .allBody .todayInnerContant .eleWait {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleWait .top {
   display: flex;
@@ -4449,11 +4700,17 @@ body::-webkit-scrollbar {
   color: rgba(127, 122, 99, 0.5);
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleCompleted {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid #265073;
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .todayPage .rightSide .allBody .todayInnerContant .eleCompleted {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top {
   display: flex;
@@ -4528,11 +4785,17 @@ body::-webkit-scrollbar {
   color: rgba(38, 80, 115, 0.5);
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleDeleted {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid rgba(134, 43, 13, 0.92);
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .todayPage .rightSide .allBody .todayInnerContant .eleDeleted {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top {
   display: flex;
@@ -4610,8 +4873,13 @@ body::-webkit-scrollbar {
   align-self: flex-end;
   width: -moz-fit-content;
   width: fit-content;
-  margin-right: 74px;
+  margin-right: 27px;
   margin-bottom: 100px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .todayPage .rightSide .allBody .addSection {
+    margin-right: 74px;
+  }
 }
 .todayPage .rightSide .allBody .addSection a {
   text-decoration: none;
@@ -4648,7 +4916,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .completed .side {
-  width: 15vw;
+  width: 20vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -4851,14 +5119,28 @@ body::-webkit-scrollbar {
   border-radius: 50px;
   background-color: #7F7A63;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .completed .side {
+    width: 15vw;
+  }
+}
 .completed .rightSide {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   flex-direction: column;
-  height: 60vh;
   margin-left: 300px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .completed .rightSide {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .completed .rightSide {
+    width: 80vw;
+  }
 }
 .completed .rightSide .profile {
   align-self: flex-end;
@@ -4880,12 +5162,22 @@ body::-webkit-scrollbar {
   box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
 }
 .completed .rightSide .allBody {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: normal;
   justify-content: normal;
   flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .completed .rightSide .allBody {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .completed .rightSide .allBody {
+    width: 80vw;
+  }
 }
 .completed .rightSide .allBody .head {
   display: flex;
@@ -4952,12 +5244,26 @@ body::-webkit-scrollbar {
   gap: 50px;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .completed .rightSide .allBody .completedContant {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
 .completed .rightSide .allBody .completedContant .ele {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid #265073;
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .completed .rightSide .allBody .completedContant .ele {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .completed .rightSide .allBody .completedContant .ele .top {
   display: flex;
@@ -5032,11 +5338,17 @@ body::-webkit-scrollbar {
   color: rgba(38, 80, 115, 0.5);
 }
 .completed .rightSide .allBody .completedContant .eleWait {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid #433E26;
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .completed .rightSide .allBody .completedContant .eleWait {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .completed .rightSide .allBody .completedContant .eleWait .top {
   display: flex;
@@ -5111,11 +5423,17 @@ body::-webkit-scrollbar {
   color: rgba(127, 122, 99, 0.5);
 }
 .completed .rightSide .allBody .completedContant .eleCompleted {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid #265073;
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .completed .rightSide .allBody .completedContant .eleCompleted {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .completed .rightSide .allBody .completedContant .eleCompleted .top {
   display: flex;
@@ -5190,11 +5508,17 @@ body::-webkit-scrollbar {
   color: rgba(38, 80, 115, 0.5);
 }
 .completed .rightSide .allBody .completedContant .eleDeleted {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid rgba(134, 43, 13, 0.92);
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .completed .rightSide .allBody .completedContant .eleDeleted {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .completed .rightSide .allBody .completedContant .eleDeleted .top {
   display: flex;
@@ -5277,7 +5601,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .trash .side {
-  width: 15vw;
+  width: 20vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -5480,14 +5804,28 @@ body::-webkit-scrollbar {
   border-radius: 50px;
   background-color: #7F7A63;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .trash .side {
+    width: 15vw;
+  }
+}
 .trash .rightSide {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   flex-direction: column;
-  height: 60vh;
   margin-left: 300px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .trash .rightSide {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .trash .rightSide {
+    width: 80vw;
+  }
 }
 .trash .rightSide .profile {
   align-self: flex-end;
@@ -5509,12 +5847,22 @@ body::-webkit-scrollbar {
   box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
 }
 .trash .rightSide .allBody {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   align-items: normal;
   justify-content: normal;
   flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .trash .rightSide .allBody {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .trash .rightSide .allBody {
+    width: 80vw;
+  }
 }
 .trash .rightSide .allBody .head {
   display: flex;
@@ -5581,12 +5929,26 @@ body::-webkit-scrollbar {
   gap: 50px;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .trash .rightSide .allBody .trashContant {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
 .trash .rightSide .allBody .trashContant .ele {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 250px;
+  max-width: 250px;
   border-radius: 15px;
   border: 1px solid rgba(134, 43, 13, 0.92);
   padding: 15px;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .trash .rightSide .allBody .trashContant .ele {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 .trash .rightSide .allBody .trashContant .ele .top {
   display: flex;

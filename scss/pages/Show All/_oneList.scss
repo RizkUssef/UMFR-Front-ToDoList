@@ -15,7 +15,7 @@
             @include profile;
         }
         .allBody{
-            width: 80vw;
+            @include allBodyRightSideWidthResponsive;
             @include flexDiv(column,normal,normal);
             gap: 30px;
             .head{
