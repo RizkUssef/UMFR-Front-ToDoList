@@ -1,0 +1,37 @@
+@import '../../utilities/mixin'; 
+
+.createList{
+    @include bgColor;
+    @include flexDiv(row,normal,space-between);
+    .side{
+        @include aside;
+        overflow-y: auto;
+        // position: fixed;
+    }
+    .rightSide{
+        @include rightSideFromProfile;
+        .profile{
+            @include profile;
+        }
+        .createListForm{
+            @include createForm;
+            .textDesc{
+                background-color: transparent;
+                border: 0.5px solid map-get($createForms, "inputBorderColor" );
+                padding: 5px 10px;
+                font-size: map-get($createForms, "labelSize" );
+                color: map-get($createForms, "labelColor" );
+                margin-bottom: 30px;
+                resize: none;
+                max-width: 450px;
+                max-height: 150px;
+                min-width: 450px;
+                min-height: 150px;
+                &:focus{
+                    outline: none;
+                }
+            }
+        } 
+
+    }
+}

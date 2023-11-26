@@ -1,0 +1,38 @@
+@import '../../utilities/mixin'; 
+
+.createList{
+    @include bgColor;
+
+    .contant{
+        @include flexDiv(row,center,center);
+        height: 100vh;
+        .allFlex{
+            @include flexDiv(row,center,space-evenly);
+            gap: 165px;
+            .text{
+                background-image: url('../../../images/vectors/create blob.svg');
+                width: 35vw;
+                height: 63.5vh;
+                background-size: cover;
+                background-repeat: no-repeat;
+                @include flexDiv(column,flex-start,center);
+                gap: 50px;
+                h1{
+                    color: map-get($createFirstList, "textColor" );
+                    font-size: map-get($createFirstList, "headerSize" );
+                }
+                p{
+                    color: map-get($createFirstList, "textColor" );
+                    font-size: map-get($createFirstList, "textSize" );  
+                }
+            }
+            .createForm{
+                width: 40%;
+                @include createFirstForm;
+                .btnCenter{
+                    @include flexDiv(row,center,center);
+                }
+            }
+        }
+    }
+}

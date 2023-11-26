@@ -1,0 +1,5662 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gugi";
+  font-weight: 400;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.filter {
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(90deg, #433E26 0.29%, rgba(127, 122, 99, 0.7) 45.94%, rgba(155, 151, 130, 0.5) 74.4%, rgba(240, 237, 221, 0.5) 99.65%);
+  background-repeat: no-repeat;
+}
+.filter .header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.filter .header .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+}
+.filter .header .logo img {
+  width: 100%;
+  height: 100%;
+}
+.filter .welcome {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.filter .welcome .img img {
+  width: 100%;
+  height: 100%;
+}
+.filter .welcome .text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+  padding-right: 50px;
+}
+.filter .welcome .text h1 {
+  width: 410px;
+  font-size: 70px;
+  color: #7F7A63;
+}
+.filter .welcome .text p {
+  font-size: 50px;
+  color: #7F7A63;
+}
+.filter .welcome .text a {
+  text-decoration: none;
+  font-size: 35px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+  border-radius: 15px;
+}
+.filter .welcome .text a:hover {
+  font-size: 35px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+
+.homeBody {
+  background-color: #F0EDDD;
+}
+
+.home_header {
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.home_header .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+}
+.home_header .logo img {
+  width: 100%;
+  height: 100%;
+}
+.home_header .reg_login .reg, .home_header .reg_login .login {
+  text-decoration: none;
+  color: #7F7A63;
+  font-size: 18px;
+}
+.home_header .reg_login .login {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.intro {
+  height: 100vh;
+  background-image: url(../../images/bg/Home\ bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(90deg, #433E26 0.29%, rgba(127, 122, 99, 0.7) 45.94%, rgba(155, 151, 130, 0.5) 74.4%, rgba(240, 237, 221, 0.5) 99.65%);
+  background-repeat: no-repeat;
+}
+.intro .text {
+  z-index: 10;
+  margin-left: 100px;
+}
+.intro .text h1 {
+  color: #BEBAA5;
+  font-size: 70px;
+  width: 70%;
+  margin-bottom: 100px;
+}
+.intro .text p {
+  color: #BEBAA5;
+  font-size: 40px;
+  width: 50%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.info .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+.info .top .leftImg {
+  flex-basis: 400px;
+  margin-top: 70px;
+}
+.info .top .leftImg img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+.info .top .rightText {
+  flex-basis: 500px;
+}
+.info .top .rightText h1 {
+  margin-bottom: 50px;
+  color: #433E26;
+  font-size: 50px;
+}
+.info .top .rightText p {
+  margin-bottom: 50px;
+  color: #433E26;
+  font-size: 20px;
+}
+.info .top .rightText a {
+  margin-bottom: 50px;
+  text-decoration: none;
+  font-size: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+  border-radius: 15px;
+}
+.info .top .rightText a:hover {
+  font-size: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+.info .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 70px;
+}
+.info .bottom .leftText {
+  flex-basis: 500px;
+}
+.info .bottom .leftText h1 {
+  margin-bottom: 50px;
+  color: #433E26;
+  font-size: 50px;
+}
+.info .bottom .leftText p {
+  margin-bottom: 50px;
+  color: #433E26;
+  font-size: 20px;
+}
+.info .bottom .leftText a {
+  margin-bottom: 50px;
+  text-decoration: none;
+  font-size: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+  border-radius: 15px;
+}
+.info .bottom .leftText a:hover {
+  font-size: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+.info .bottom .rightImg {
+  flex-basis: 700px;
+}
+.info .bottom .rightImg img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.qoute {
+  background: linear-gradient(90deg, #433E26 0.29%, rgba(127, 122, 99, 0.7) 45.94%, rgba(155, 151, 130, 0.5) 74.4%, rgba(240, 237, 221, 0.5) 99.65%);
+  padding: 70px 150px;
+  margin-bottom: 100px;
+}
+.qoute .qouteText {
+  text-align: center;
+}
+.qoute .qouteText h1 {
+  background: linear-gradient(94deg, #7F7A63 0%, #433E26 48.4%, #BEBAA5 99.17%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 60px;
+}
+
+.listImages {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
+  row-gap: 50px;
+  margin-bottom: 100px;
+}
+.listImages .one {
+  width: 300px;
+  grid-column: 1/2;
+}
+.listImages .one img {
+  width: 100%;
+  height: 100%;
+}
+.listImages .two {
+  width: 300px;
+  grid-column: 2/3;
+}
+.listImages .two img {
+  width: 100%;
+  height: 100%;
+}
+.listImages .three {
+  width: 300px;
+  grid-column: 3/4;
+}
+.listImages .three img {
+  width: 100%;
+  height: 100%;
+}
+.listImages .four {
+  width: 300px;
+  grid-column: 1/2;
+}
+.listImages .four img {
+  width: 100%;
+  height: 100%;
+}
+.listImages .five {
+  width: 300px;
+  grid-column: 2/3;
+}
+.listImages .five img {
+  width: 100%;
+  height: 100%;
+}
+.listImages .six {
+  width: 300px;
+  grid-column: 3/4;
+}
+.listImages .six img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(90deg, #433E26 0.29%, rgba(127, 122, 99, 0.7) 45.94%, rgba(155, 151, 130, 0.5) 74.4%, rgba(240, 237, 221, 0.5) 99.65%);
+  background-repeat: no-repeat;
+}
+.footer .upperPart {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.footer .upperPart .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+}
+.footer .upperPart .logo img {
+  width: 100%;
+  height: 100%;
+}
+.footer .upperPart .firstLinks h1, .footer .upperPart .secLinks h1, .footer .upperPart .thiredLinks h1 {
+  color: #433E26;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.footer .upperPart .firstLinks a, .footer .upperPart .secLinks a, .footer .upperPart .thiredLinks a {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #908A6F;
+  font-size: 20px;
+}
+.footer .upperPart .thiredLinks {
+  margin-right: 100px;
+}
+.footer .hr {
+  width: 80%;
+  height: 0.3px;
+  border-radius: 50px;
+  margin: 50px 0px;
+  background-color: #F0EDDD;
+}
+.footer .lowerPart .follow h1 {
+  color: #433E26;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer .lowerPart .socailLogos {
+  margin-bottom: 20px;
+}
+.footer .lowerPart .socailLogos img {
+  width: 50px;
+  height: 50px;
+}
+
+.introRegister {
+  height: 100vh;
+  background-image: url(../../../images/auth/Register.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.introRegister::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(90deg, #433E26 0.29%, rgba(127, 122, 99, 0.7) 45.94%, rgba(155, 151, 130, 0.5) 74.4%, rgba(240, 237, 221, 0.5) 99.65%);
+  background-repeat: no-repeat;
+}
+.introRegister .form {
+  z-index: 10;
+  margin-left: 100px;
+  padding-top: 50px;
+}
+.introRegister .form h1 {
+  color: #BEBAA5;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.introRegister .form label {
+  display: block;
+  color: #BEBAA5;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.introRegister .form input {
+  display: block;
+  color: #BEBAA5;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  font-size: 15px;
+  margin-bottom: 30px;
+  width: 450px;
+  height: 35px;
+  padding: 5px 10px;
+}
+.introRegister .form input:focus {
+  outline: none;
+}
+.introRegister .form p {
+  color: #BEBAA5;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.introRegister .form p span a {
+  text-decoration: none;
+  color: #BEBAA5;
+}
+.introRegister .form .submit {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+}
+.introRegister .form .submit:hover {
+  cursor: pointer;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+.introRegister .form .btnCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.introLogin {
+  height: 100vh;
+  background-image: url(../../../images/auth/Login.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.introLogin::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(90deg, #433E26 0.29%, rgba(127, 122, 99, 0.7) 45.94%, rgba(155, 151, 130, 0.5) 74.4%, rgba(240, 237, 221, 0.5) 99.65%);
+  background-repeat: no-repeat;
+}
+.introLogin .form {
+  z-index: 10;
+  margin-left: 100px;
+}
+.introLogin .form h1 {
+  color: #BEBAA5;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.introLogin .form label {
+  display: block;
+  color: #BEBAA5;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.introLogin .form input {
+  display: block;
+  color: #BEBAA5;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  font-size: 15px;
+  margin-bottom: 30px;
+  width: 450px;
+  height: 35px;
+  padding: 5px 10px;
+}
+.introLogin .form input:focus {
+  outline: none;
+}
+.introLogin .form p {
+  color: #BEBAA5;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.introLogin .form p span a {
+  text-decoration: none;
+  color: #BEBAA5;
+}
+.introLogin .form .submit {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+}
+.introLogin .form .submit:hover {
+  cursor: pointer;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+.introLogin .form .forgetPass {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.introLogin .form .forgetPass .left a {
+  text-decoration: none;
+}
+.introLogin .form .forgetPass .right a {
+  color: #BEBAA5;
+  text-decoration: none;
+}
+.introLogin .form .btnCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.introForgetPass {
+  height: 100vh;
+  background-image: url("../../../images/auth/Forget Password.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.introForgetPass::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(90deg, #433E26 0.29%, rgba(127, 122, 99, 0.7) 45.94%, rgba(155, 151, 130, 0.5) 74.4%, rgba(240, 237, 221, 0.5) 99.65%);
+  background-repeat: no-repeat;
+}
+.introForgetPass .form {
+  z-index: 10;
+  margin-left: 100px;
+}
+.introForgetPass .form h1 {
+  color: #BEBAA5;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.introForgetPass .form label {
+  display: block;
+  color: #BEBAA5;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.introForgetPass .form input {
+  display: block;
+  color: #BEBAA5;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  font-size: 15px;
+  margin-bottom: 30px;
+  width: 450px;
+  height: 35px;
+  padding: 5px 10px;
+}
+.introForgetPass .form input:focus {
+  outline: none;
+}
+.introForgetPass .form p {
+  color: #BEBAA5;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.introForgetPass .form p span a {
+  text-decoration: none;
+  color: #BEBAA5;
+}
+.introForgetPass .form .submit {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+}
+.introForgetPass .form .submit:hover {
+  cursor: pointer;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+.introForgetPass .form h1 {
+  width: 300px;
+}
+.introForgetPass .form .btnCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.introResetPass {
+  height: 100vh;
+  background-image: url("../../../images/auth/Reset Password.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.introResetPass::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(90deg, #433E26 0.29%, rgba(127, 122, 99, 0.7) 45.94%, rgba(155, 151, 130, 0.5) 74.4%, rgba(240, 237, 221, 0.5) 99.65%);
+  background-repeat: no-repeat;
+}
+.introResetPass .form {
+  z-index: 10;
+  margin-left: 100px;
+}
+.introResetPass .form h1 {
+  color: #BEBAA5;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.introResetPass .form label {
+  display: block;
+  color: #BEBAA5;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.introResetPass .form input {
+  display: block;
+  color: #BEBAA5;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  font-size: 15px;
+  margin-bottom: 30px;
+  width: 450px;
+  height: 35px;
+  padding: 5px 10px;
+}
+.introResetPass .form input:focus {
+  outline: none;
+}
+.introResetPass .form p {
+  color: #BEBAA5;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.introResetPass .form p span a {
+  text-decoration: none;
+  color: #BEBAA5;
+}
+.introResetPass .form .submit {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+}
+.introResetPass .form .submit:hover {
+  cursor: pointer;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+.introResetPass .form h1 {
+  width: 300px;
+}
+.introResetPass .form .btnCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.introVerify {
+  height: 100vh;
+  background-image: url("../../../images/auth/Verify Email.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.introVerify::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(90deg, #433E26 0.29%, rgba(127, 122, 99, 0.7) 45.94%, rgba(155, 151, 130, 0.5) 74.4%, rgba(240, 237, 221, 0.5) 99.65%);
+  background-repeat: no-repeat;
+}
+.introVerify .verifyDiv {
+  z-index: 10;
+  margin-left: 100px;
+}
+.introVerify .verifyDiv h1 {
+  color: #BEBAA5;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.introVerify .verifyDiv label {
+  display: block;
+  color: #BEBAA5;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.introVerify .verifyDiv input {
+  display: block;
+  color: #BEBAA5;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  font-size: 15px;
+  margin-bottom: 30px;
+  width: 450px;
+  height: 35px;
+  padding: 5px 10px;
+}
+.introVerify .verifyDiv input:focus {
+  outline: none;
+}
+.introVerify .verifyDiv p {
+  color: #BEBAA5;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.introVerify .verifyDiv p span a {
+  text-decoration: none;
+  color: #BEBAA5;
+}
+.introVerify .verifyDiv .submit {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+}
+.introVerify .verifyDiv .submit:hover {
+  cursor: pointer;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+.introVerify .verifyDiv h1 {
+  width: 300px;
+}
+.introVerify .verifyDiv p {
+  width: 100%;
+}
+.introVerify .verifyDiv .btnCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.introVerify .verifyDiv .btnCenter a {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+  border-radius: 15px;
+}
+.introVerify .verifyDiv .btnCenter a:hover {
+  font-size: 20px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+
+.createList {
+  background-color: #F0EDDD;
+}
+.createList .contant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100vh;
+}
+.createList .contant .allFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 165px;
+}
+.createList .contant .allFlex .text {
+  background-image: url("../../../images/vectors/create blob.svg");
+  width: 35vw;
+  height: 63.5vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.createList .contant .allFlex .text h1 {
+  color: #433E26;
+  font-size: 50px;
+}
+.createList .contant .allFlex .text p {
+  color: #433E26;
+  font-size: 25px;
+}
+.createList .contant .allFlex .createForm {
+  width: 40%;
+}
+.createList .contant .allFlex .createForm h1 {
+  color: #433E26;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.createList .contant .allFlex .createForm label {
+  display: block;
+  color: #433E26;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.createList .contant .allFlex .createForm input, .createList .contant .allFlex .createForm select, .createList .contant .allFlex .createForm textarea {
+  display: block;
+  color: #433E26;
+  background-color: transparent;
+  border: 1px solid #433E26;
+  font-size: 15px;
+  margin-bottom: 30px;
+  width: 450px;
+  height: 35px;
+  padding: 5px 10px;
+}
+.createList .contant .allFlex .createForm input:focus, .createList .contant .allFlex .createForm select:focus, .createList .contant .allFlex .createForm textarea:focus {
+  outline: none;
+}
+.createList .contant .allFlex .createForm select {
+  width: 471px;
+  height: 45px;
+}
+.createList .contant .allFlex .createForm textarea {
+  resize: none;
+  max-width: 450px;
+  max-height: 200px;
+  min-width: 450px;
+  min-height: 200px;
+}
+.createList .contant .allFlex .createForm p {
+  color: #BEBAA5;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.createList .contant .allFlex .createForm p span a {
+  text-decoration: none;
+  color: #BEBAA5;
+}
+.createList .contant .allFlex .createForm .submit {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+}
+.createList .contant .allFlex .createForm .submit:hover {
+  cursor: pointer;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+.createList .contant .allFlex .createForm .btnCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.createSection {
+  background-color: #F0EDDD;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.createSection .side {
+  width: 15vw;
+  min-height: 100vh;
+  background-color: rgba(190, 186, 165, 0.37);
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.createSection .side .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.createSection .side .logo img {
+  width: 100%;
+  height: 100%;
+}
+.createSection .side .first, .createSection .side .third, .createSection .side .logout {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+.createSection .side .first .ladelList, .createSection .side .first .ladelTag, .createSection .side .third .ladelList, .createSection .side .third .ladelTag, .createSection .side .logout .ladelList, .createSection .side .logout .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.createSection .side .first .ladelList .addShow, .createSection .side .first .ladelTag .addShow, .createSection .side .third .ladelList .addShow, .createSection .side .third .ladelTag .addShow, .createSection .side .logout .ladelList .addShow, .createSection .side .logout .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.createSection .side .first .ladelList .addShow img, .createSection .side .first .ladelTag .addShow img, .createSection .side .third .ladelList .addShow img, .createSection .side .third .ladelTag .addShow img, .createSection .side .logout .ladelList .addShow img, .createSection .side .logout .ladelTag .addShow img {
+  width: 13px;
+}
+.createSection .side .first .fullLink, .createSection .side .third .fullLink, .createSection .side .logout .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.createSection .side .first .fullLink .right, .createSection .side .third .fullLink .right, .createSection .side .logout .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.createSection .side .first .fullLink .right .icon, .createSection .side .third .fullLink .right .icon, .createSection .side .logout .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.createSection .side .first .fullLink .right .icon img, .createSection .side .third .fullLink .right .icon img, .createSection .side .logout .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.createSection .side .first .fullLink .right .link a, .createSection .side .third .fullLink .right .link a, .createSection .side .logout .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.createSection .side .first .fullLink .right .link a::after, .createSection .side .third .fullLink .right .link a::after, .createSection .side .logout .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.createSection .side .first .fullLink .right .link a:hover::after, .createSection .side .third .fullLink .right .link a:hover::after, .createSection .side .logout .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.createSection .side .first .fullLink .left, .createSection .side .third .fullLink .left, .createSection .side .logout .fullLink .left {
+  margin-right: 10px;
+}
+.createSection .side .first .fullLink .left .num p, .createSection .side .third .fullLink .left .num p, .createSection .side .logout .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.createSection .side .first {
+  margin-top: 30px;
+}
+.createSection .side .second {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+.createSection .side .second .ladelList, .createSection .side .second .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.createSection .side .second .ladelList .addShow, .createSection .side .second .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.createSection .side .second .ladelList .addShow img, .createSection .side .second .ladelTag .addShow img {
+  width: 13px;
+}
+.createSection .side .second .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.createSection .side .second .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.createSection .side .second .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.createSection .side .second .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.createSection .side .second .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.createSection .side .second .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.createSection .side .second .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.createSection .side .second .fullLink .left {
+  margin-right: 10px;
+}
+.createSection .side .second .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.createSection .side .logout {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20px;
+}
+.createSection .side .hr {
+  width: 80%;
+  height: 0.3px;
+  border-radius: 50px;
+  background-color: #7F7A63;
+}
+.createSection .rightSide {
+  width: 80vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 60vh;
+}
+.createSection .rightSide .profile {
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.createSection .rightSide .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
+}
+.createSection .rightSide .createSectionForm {
+  width: 80%;
+}
+.createSection .rightSide .createSectionForm .head {
+  margin-bottom: 40px;
+}
+.createSection .rightSide .createSectionForm .head h1 {
+  color: #433E26;
+  font-size: 50px;
+}
+.createSection .rightSide .createSectionForm .form {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.createSection .rightSide .createSectionForm .form form {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+}
+.createSection .rightSide .createSectionForm .form label {
+  color: #433E26;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.createSection .rightSide .createSectionForm .form input[type=text], .createSection .rightSide .createSectionForm .form input[type=color] {
+  margin-bottom: 20px;
+  width: 450px;
+  height: 35px;
+  background-color: transparent;
+  border: 0.5px solid #433E26;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #433E26;
+}
+.createSection .rightSide .createSectionForm .form input[type=text]:focus, .createSection .rightSide .createSectionForm .form input[type=color]:focus {
+  outline: none;
+}
+.createSection .rightSide .createSectionForm .form input[type=color] {
+  width: 35px;
+  height: 35px;
+  padding: 0px;
+}
+.createSection .rightSide .createSectionForm .form input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.createSection .rightSide .createSectionForm .form .submit {
+  text-decoration: none;
+  font-size: 15px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+  align-self: end;
+}
+.createSection .rightSide .createSectionForm .form .submit:hover {
+  cursor: pointer;
+  font-size: 15px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+
+.createTag {
+  background-color: #F0EDDD;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.createTag .side {
+  width: 15vw;
+  min-height: 100vh;
+  background-color: rgba(190, 186, 165, 0.37);
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.createTag .side .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.createTag .side .logo img {
+  width: 100%;
+  height: 100%;
+}
+.createTag .side .first, .createTag .side .third, .createTag .side .logout {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+.createTag .side .first .ladelList, .createTag .side .first .ladelTag, .createTag .side .third .ladelList, .createTag .side .third .ladelTag, .createTag .side .logout .ladelList, .createTag .side .logout .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.createTag .side .first .ladelList .addShow, .createTag .side .first .ladelTag .addShow, .createTag .side .third .ladelList .addShow, .createTag .side .third .ladelTag .addShow, .createTag .side .logout .ladelList .addShow, .createTag .side .logout .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.createTag .side .first .ladelList .addShow img, .createTag .side .first .ladelTag .addShow img, .createTag .side .third .ladelList .addShow img, .createTag .side .third .ladelTag .addShow img, .createTag .side .logout .ladelList .addShow img, .createTag .side .logout .ladelTag .addShow img {
+  width: 13px;
+}
+.createTag .side .first .fullLink, .createTag .side .third .fullLink, .createTag .side .logout .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.createTag .side .first .fullLink .right, .createTag .side .third .fullLink .right, .createTag .side .logout .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.createTag .side .first .fullLink .right .icon, .createTag .side .third .fullLink .right .icon, .createTag .side .logout .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.createTag .side .first .fullLink .right .icon img, .createTag .side .third .fullLink .right .icon img, .createTag .side .logout .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.createTag .side .first .fullLink .right .link a, .createTag .side .third .fullLink .right .link a, .createTag .side .logout .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.createTag .side .first .fullLink .right .link a::after, .createTag .side .third .fullLink .right .link a::after, .createTag .side .logout .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.createTag .side .first .fullLink .right .link a:hover::after, .createTag .side .third .fullLink .right .link a:hover::after, .createTag .side .logout .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.createTag .side .first .fullLink .left, .createTag .side .third .fullLink .left, .createTag .side .logout .fullLink .left {
+  margin-right: 10px;
+}
+.createTag .side .first .fullLink .left .num p, .createTag .side .third .fullLink .left .num p, .createTag .side .logout .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.createTag .side .first {
+  margin-top: 30px;
+}
+.createTag .side .second {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+.createTag .side .second .ladelList, .createTag .side .second .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.createTag .side .second .ladelList .addShow, .createTag .side .second .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.createTag .side .second .ladelList .addShow img, .createTag .side .second .ladelTag .addShow img {
+  width: 13px;
+}
+.createTag .side .second .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.createTag .side .second .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.createTag .side .second .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.createTag .side .second .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.createTag .side .second .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.createTag .side .second .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.createTag .side .second .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.createTag .side .second .fullLink .left {
+  margin-right: 10px;
+}
+.createTag .side .second .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.createTag .side .logout {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20px;
+}
+.createTag .side .hr {
+  width: 80%;
+  height: 0.3px;
+  border-radius: 50px;
+  background-color: #7F7A63;
+}
+.createTag .rightSide {
+  width: 80vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 60vh;
+}
+.createTag .rightSide .profile {
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.createTag .rightSide .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
+}
+.createTag .rightSide .createTagForm {
+  width: 80%;
+}
+.createTag .rightSide .createTagForm .head {
+  margin-bottom: 40px;
+}
+.createTag .rightSide .createTagForm .head h1 {
+  color: #433E26;
+  font-size: 50px;
+}
+.createTag .rightSide .createTagForm .form {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.createTag .rightSide .createTagForm .form form {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+}
+.createTag .rightSide .createTagForm .form label {
+  color: #433E26;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.createTag .rightSide .createTagForm .form input[type=text], .createTag .rightSide .createTagForm .form input[type=color] {
+  margin-bottom: 20px;
+  width: 450px;
+  height: 35px;
+  background-color: transparent;
+  border: 0.5px solid #433E26;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #433E26;
+}
+.createTag .rightSide .createTagForm .form input[type=text]:focus, .createTag .rightSide .createTagForm .form input[type=color]:focus {
+  outline: none;
+}
+.createTag .rightSide .createTagForm .form input[type=color] {
+  width: 35px;
+  height: 35px;
+  padding: 0px;
+}
+.createTag .rightSide .createTagForm .form input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.createTag .rightSide .createTagForm .form .submit {
+  text-decoration: none;
+  font-size: 15px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+  align-self: end;
+}
+.createTag .rightSide .createTagForm .form .submit:hover {
+  cursor: pointer;
+  font-size: 15px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+
+.createList {
+  background-color: #F0EDDD;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.createList .side {
+  width: 15vw;
+  min-height: 100vh;
+  background-color: rgba(190, 186, 165, 0.37);
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.createList .side .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.createList .side .logo img {
+  width: 100%;
+  height: 100%;
+}
+.createList .side .first, .createList .side .third, .createList .side .logout {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+.createList .side .first .ladelList, .createList .side .first .ladelTag, .createList .side .third .ladelList, .createList .side .third .ladelTag, .createList .side .logout .ladelList, .createList .side .logout .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.createList .side .first .ladelList .addShow, .createList .side .first .ladelTag .addShow, .createList .side .third .ladelList .addShow, .createList .side .third .ladelTag .addShow, .createList .side .logout .ladelList .addShow, .createList .side .logout .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.createList .side .first .ladelList .addShow img, .createList .side .first .ladelTag .addShow img, .createList .side .third .ladelList .addShow img, .createList .side .third .ladelTag .addShow img, .createList .side .logout .ladelList .addShow img, .createList .side .logout .ladelTag .addShow img {
+  width: 13px;
+}
+.createList .side .first .fullLink, .createList .side .third .fullLink, .createList .side .logout .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.createList .side .first .fullLink .right, .createList .side .third .fullLink .right, .createList .side .logout .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.createList .side .first .fullLink .right .icon, .createList .side .third .fullLink .right .icon, .createList .side .logout .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.createList .side .first .fullLink .right .icon img, .createList .side .third .fullLink .right .icon img, .createList .side .logout .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.createList .side .first .fullLink .right .link a, .createList .side .third .fullLink .right .link a, .createList .side .logout .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.createList .side .first .fullLink .right .link a::after, .createList .side .third .fullLink .right .link a::after, .createList .side .logout .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.createList .side .first .fullLink .right .link a:hover::after, .createList .side .third .fullLink .right .link a:hover::after, .createList .side .logout .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.createList .side .first .fullLink .left, .createList .side .third .fullLink .left, .createList .side .logout .fullLink .left {
+  margin-right: 10px;
+}
+.createList .side .first .fullLink .left .num p, .createList .side .third .fullLink .left .num p, .createList .side .logout .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.createList .side .first {
+  margin-top: 30px;
+}
+.createList .side .second {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+.createList .side .second .ladelList, .createList .side .second .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.createList .side .second .ladelList .addShow, .createList .side .second .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.createList .side .second .ladelList .addShow img, .createList .side .second .ladelTag .addShow img {
+  width: 13px;
+}
+.createList .side .second .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.createList .side .second .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.createList .side .second .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.createList .side .second .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.createList .side .second .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.createList .side .second .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.createList .side .second .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.createList .side .second .fullLink .left {
+  margin-right: 10px;
+}
+.createList .side .second .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.createList .side .logout {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20px;
+}
+.createList .side .hr {
+  width: 80%;
+  height: 0.3px;
+  border-radius: 50px;
+  background-color: #7F7A63;
+}
+.createList .rightSide {
+  width: 80vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 60vh;
+}
+.createList .rightSide .profile {
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.createList .rightSide .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
+}
+.createList .rightSide .createListForm {
+  width: 80%;
+}
+.createList .rightSide .createListForm .head {
+  margin-bottom: 40px;
+}
+.createList .rightSide .createListForm .head h1 {
+  color: #433E26;
+  font-size: 50px;
+}
+.createList .rightSide .createListForm .form {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.createList .rightSide .createListForm .form form {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+}
+.createList .rightSide .createListForm .form label {
+  color: #433E26;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.createList .rightSide .createListForm .form input[type=text], .createList .rightSide .createListForm .form input[type=color] {
+  margin-bottom: 20px;
+  width: 450px;
+  height: 35px;
+  background-color: transparent;
+  border: 0.5px solid #433E26;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #433E26;
+}
+.createList .rightSide .createListForm .form input[type=text]:focus, .createList .rightSide .createListForm .form input[type=color]:focus {
+  outline: none;
+}
+.createList .rightSide .createListForm .form input[type=color] {
+  width: 35px;
+  height: 35px;
+  padding: 0px;
+}
+.createList .rightSide .createListForm .form input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.createList .rightSide .createListForm .form .submit {
+  text-decoration: none;
+  font-size: 15px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+  align-self: end;
+}
+.createList .rightSide .createListForm .form .submit:hover {
+  cursor: pointer;
+  font-size: 15px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+.createList .rightSide .createListForm .textDesc {
+  background-color: transparent;
+  border: 0.5px solid #433E26;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #433E26;
+  margin-bottom: 30px;
+  resize: none;
+  max-width: 450px;
+  max-height: 150px;
+  min-width: 450px;
+  min-height: 150px;
+}
+.createList .rightSide .createListForm .textDesc:focus {
+  outline: none;
+}
+
+.inbox {
+  background-color: #F0EDDD;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.inbox .side {
+  width: 15vw;
+  min-height: 100vh;
+  background-color: rgba(190, 186, 165, 0.37);
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: fixed;
+}
+.inbox .side .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.inbox .side .logo img {
+  width: 100%;
+  height: 100%;
+}
+.inbox .side .first, .inbox .side .third, .inbox .side .logout {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+.inbox .side .first .ladelList, .inbox .side .first .ladelTag, .inbox .side .third .ladelList, .inbox .side .third .ladelTag, .inbox .side .logout .ladelList, .inbox .side .logout .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.inbox .side .first .ladelList .addShow, .inbox .side .first .ladelTag .addShow, .inbox .side .third .ladelList .addShow, .inbox .side .third .ladelTag .addShow, .inbox .side .logout .ladelList .addShow, .inbox .side .logout .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.inbox .side .first .ladelList .addShow img, .inbox .side .first .ladelTag .addShow img, .inbox .side .third .ladelList .addShow img, .inbox .side .third .ladelTag .addShow img, .inbox .side .logout .ladelList .addShow img, .inbox .side .logout .ladelTag .addShow img {
+  width: 13px;
+}
+.inbox .side .first .fullLink, .inbox .side .third .fullLink, .inbox .side .logout .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.inbox .side .first .fullLink .right, .inbox .side .third .fullLink .right, .inbox .side .logout .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.inbox .side .first .fullLink .right .icon, .inbox .side .third .fullLink .right .icon, .inbox .side .logout .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.inbox .side .first .fullLink .right .icon img, .inbox .side .third .fullLink .right .icon img, .inbox .side .logout .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.inbox .side .first .fullLink .right .link a, .inbox .side .third .fullLink .right .link a, .inbox .side .logout .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.inbox .side .first .fullLink .right .link a::after, .inbox .side .third .fullLink .right .link a::after, .inbox .side .logout .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.inbox .side .first .fullLink .right .link a:hover::after, .inbox .side .third .fullLink .right .link a:hover::after, .inbox .side .logout .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.inbox .side .first .fullLink .left, .inbox .side .third .fullLink .left, .inbox .side .logout .fullLink .left {
+  margin-right: 10px;
+}
+.inbox .side .first .fullLink .left .num p, .inbox .side .third .fullLink .left .num p, .inbox .side .logout .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.inbox .side .first {
+  margin-top: 30px;
+}
+.inbox .side .second {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+.inbox .side .second .ladelList, .inbox .side .second .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.inbox .side .second .ladelList .addShow, .inbox .side .second .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.inbox .side .second .ladelList .addShow img, .inbox .side .second .ladelTag .addShow img {
+  width: 13px;
+}
+.inbox .side .second .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.inbox .side .second .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.inbox .side .second .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.inbox .side .second .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.inbox .side .second .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.inbox .side .second .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.inbox .side .second .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.inbox .side .second .fullLink .left {
+  margin-right: 10px;
+}
+.inbox .side .second .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.inbox .side .logout {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20px;
+}
+.inbox .side .hr {
+  width: 80%;
+  height: 0.3px;
+  border-radius: 50px;
+  background-color: #7F7A63;
+}
+.inbox .rightSide {
+  width: 80vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 60vh;
+  margin-left: 300px;
+}
+.inbox .rightSide .profile {
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.inbox .rightSide .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
+}
+.inbox .rightSide .allBody {
+  width: 80vw;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+  flex-direction: column;
+  gap: 30px;
+}
+.inbox .rightSide .allBody .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.inbox .rightSide .allBody .head h1 {
+  font-size: 60px;
+  color: #433E26;
+}
+.inbox .rightSide .allBody .head .addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.inbox .rightSide .allBody .head .addTaskForm .vis {
+  display: none;
+}
+.inbox .rightSide .allBody .head .addTaskForm input {
+  background-color: transparent;
+  width: 400px;
+  height: 38px;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 20px;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.inbox .rightSide .allBody .head .addTaskForm input:focus {
+  outline: none;
+}
+.inbox .rightSide .allBody .head .addTaskForm button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.inbox .rightSide .allBody .head .addTaskForm button img {
+  width: 20px;
+  height: 20px;
+}
+.inbox .rightSide .allBody .head .addTaskForm .clickToAdd {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.inbox .rightSide .allBody .secName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.inbox .rightSide .allBody .secName h1 {
+  font-size: 35px;
+  color: #433E26;
+}
+.inbox .rightSide .allBody .secName .addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.inbox .rightSide .allBody .secName .addTaskForm .vis {
+  display: none;
+}
+.inbox .rightSide .allBody .secName .addTaskForm .show {
+  display: block;
+}
+.inbox .rightSide .allBody .secName .addTaskForm input {
+  background-color: transparent;
+  width: 400px;
+  height: 27px;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 15px;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.inbox .rightSide .allBody .secName .addTaskForm input:focus {
+  outline: none;
+}
+.inbox .rightSide .allBody .secName .addTaskForm button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.inbox .rightSide .allBody .secName .addTaskForm button img {
+  width: 15px;
+  height: 15px;
+}
+.inbox .rightSide .allBody .secName .addTaskForm .clickToAdd {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.inbox .rightSide .allBody .secContant {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.inbox .rightSide .allBody .secContant .ele {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid #433E26;
+  padding: 15px;
+}
+.inbox .rightSide .allBody .secContant .ele .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.inbox .rightSide .allBody .secContant .ele .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.inbox .rightSide .allBody .secContant .ele .top .cName h1 {
+  color: #433E26;
+}
+.inbox .rightSide .allBody .secContant .ele .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: transparent;
+  cursor: pointer;
+}
+.inbox .rightSide .allBody .secContant .ele .top .cName form .cheack:focus {
+  background-color: transparent;
+}
+.inbox .rightSide .allBody .secContant .ele .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.inbox .rightSide .allBody .secContant .ele .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.inbox .rightSide .allBody .secContant .ele .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.inbox .rightSide .allBody .secContant .ele .middle .time, .inbox .rightSide .allBody .secContant .ele .middle .list, .inbox .rightSide .allBody .secContant .ele .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.inbox .rightSide .allBody .secContant .ele .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.inbox .rightSide .allBody .secContant .ele .middle .list, .inbox .rightSide .allBody .secContant .ele .middle .tag {
+  color: rgba(127, 122, 99, 0.5);
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  padding: 5px 20px;
+  background-color: transparent;
+}
+.inbox .rightSide .allBody .secContant .ele .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.inbox .rightSide .allBody .secContant .ele .bottom p {
+  color: #433E26;
+  font-size: 12px;
+}
+.inbox .rightSide .allBody .secContant .ele .bottom p span {
+  color: rgba(127, 122, 99, 0.5);
+}
+.inbox .rightSide .allBody .addSection {
+  align-self: flex-end;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 74px;
+  margin-bottom: 100px;
+}
+.inbox .rightSide .allBody .addSection a {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 20px;
+  transition: 1s ease-in-out;
+  border-radius: 15px;
+}
+.inbox .rightSide .allBody .addSection a:hover {
+  font-size: 20px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+
+.list {
+  background-color: #F0EDDD;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.list .side {
+  width: 15vw;
+  min-height: 100vh;
+  background-color: rgba(190, 186, 165, 0.37);
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: fixed;
+}
+.list .side .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.list .side .logo img {
+  width: 100%;
+  height: 100%;
+}
+.list .side .first, .list .side .third, .list .side .logout {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+.list .side .first .ladelList, .list .side .first .ladelTag, .list .side .third .ladelList, .list .side .third .ladelTag, .list .side .logout .ladelList, .list .side .logout .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.list .side .first .ladelList .addShow, .list .side .first .ladelTag .addShow, .list .side .third .ladelList .addShow, .list .side .third .ladelTag .addShow, .list .side .logout .ladelList .addShow, .list .side .logout .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.list .side .first .ladelList .addShow img, .list .side .first .ladelTag .addShow img, .list .side .third .ladelList .addShow img, .list .side .third .ladelTag .addShow img, .list .side .logout .ladelList .addShow img, .list .side .logout .ladelTag .addShow img {
+  width: 13px;
+}
+.list .side .first .fullLink, .list .side .third .fullLink, .list .side .logout .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.list .side .first .fullLink .right, .list .side .third .fullLink .right, .list .side .logout .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.list .side .first .fullLink .right .icon, .list .side .third .fullLink .right .icon, .list .side .logout .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.list .side .first .fullLink .right .icon img, .list .side .third .fullLink .right .icon img, .list .side .logout .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.list .side .first .fullLink .right .link a, .list .side .third .fullLink .right .link a, .list .side .logout .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.list .side .first .fullLink .right .link a::after, .list .side .third .fullLink .right .link a::after, .list .side .logout .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.list .side .first .fullLink .right .link a:hover::after, .list .side .third .fullLink .right .link a:hover::after, .list .side .logout .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.list .side .first .fullLink .left, .list .side .third .fullLink .left, .list .side .logout .fullLink .left {
+  margin-right: 10px;
+}
+.list .side .first .fullLink .left .num p, .list .side .third .fullLink .left .num p, .list .side .logout .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.list .side .first {
+  margin-top: 30px;
+}
+.list .side .second {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+.list .side .second .ladelList, .list .side .second .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.list .side .second .ladelList .addShow, .list .side .second .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.list .side .second .ladelList .addShow img, .list .side .second .ladelTag .addShow img {
+  width: 13px;
+}
+.list .side .second .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.list .side .second .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.list .side .second .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.list .side .second .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.list .side .second .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.list .side .second .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.list .side .second .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.list .side .second .fullLink .left {
+  margin-right: 10px;
+}
+.list .side .second .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.list .side .logout {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20px;
+}
+.list .side .hr {
+  width: 80%;
+  height: 0.3px;
+  border-radius: 50px;
+  background-color: #7F7A63;
+}
+.list .rightSide {
+  width: 80vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 60vh;
+  margin-left: 300px;
+}
+.list .rightSide .profile {
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.list .rightSide .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
+}
+.list .rightSide .allBody {
+  width: 80vw;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+  flex-direction: column;
+  gap: 30px;
+}
+.list .rightSide .allBody .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.list .rightSide .allBody .head h1 {
+  font-size: 60px;
+  color: #433E26;
+}
+.list .rightSide .allBody .head .addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.list .rightSide .allBody .head .addTaskForm .vis {
+  display: none;
+}
+.list .rightSide .allBody .head .addTaskForm input {
+  background-color: transparent;
+  width: 400px;
+  height: 38px;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 20px;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.list .rightSide .allBody .head .addTaskForm input:focus {
+  outline: none;
+}
+.list .rightSide .allBody .head .addTaskForm button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.list .rightSide .allBody .head .addTaskForm button img {
+  width: 20px;
+  height: 20px;
+}
+.list .rightSide .allBody .head .addTaskForm .clickToAdd {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.list .rightSide .allBody .listName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.list .rightSide .allBody .listName h1 {
+  font-size: 35px;
+  color: #433E26;
+}
+.list .rightSide .allBody .listName .addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.list .rightSide .allBody .listName .addTaskForm .vis {
+  display: none;
+}
+.list .rightSide .allBody .listName .addTaskForm .show {
+  display: block;
+}
+.list .rightSide .allBody .listName .addTaskForm input {
+  background-color: transparent;
+  width: 400px;
+  height: 27px;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 15px;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.list .rightSide .allBody .listName .addTaskForm input:focus {
+  outline: none;
+}
+.list .rightSide .allBody .listName .addTaskForm button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.list .rightSide .allBody .listName .addTaskForm button img {
+  width: 15px;
+  height: 15px;
+}
+.list .rightSide .allBody .listName .addTaskForm .clickToAdd {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.list .rightSide .allBody .listContant {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.list .rightSide .allBody .listContant .ele {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid #433E26;
+  padding: 15px;
+}
+.list .rightSide .allBody .listContant .ele .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.list .rightSide .allBody .listContant .ele .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.list .rightSide .allBody .listContant .ele .top .cName h1 {
+  color: #433E26;
+}
+.list .rightSide .allBody .listContant .ele .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: transparent;
+  cursor: pointer;
+}
+.list .rightSide .allBody .listContant .ele .top .cName form .cheack:focus {
+  background-color: transparent;
+}
+.list .rightSide .allBody .listContant .ele .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.list .rightSide .allBody .listContant .ele .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.list .rightSide .allBody .listContant .ele .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.list .rightSide .allBody .listContant .ele .middle .time, .list .rightSide .allBody .listContant .ele .middle .list, .list .rightSide .allBody .listContant .ele .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.list .rightSide .allBody .listContant .ele .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.list .rightSide .allBody .listContant .ele .middle .list, .list .rightSide .allBody .listContant .ele .middle .tag {
+  color: rgba(127, 122, 99, 0.5);
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  padding: 5px 20px;
+  background-color: transparent;
+}
+.list .rightSide .allBody .listContant .ele .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.list .rightSide .allBody .listContant .ele .bottom p {
+  color: #433E26;
+  font-size: 12px;
+}
+.list .rightSide .allBody .listContant .ele .bottom p span {
+  color: rgba(127, 122, 99, 0.5);
+}
+.list .rightSide .allBody .listContant .eleWait {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid #433E26;
+  padding: 15px;
+}
+.list .rightSide .allBody .listContant .eleWait .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.list .rightSide .allBody .listContant .eleWait .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.list .rightSide .allBody .listContant .eleWait .top .cName h1 {
+  color: #433E26;
+}
+.list .rightSide .allBody .listContant .eleWait .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: transparent;
+  cursor: pointer;
+}
+.list .rightSide .allBody .listContant .eleWait .top .cName form .cheack:focus {
+  background-color: transparent;
+}
+.list .rightSide .allBody .listContant .eleWait .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.list .rightSide .allBody .listContant .eleWait .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.list .rightSide .allBody .listContant .eleWait .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.list .rightSide .allBody .listContant .eleWait .middle .time, .list .rightSide .allBody .listContant .eleWait .middle .list, .list .rightSide .allBody .listContant .eleWait .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.list .rightSide .allBody .listContant .eleWait .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.list .rightSide .allBody .listContant .eleWait .middle .list, .list .rightSide .allBody .listContant .eleWait .middle .tag {
+  color: rgba(127, 122, 99, 0.5);
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  padding: 5px 20px;
+  background-color: transparent;
+}
+.list .rightSide .allBody .listContant .eleWait .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.list .rightSide .allBody .listContant .eleWait .bottom p {
+  color: #433E26;
+  font-size: 12px;
+}
+.list .rightSide .allBody .listContant .eleWait .bottom p span {
+  color: rgba(127, 122, 99, 0.5);
+}
+.list .rightSide .allBody .listContant .eleCompleted {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid #265073;
+  padding: 15px;
+}
+.list .rightSide .allBody .listContant .eleCompleted .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.list .rightSide .allBody .listContant .eleCompleted .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.list .rightSide .allBody .listContant .eleCompleted .top .cName h1 {
+  color: #265073;
+}
+.list .rightSide .allBody .listContant .eleCompleted .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: #265073;
+  cursor: pointer;
+}
+.list .rightSide .allBody .listContant .eleCompleted .top .cName form .cheack:focus {
+  background-color: #265073;
+}
+.list .rightSide .allBody .listContant .eleCompleted .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.list .rightSide .allBody .listContant .eleCompleted .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.list .rightSide .allBody .listContant .eleCompleted .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.list .rightSide .allBody .listContant .eleCompleted .middle .time, .list .rightSide .allBody .listContant .eleCompleted .middle .list, .list .rightSide .allBody .listContant .eleCompleted .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.list .rightSide .allBody .listContant .eleCompleted .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.list .rightSide .allBody .listContant .eleCompleted .middle .list, .list .rightSide .allBody .listContant .eleCompleted .middle .tag {
+  color: #265073;
+  border-radius: 15px;
+  border: 1px solid rgba(147, 185, 185, 0.5);
+  padding: 5px 20px;
+  background-color: rgba(147, 185, 185, 0.5);
+}
+.list .rightSide .allBody .listContant .eleCompleted .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.list .rightSide .allBody .listContant .eleCompleted .bottom p {
+  color: #265073;
+  font-size: 12px;
+}
+.list .rightSide .allBody .listContant .eleCompleted .bottom p span {
+  color: rgba(38, 80, 115, 0.5);
+}
+.list .rightSide .allBody .listContant .eleDeleted {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid rgba(134, 43, 13, 0.92);
+  padding: 15px;
+}
+.list .rightSide .allBody .listContant .eleDeleted .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.list .rightSide .allBody .listContant .eleDeleted .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.list .rightSide .allBody .listContant .eleDeleted .top .cName h1 {
+  color: rgba(134, 43, 13, 0.92);
+}
+.list .rightSide .allBody .listContant .eleDeleted .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: rgba(134, 43, 13, 0.92);
+  cursor: pointer;
+}
+.list .rightSide .allBody .listContant .eleDeleted .top .cName form .cheack:focus {
+  background-color: rgba(134, 43, 13, 0.92);
+}
+.list .rightSide .allBody .listContant .eleDeleted .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.list .rightSide .allBody .listContant .eleDeleted .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.list .rightSide .allBody .listContant .eleDeleted .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.list .rightSide .allBody .listContant .eleDeleted .middle .time, .list .rightSide .allBody .listContant .eleDeleted .middle .list, .list .rightSide .allBody .listContant .eleDeleted .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.list .rightSide .allBody .listContant .eleDeleted .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.list .rightSide .allBody .listContant .eleDeleted .middle .list, .list .rightSide .allBody .listContant .eleDeleted .middle .tag {
+  color: rgba(134, 43, 13, 0.92);
+  border-radius: 15px;
+  border: 1px solid rgba(134, 43, 13, 0.92);
+  padding: 5px 20px;
+  background-color: rgba(134, 43, 13, 0.5);
+}
+.list .rightSide .allBody .listContant .eleDeleted .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.list .rightSide .allBody .listContant .eleDeleted .bottom p {
+  color: rgba(134, 43, 13, 0.92);
+  font-size: 12px;
+}
+.list .rightSide .allBody .listContant .eleDeleted .bottom p span {
+  color: rgba(134, 43, 13, 0.5);
+}
+.list .rightSide .allBody .addSection {
+  align-self: flex-end;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 74px;
+  margin-bottom: 100px;
+}
+.list .rightSide .allBody .addSection a {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 20px;
+  transition: 1s ease-in-out;
+  border-radius: 15px;
+}
+.list .rightSide .allBody .addSection a:hover {
+  font-size: 20px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+
+.tag {
+  background-color: #F0EDDD;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.tag .side {
+  width: 15vw;
+  min-height: 100vh;
+  background-color: rgba(190, 186, 165, 0.37);
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: fixed;
+}
+.tag .side .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.tag .side .logo img {
+  width: 100%;
+  height: 100%;
+}
+.tag .side .first, .tag .side .third, .tag .side .logout {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+.tag .side .first .ladelList, .tag .side .first .ladelTag, .tag .side .third .ladelList, .tag .side .third .ladelTag, .tag .side .logout .ladelList, .tag .side .logout .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.tag .side .first .ladelList .addShow, .tag .side .first .ladelTag .addShow, .tag .side .third .ladelList .addShow, .tag .side .third .ladelTag .addShow, .tag .side .logout .ladelList .addShow, .tag .side .logout .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.tag .side .first .ladelList .addShow img, .tag .side .first .ladelTag .addShow img, .tag .side .third .ladelList .addShow img, .tag .side .third .ladelTag .addShow img, .tag .side .logout .ladelList .addShow img, .tag .side .logout .ladelTag .addShow img {
+  width: 13px;
+}
+.tag .side .first .fullLink, .tag .side .third .fullLink, .tag .side .logout .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.tag .side .first .fullLink .right, .tag .side .third .fullLink .right, .tag .side .logout .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.tag .side .first .fullLink .right .icon, .tag .side .third .fullLink .right .icon, .tag .side .logout .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.tag .side .first .fullLink .right .icon img, .tag .side .third .fullLink .right .icon img, .tag .side .logout .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.tag .side .first .fullLink .right .link a, .tag .side .third .fullLink .right .link a, .tag .side .logout .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.tag .side .first .fullLink .right .link a::after, .tag .side .third .fullLink .right .link a::after, .tag .side .logout .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.tag .side .first .fullLink .right .link a:hover::after, .tag .side .third .fullLink .right .link a:hover::after, .tag .side .logout .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.tag .side .first .fullLink .left, .tag .side .third .fullLink .left, .tag .side .logout .fullLink .left {
+  margin-right: 10px;
+}
+.tag .side .first .fullLink .left .num p, .tag .side .third .fullLink .left .num p, .tag .side .logout .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.tag .side .first {
+  margin-top: 30px;
+}
+.tag .side .second {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+.tag .side .second .ladelList, .tag .side .second .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.tag .side .second .ladelList .addShow, .tag .side .second .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.tag .side .second .ladelList .addShow img, .tag .side .second .ladelTag .addShow img {
+  width: 13px;
+}
+.tag .side .second .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.tag .side .second .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.tag .side .second .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.tag .side .second .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.tag .side .second .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.tag .side .second .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.tag .side .second .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.tag .side .second .fullLink .left {
+  margin-right: 10px;
+}
+.tag .side .second .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.tag .side .logout {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20px;
+}
+.tag .side .hr {
+  width: 80%;
+  height: 0.3px;
+  border-radius: 50px;
+  background-color: #7F7A63;
+}
+.tag .rightSide {
+  width: 80vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 60vh;
+  margin-left: 300px;
+}
+.tag .rightSide .profile {
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.tag .rightSide .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
+}
+.tag .rightSide .allBody {
+  width: 80vw;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+  flex-direction: column;
+  gap: 30px;
+}
+.tag .rightSide .allBody .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.tag .rightSide .allBody .head h1 {
+  font-size: 60px;
+  color: #433E26;
+}
+.tag .rightSide .allBody .head .addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.tag .rightSide .allBody .head .addTaskForm .vis {
+  display: none;
+}
+.tag .rightSide .allBody .head .addTaskForm input {
+  background-color: transparent;
+  width: 400px;
+  height: 38px;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 20px;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.tag .rightSide .allBody .head .addTaskForm input:focus {
+  outline: none;
+}
+.tag .rightSide .allBody .head .addTaskForm button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.tag .rightSide .allBody .head .addTaskForm button img {
+  width: 20px;
+  height: 20px;
+}
+.tag .rightSide .allBody .head .addTaskForm .clickToAdd {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.tag .rightSide .allBody .tagName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.tag .rightSide .allBody .tagName h1 {
+  font-size: 35px;
+  color: #433E26;
+}
+.tag .rightSide .allBody .tagName .addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.tag .rightSide .allBody .tagName .addTaskForm .vis {
+  display: none;
+}
+.tag .rightSide .allBody .tagName .addTaskForm .show {
+  display: block;
+}
+.tag .rightSide .allBody .tagName .addTaskForm input {
+  background-color: transparent;
+  width: 400px;
+  height: 27px;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 15px;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.tag .rightSide .allBody .tagName .addTaskForm input:focus {
+  outline: none;
+}
+.tag .rightSide .allBody .tagName .addTaskForm button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.tag .rightSide .allBody .tagName .addTaskForm button img {
+  width: 15px;
+  height: 15px;
+}
+.tag .rightSide .allBody .tagName .addTaskForm .clickToAdd {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.tag .rightSide .allBody .tagContant {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.tag .rightSide .allBody .tagContant .ele {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid #433E26;
+  padding: 15px;
+}
+.tag .rightSide .allBody .tagContant .ele .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.tag .rightSide .allBody .tagContant .ele .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.tag .rightSide .allBody .tagContant .ele .top .cName h1 {
+  color: #433E26;
+}
+.tag .rightSide .allBody .tagContant .ele .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: transparent;
+  cursor: pointer;
+}
+.tag .rightSide .allBody .tagContant .ele .top .cName form .cheack:focus {
+  background-color: transparent;
+}
+.tag .rightSide .allBody .tagContant .ele .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.tag .rightSide .allBody .tagContant .ele .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.tag .rightSide .allBody .tagContant .ele .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.tag .rightSide .allBody .tagContant .ele .middle .time, .tag .rightSide .allBody .tagContant .ele .middle .list, .tag .rightSide .allBody .tagContant .ele .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.tag .rightSide .allBody .tagContant .ele .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.tag .rightSide .allBody .tagContant .ele .middle .list, .tag .rightSide .allBody .tagContant .ele .middle .tag {
+  color: rgba(127, 122, 99, 0.5);
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  padding: 5px 20px;
+  background-color: transparent;
+}
+.tag .rightSide .allBody .tagContant .ele .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.tag .rightSide .allBody .tagContant .ele .bottom p {
+  color: #433E26;
+  font-size: 12px;
+}
+.tag .rightSide .allBody .tagContant .ele .bottom p span {
+  color: rgba(127, 122, 99, 0.5);
+}
+.tag .rightSide .allBody .tagContant .eleWait {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid #433E26;
+  padding: 15px;
+}
+.tag .rightSide .allBody .tagContant .eleWait .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.tag .rightSide .allBody .tagContant .eleWait .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.tag .rightSide .allBody .tagContant .eleWait .top .cName h1 {
+  color: #433E26;
+}
+.tag .rightSide .allBody .tagContant .eleWait .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: transparent;
+  cursor: pointer;
+}
+.tag .rightSide .allBody .tagContant .eleWait .top .cName form .cheack:focus {
+  background-color: transparent;
+}
+.tag .rightSide .allBody .tagContant .eleWait .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.tag .rightSide .allBody .tagContant .eleWait .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.tag .rightSide .allBody .tagContant .eleWait .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.tag .rightSide .allBody .tagContant .eleWait .middle .time, .tag .rightSide .allBody .tagContant .eleWait .middle .list, .tag .rightSide .allBody .tagContant .eleWait .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.tag .rightSide .allBody .tagContant .eleWait .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.tag .rightSide .allBody .tagContant .eleWait .middle .list, .tag .rightSide .allBody .tagContant .eleWait .middle .tag {
+  color: rgba(127, 122, 99, 0.5);
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  padding: 5px 20px;
+  background-color: transparent;
+}
+.tag .rightSide .allBody .tagContant .eleWait .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.tag .rightSide .allBody .tagContant .eleWait .bottom p {
+  color: #433E26;
+  font-size: 12px;
+}
+.tag .rightSide .allBody .tagContant .eleWait .bottom p span {
+  color: rgba(127, 122, 99, 0.5);
+}
+.tag .rightSide .allBody .tagContant .eleCompleted {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid #265073;
+  padding: 15px;
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .top .cName h1 {
+  color: #265073;
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: #265073;
+  cursor: pointer;
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .top .cName form .cheack:focus {
+  background-color: #265073;
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .middle .time, .tag .rightSide .allBody .tagContant .eleCompleted .middle .list, .tag .rightSide .allBody .tagContant .eleCompleted .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .middle .list, .tag .rightSide .allBody .tagContant .eleCompleted .middle .tag {
+  color: #265073;
+  border-radius: 15px;
+  border: 1px solid rgba(147, 185, 185, 0.5);
+  padding: 5px 20px;
+  background-color: rgba(147, 185, 185, 0.5);
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .bottom p {
+  color: #265073;
+  font-size: 12px;
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .bottom p span {
+  color: rgba(38, 80, 115, 0.5);
+}
+.tag .rightSide .allBody .tagContant .eleDeleted {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid rgba(134, 43, 13, 0.92);
+  padding: 15px;
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .top .cName h1 {
+  color: rgba(134, 43, 13, 0.92);
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: rgba(134, 43, 13, 0.92);
+  cursor: pointer;
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .top .cName form .cheack:focus {
+  background-color: rgba(134, 43, 13, 0.92);
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .middle .time, .tag .rightSide .allBody .tagContant .eleDeleted .middle .list, .tag .rightSide .allBody .tagContant .eleDeleted .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .middle .list, .tag .rightSide .allBody .tagContant .eleDeleted .middle .tag {
+  color: rgba(134, 43, 13, 0.92);
+  border-radius: 15px;
+  border: 1px solid rgba(134, 43, 13, 0.92);
+  padding: 5px 20px;
+  background-color: rgba(134, 43, 13, 0.5);
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .bottom p {
+  color: rgba(134, 43, 13, 0.92);
+  font-size: 12px;
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .bottom p span {
+  color: rgba(134, 43, 13, 0.5);
+}
+.tag .rightSide .allBody .addSection {
+  align-self: flex-end;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 74px;
+  margin-bottom: 100px;
+}
+.tag .rightSide .allBody .addSection a {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 20px;
+  transition: 1s ease-in-out;
+  border-radius: 15px;
+}
+.tag .rightSide .allBody .addSection a:hover {
+  font-size: 20px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+
+.todayPage {
+  background-color: #F0EDDD;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.todayPage .side {
+  width: 15vw;
+  min-height: 100vh;
+  background-color: rgba(190, 186, 165, 0.37);
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: fixed;
+}
+.todayPage .side .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.todayPage .side .logo img {
+  width: 100%;
+  height: 100%;
+}
+.todayPage .side .first, .todayPage .side .third, .todayPage .side .logout {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+.todayPage .side .first .ladelList, .todayPage .side .first .ladelTag, .todayPage .side .third .ladelList, .todayPage .side .third .ladelTag, .todayPage .side .logout .ladelList, .todayPage .side .logout .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.todayPage .side .first .ladelList .addShow, .todayPage .side .first .ladelTag .addShow, .todayPage .side .third .ladelList .addShow, .todayPage .side .third .ladelTag .addShow, .todayPage .side .logout .ladelList .addShow, .todayPage .side .logout .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.todayPage .side .first .ladelList .addShow img, .todayPage .side .first .ladelTag .addShow img, .todayPage .side .third .ladelList .addShow img, .todayPage .side .third .ladelTag .addShow img, .todayPage .side .logout .ladelList .addShow img, .todayPage .side .logout .ladelTag .addShow img {
+  width: 13px;
+}
+.todayPage .side .first .fullLink, .todayPage .side .third .fullLink, .todayPage .side .logout .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.todayPage .side .first .fullLink .right, .todayPage .side .third .fullLink .right, .todayPage .side .logout .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.todayPage .side .first .fullLink .right .icon, .todayPage .side .third .fullLink .right .icon, .todayPage .side .logout .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.todayPage .side .first .fullLink .right .icon img, .todayPage .side .third .fullLink .right .icon img, .todayPage .side .logout .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.todayPage .side .first .fullLink .right .link a, .todayPage .side .third .fullLink .right .link a, .todayPage .side .logout .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.todayPage .side .first .fullLink .right .link a::after, .todayPage .side .third .fullLink .right .link a::after, .todayPage .side .logout .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.todayPage .side .first .fullLink .right .link a:hover::after, .todayPage .side .third .fullLink .right .link a:hover::after, .todayPage .side .logout .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.todayPage .side .first .fullLink .left, .todayPage .side .third .fullLink .left, .todayPage .side .logout .fullLink .left {
+  margin-right: 10px;
+}
+.todayPage .side .first .fullLink .left .num p, .todayPage .side .third .fullLink .left .num p, .todayPage .side .logout .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.todayPage .side .first {
+  margin-top: 30px;
+}
+.todayPage .side .second {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+.todayPage .side .second .ladelList, .todayPage .side .second .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.todayPage .side .second .ladelList .addShow, .todayPage .side .second .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.todayPage .side .second .ladelList .addShow img, .todayPage .side .second .ladelTag .addShow img {
+  width: 13px;
+}
+.todayPage .side .second .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.todayPage .side .second .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.todayPage .side .second .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.todayPage .side .second .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.todayPage .side .second .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.todayPage .side .second .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.todayPage .side .second .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.todayPage .side .second .fullLink .left {
+  margin-right: 10px;
+}
+.todayPage .side .second .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.todayPage .side .logout {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20px;
+}
+.todayPage .side .hr {
+  width: 80%;
+  height: 0.3px;
+  border-radius: 50px;
+  background-color: #7F7A63;
+}
+.todayPage .rightSide {
+  width: 80vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 60vh;
+  margin-left: 300px;
+}
+.todayPage .rightSide .profile {
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.todayPage .rightSide .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
+}
+.todayPage .rightSide .allBody {
+  width: 80vw;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+  flex-direction: column;
+  gap: 30px;
+}
+.todayPage .rightSide .allBody .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.todayPage .rightSide .allBody .head h1 {
+  font-size: 60px;
+  color: #433E26;
+}
+.todayPage .rightSide .allBody .head .addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.todayPage .rightSide .allBody .head .addTaskForm .vis {
+  display: none;
+}
+.todayPage .rightSide .allBody .head .addTaskForm input {
+  background-color: transparent;
+  width: 400px;
+  height: 38px;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 20px;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.todayPage .rightSide .allBody .head .addTaskForm input:focus {
+  outline: none;
+}
+.todayPage .rightSide .allBody .head .addTaskForm button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.todayPage .rightSide .allBody .head .addTaskForm button img {
+  width: 20px;
+  height: 20px;
+}
+.todayPage .rightSide .allBody .head .addTaskForm .clickToAdd {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.todayPage .rightSide .allBody .todayInnerName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.todayPage .rightSide .allBody .todayInnerName h1 {
+  font-size: 35px;
+  color: #433E26;
+}
+.todayPage .rightSide .allBody .todayInnerName .addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.todayPage .rightSide .allBody .todayInnerName .addTaskForm .vis {
+  display: none;
+}
+.todayPage .rightSide .allBody .todayInnerName .addTaskForm .show {
+  display: block;
+}
+.todayPage .rightSide .allBody .todayInnerName .addTaskForm input {
+  background-color: transparent;
+  width: 400px;
+  height: 27px;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 15px;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.todayPage .rightSide .allBody .todayInnerName .addTaskForm input:focus {
+  outline: none;
+}
+.todayPage .rightSide .allBody .todayInnerName .addTaskForm button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.todayPage .rightSide .allBody .todayInnerName .addTaskForm button img {
+  width: 15px;
+  height: 15px;
+}
+.todayPage .rightSide .allBody .todayInnerName .addTaskForm .clickToAdd {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.todayPage .rightSide .allBody .todayInnerContant {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid #433E26;
+  padding: 15px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .top .cName h1 {
+  color: #433E26;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: transparent;
+  cursor: pointer;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .top .cName form .cheack:focus {
+  background-color: transparent;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .middle .time, .todayPage .rightSide .allBody .todayInnerContant .ele .middle .list, .todayPage .rightSide .allBody .todayInnerContant .ele .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .middle .list, .todayPage .rightSide .allBody .todayInnerContant .ele .middle .tag {
+  color: rgba(127, 122, 99, 0.5);
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  padding: 5px 20px;
+  background-color: transparent;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .bottom p {
+  color: #433E26;
+  font-size: 12px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .bottom p span {
+  color: rgba(127, 122, 99, 0.5);
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid #433E26;
+  padding: 15px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .top .cName h1 {
+  color: #433E26;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: transparent;
+  cursor: pointer;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .top .cName form .cheack:focus {
+  background-color: transparent;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .time, .todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .list, .todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .list, .todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .tag {
+  color: rgba(127, 122, 99, 0.5);
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  padding: 5px 20px;
+  background-color: transparent;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .bottom p {
+  color: #433E26;
+  font-size: 12px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .bottom p span {
+  color: rgba(127, 122, 99, 0.5);
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid #265073;
+  padding: 15px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top .cName h1 {
+  color: #265073;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: #265073;
+  cursor: pointer;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top .cName form .cheack:focus {
+  background-color: #265073;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .time, .todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .list, .todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .list, .todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .tag {
+  color: #265073;
+  border-radius: 15px;
+  border: 1px solid rgba(147, 185, 185, 0.5);
+  padding: 5px 20px;
+  background-color: rgba(147, 185, 185, 0.5);
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .bottom p {
+  color: #265073;
+  font-size: 12px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .bottom p span {
+  color: rgba(38, 80, 115, 0.5);
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid rgba(134, 43, 13, 0.92);
+  padding: 15px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top .cName h1 {
+  color: rgba(134, 43, 13, 0.92);
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: rgba(134, 43, 13, 0.92);
+  cursor: pointer;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top .cName form .cheack:focus {
+  background-color: rgba(134, 43, 13, 0.92);
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .time, .todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .list, .todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .list, .todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .tag {
+  color: rgba(134, 43, 13, 0.92);
+  border-radius: 15px;
+  border: 1px solid rgba(134, 43, 13, 0.92);
+  padding: 5px 20px;
+  background-color: rgba(134, 43, 13, 0.5);
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .bottom p {
+  color: rgba(134, 43, 13, 0.92);
+  font-size: 12px;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .bottom p span {
+  color: rgba(134, 43, 13, 0.5);
+}
+.todayPage .rightSide .allBody .addSection {
+  align-self: flex-end;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 74px;
+  margin-bottom: 100px;
+}
+.todayPage .rightSide .allBody .addSection a {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 20px;
+  transition: 1s ease-in-out;
+  border-radius: 15px;
+}
+.todayPage .rightSide .allBody .addSection a:hover {
+  font-size: 20px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+
+.completed {
+  background-color: #F0EDDD;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.completed .side {
+  width: 15vw;
+  min-height: 100vh;
+  background-color: rgba(190, 186, 165, 0.37);
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: fixed;
+}
+.completed .side .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.completed .side .logo img {
+  width: 100%;
+  height: 100%;
+}
+.completed .side .first, .completed .side .third, .completed .side .logout {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+.completed .side .first .ladelList, .completed .side .first .ladelTag, .completed .side .third .ladelList, .completed .side .third .ladelTag, .completed .side .logout .ladelList, .completed .side .logout .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.completed .side .first .ladelList .addShow, .completed .side .first .ladelTag .addShow, .completed .side .third .ladelList .addShow, .completed .side .third .ladelTag .addShow, .completed .side .logout .ladelList .addShow, .completed .side .logout .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.completed .side .first .ladelList .addShow img, .completed .side .first .ladelTag .addShow img, .completed .side .third .ladelList .addShow img, .completed .side .third .ladelTag .addShow img, .completed .side .logout .ladelList .addShow img, .completed .side .logout .ladelTag .addShow img {
+  width: 13px;
+}
+.completed .side .first .fullLink, .completed .side .third .fullLink, .completed .side .logout .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.completed .side .first .fullLink .right, .completed .side .third .fullLink .right, .completed .side .logout .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.completed .side .first .fullLink .right .icon, .completed .side .third .fullLink .right .icon, .completed .side .logout .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.completed .side .first .fullLink .right .icon img, .completed .side .third .fullLink .right .icon img, .completed .side .logout .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.completed .side .first .fullLink .right .link a, .completed .side .third .fullLink .right .link a, .completed .side .logout .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.completed .side .first .fullLink .right .link a::after, .completed .side .third .fullLink .right .link a::after, .completed .side .logout .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.completed .side .first .fullLink .right .link a:hover::after, .completed .side .third .fullLink .right .link a:hover::after, .completed .side .logout .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.completed .side .first .fullLink .left, .completed .side .third .fullLink .left, .completed .side .logout .fullLink .left {
+  margin-right: 10px;
+}
+.completed .side .first .fullLink .left .num p, .completed .side .third .fullLink .left .num p, .completed .side .logout .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.completed .side .first {
+  margin-top: 30px;
+}
+.completed .side .second {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+.completed .side .second .ladelList, .completed .side .second .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.completed .side .second .ladelList .addShow, .completed .side .second .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.completed .side .second .ladelList .addShow img, .completed .side .second .ladelTag .addShow img {
+  width: 13px;
+}
+.completed .side .second .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.completed .side .second .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.completed .side .second .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.completed .side .second .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.completed .side .second .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.completed .side .second .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.completed .side .second .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.completed .side .second .fullLink .left {
+  margin-right: 10px;
+}
+.completed .side .second .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.completed .side .logout {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20px;
+}
+.completed .side .hr {
+  width: 80%;
+  height: 0.3px;
+  border-radius: 50px;
+  background-color: #7F7A63;
+}
+.completed .rightSide {
+  width: 80vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 60vh;
+  margin-left: 300px;
+}
+.completed .rightSide .profile {
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.completed .rightSide .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
+}
+.completed .rightSide .allBody {
+  width: 80vw;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+  flex-direction: column;
+  gap: 30px;
+}
+.completed .rightSide .allBody .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.completed .rightSide .allBody .head h1 {
+  font-size: 60px;
+  color: #433E26;
+}
+.completed .rightSide .allBody .head .addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.completed .rightSide .allBody .head .addTaskForm .vis {
+  display: none;
+}
+.completed .rightSide .allBody .head .addTaskForm input {
+  background-color: transparent;
+  width: 400px;
+  height: 38px;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 20px;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.completed .rightSide .allBody .head .addTaskForm input:focus {
+  outline: none;
+}
+.completed .rightSide .allBody .head .addTaskForm button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.completed .rightSide .allBody .head .addTaskForm button img {
+  width: 20px;
+  height: 20px;
+}
+.completed .rightSide .allBody .head .addTaskForm .clickToAdd {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.completed .rightSide .allBody .completedContant {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.completed .rightSide .allBody .completedContant .ele {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid #265073;
+  padding: 15px;
+}
+.completed .rightSide .allBody .completedContant .ele .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.completed .rightSide .allBody .completedContant .ele .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.completed .rightSide .allBody .completedContant .ele .top .cName h1 {
+  color: #265073;
+}
+.completed .rightSide .allBody .completedContant .ele .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: #265073;
+  cursor: pointer;
+}
+.completed .rightSide .allBody .completedContant .ele .top .cName form .cheack:focus {
+  background-color: #265073;
+}
+.completed .rightSide .allBody .completedContant .ele .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.completed .rightSide .allBody .completedContant .ele .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.completed .rightSide .allBody .completedContant .ele .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.completed .rightSide .allBody .completedContant .ele .middle .time, .completed .rightSide .allBody .completedContant .ele .middle .list, .completed .rightSide .allBody .completedContant .ele .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.completed .rightSide .allBody .completedContant .ele .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.completed .rightSide .allBody .completedContant .ele .middle .list, .completed .rightSide .allBody .completedContant .ele .middle .tag {
+  color: #265073;
+  border-radius: 15px;
+  border: 1px solid rgba(147, 185, 185, 0.5);
+  padding: 5px 20px;
+  background-color: rgba(147, 185, 185, 0.5);
+}
+.completed .rightSide .allBody .completedContant .ele .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.completed .rightSide .allBody .completedContant .ele .bottom p {
+  color: #265073;
+  font-size: 12px;
+}
+.completed .rightSide .allBody .completedContant .ele .bottom p span {
+  color: rgba(38, 80, 115, 0.5);
+}
+.completed .rightSide .allBody .completedContant .eleWait {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid #433E26;
+  padding: 15px;
+}
+.completed .rightSide .allBody .completedContant .eleWait .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.completed .rightSide .allBody .completedContant .eleWait .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.completed .rightSide .allBody .completedContant .eleWait .top .cName h1 {
+  color: #433E26;
+}
+.completed .rightSide .allBody .completedContant .eleWait .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: transparent;
+  cursor: pointer;
+}
+.completed .rightSide .allBody .completedContant .eleWait .top .cName form .cheack:focus {
+  background-color: transparent;
+}
+.completed .rightSide .allBody .completedContant .eleWait .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.completed .rightSide .allBody .completedContant .eleWait .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.completed .rightSide .allBody .completedContant .eleWait .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.completed .rightSide .allBody .completedContant .eleWait .middle .time, .completed .rightSide .allBody .completedContant .eleWait .middle .list, .completed .rightSide .allBody .completedContant .eleWait .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.completed .rightSide .allBody .completedContant .eleWait .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.completed .rightSide .allBody .completedContant .eleWait .middle .list, .completed .rightSide .allBody .completedContant .eleWait .middle .tag {
+  color: rgba(127, 122, 99, 0.5);
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  padding: 5px 20px;
+  background-color: transparent;
+}
+.completed .rightSide .allBody .completedContant .eleWait .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.completed .rightSide .allBody .completedContant .eleWait .bottom p {
+  color: #433E26;
+  font-size: 12px;
+}
+.completed .rightSide .allBody .completedContant .eleWait .bottom p span {
+  color: rgba(127, 122, 99, 0.5);
+}
+.completed .rightSide .allBody .completedContant .eleCompleted {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid #265073;
+  padding: 15px;
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .top .cName h1 {
+  color: #265073;
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: #265073;
+  cursor: pointer;
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .top .cName form .cheack:focus {
+  background-color: #265073;
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .middle .time, .completed .rightSide .allBody .completedContant .eleCompleted .middle .list, .completed .rightSide .allBody .completedContant .eleCompleted .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .middle .list, .completed .rightSide .allBody .completedContant .eleCompleted .middle .tag {
+  color: #265073;
+  border-radius: 15px;
+  border: 1px solid rgba(147, 185, 185, 0.5);
+  padding: 5px 20px;
+  background-color: rgba(147, 185, 185, 0.5);
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .bottom p {
+  color: #265073;
+  font-size: 12px;
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .bottom p span {
+  color: rgba(38, 80, 115, 0.5);
+}
+.completed .rightSide .allBody .completedContant .eleDeleted {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid rgba(134, 43, 13, 0.92);
+  padding: 15px;
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .top .cName h1 {
+  color: rgba(134, 43, 13, 0.92);
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: rgba(134, 43, 13, 0.92);
+  cursor: pointer;
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .top .cName form .cheack:focus {
+  background-color: rgba(134, 43, 13, 0.92);
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .middle .time, .completed .rightSide .allBody .completedContant .eleDeleted .middle .list, .completed .rightSide .allBody .completedContant .eleDeleted .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .middle .list, .completed .rightSide .allBody .completedContant .eleDeleted .middle .tag {
+  color: rgba(134, 43, 13, 0.92);
+  border-radius: 15px;
+  border: 1px solid rgba(134, 43, 13, 0.92);
+  padding: 5px 20px;
+  background-color: rgba(134, 43, 13, 0.5);
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .bottom p {
+  color: rgba(134, 43, 13, 0.92);
+  font-size: 12px;
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .bottom p span {
+  color: rgba(134, 43, 13, 0.5);
+}
+
+.trash {
+  background-color: #F0EDDD;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.trash .side {
+  width: 15vw;
+  min-height: 100vh;
+  background-color: rgba(190, 186, 165, 0.37);
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: fixed;
+}
+.trash .side .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.trash .side .logo img {
+  width: 100%;
+  height: 100%;
+}
+.trash .side .first, .trash .side .third, .trash .side .logout {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+.trash .side .first .ladelList, .trash .side .first .ladelTag, .trash .side .third .ladelList, .trash .side .third .ladelTag, .trash .side .logout .ladelList, .trash .side .logout .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.trash .side .first .ladelList .addShow, .trash .side .first .ladelTag .addShow, .trash .side .third .ladelList .addShow, .trash .side .third .ladelTag .addShow, .trash .side .logout .ladelList .addShow, .trash .side .logout .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.trash .side .first .ladelList .addShow img, .trash .side .first .ladelTag .addShow img, .trash .side .third .ladelList .addShow img, .trash .side .third .ladelTag .addShow img, .trash .side .logout .ladelList .addShow img, .trash .side .logout .ladelTag .addShow img {
+  width: 13px;
+}
+.trash .side .first .fullLink, .trash .side .third .fullLink, .trash .side .logout .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.trash .side .first .fullLink .right, .trash .side .third .fullLink .right, .trash .side .logout .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.trash .side .first .fullLink .right .icon, .trash .side .third .fullLink .right .icon, .trash .side .logout .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.trash .side .first .fullLink .right .icon img, .trash .side .third .fullLink .right .icon img, .trash .side .logout .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.trash .side .first .fullLink .right .link a, .trash .side .third .fullLink .right .link a, .trash .side .logout .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.trash .side .first .fullLink .right .link a::after, .trash .side .third .fullLink .right .link a::after, .trash .side .logout .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.trash .side .first .fullLink .right .link a:hover::after, .trash .side .third .fullLink .right .link a:hover::after, .trash .side .logout .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.trash .side .first .fullLink .left, .trash .side .third .fullLink .left, .trash .side .logout .fullLink .left {
+  margin-right: 10px;
+}
+.trash .side .first .fullLink .left .num p, .trash .side .third .fullLink .left .num p, .trash .side .logout .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.trash .side .first {
+  margin-top: 30px;
+}
+.trash .side .second {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+.trash .side .second .ladelList, .trash .side .second .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.trash .side .second .ladelList .addShow, .trash .side .second .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.trash .side .second .ladelList .addShow img, .trash .side .second .ladelTag .addShow img {
+  width: 13px;
+}
+.trash .side .second .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.trash .side .second .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.trash .side .second .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.trash .side .second .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.trash .side .second .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.trash .side .second .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.trash .side .second .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.trash .side .second .fullLink .left {
+  margin-right: 10px;
+}
+.trash .side .second .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.trash .side .logout {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20px;
+}
+.trash .side .hr {
+  width: 80%;
+  height: 0.3px;
+  border-radius: 50px;
+  background-color: #7F7A63;
+}
+.trash .rightSide {
+  width: 80vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 60vh;
+  margin-left: 300px;
+}
+.trash .rightSide .profile {
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.trash .rightSide .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
+}
+.trash .rightSide .allBody {
+  width: 80vw;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+  flex-direction: column;
+  gap: 30px;
+}
+.trash .rightSide .allBody .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.trash .rightSide .allBody .head h1 {
+  font-size: 60px;
+  color: #433E26;
+}
+.trash .rightSide .allBody .head .addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.trash .rightSide .allBody .head .addTaskForm .vis {
+  display: none;
+}
+.trash .rightSide .allBody .head .addTaskForm input {
+  background-color: transparent;
+  width: 400px;
+  height: 38px;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 20px;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.trash .rightSide .allBody .head .addTaskForm input:focus {
+  outline: none;
+}
+.trash .rightSide .allBody .head .addTaskForm button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.trash .rightSide .allBody .head .addTaskForm button img {
+  width: 20px;
+  height: 20px;
+}
+.trash .rightSide .allBody .head .addTaskForm .clickToAdd {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.trash .rightSide .allBody .trashContant {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.trash .rightSide .allBody .trashContant .ele {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 15px;
+  border: 1px solid rgba(134, 43, 13, 0.92);
+  padding: 15px;
+}
+.trash .rightSide .allBody .trashContant .ele .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.trash .rightSide .allBody .trashContant .ele .top .cName {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.trash .rightSide .allBody .trashContant .ele .top .cName h1 {
+  color: rgba(134, 43, 13, 0.92);
+}
+.trash .rightSide .allBody .trashContant .ele .top .cName form .cheack {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #BEBAA5;
+  background-color: rgba(134, 43, 13, 0.92);
+  cursor: pointer;
+}
+.trash .rightSide .allBody .trashContant .ele .top .cName form .cheack:focus {
+  background-color: rgba(134, 43, 13, 0.92);
+}
+.trash .rightSide .allBody .trashContant .ele .top form .delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.trash .rightSide .allBody .trashContant .ele .top form .delete img {
+  width: 20px;
+  height: 20px;
+}
+.trash .rightSide .allBody .trashContant .ele .middle {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.trash .rightSide .allBody .trashContant .ele .middle .time, .trash .rightSide .allBody .trashContant .ele .middle .list, .trash .rightSide .allBody .trashContant .ele .middle .tag {
+  text-decoration: none;
+  font-size: 12px;
+}
+.trash .rightSide .allBody .trashContant .ele .middle .time {
+  color: rgba(134, 43, 13, 0.5);
+}
+.trash .rightSide .allBody .trashContant .ele .middle .list, .trash .rightSide .allBody .trashContant .ele .middle .tag {
+  color: rgba(134, 43, 13, 0.92);
+  border-radius: 15px;
+  border: 1px solid rgba(134, 43, 13, 0.92);
+  padding: 5px 20px;
+  background-color: rgba(134, 43, 13, 0.5);
+}
+.trash .rightSide .allBody .trashContant .ele .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.trash .rightSide .allBody .trashContant .ele .bottom p {
+  color: rgba(134, 43, 13, 0.92);
+  font-size: 12px;
+}
+.trash .rightSide .allBody .trashContant .ele .bottom p span {
+  color: rgba(134, 43, 13, 0.5);
+}/*# sourceMappingURL=main.css.map */

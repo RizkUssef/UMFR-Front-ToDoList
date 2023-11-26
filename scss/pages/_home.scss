@@ -1,0 +1,225 @@
+@import '../utilities/mixin';
+.homeBody{
+    background-color: #F0EDDD;
+}
+.home_header{
+    width: 100%;
+    z-index: 10;
+    @include header;
+    .logo{
+        @include logo;
+    }
+    .reg_login{
+        .reg , .login{
+            text-decoration: none;
+            color: map-get($homePageColorFirstSection, "redLoginColor" );
+            font-size: map-get($homePageFontSizesFirstSection, "redLoginSize" );
+        }
+        .login{
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+    }
+}
+.intro{
+    @include bgImageFilter(url(../../images/bg/Home\ bg.jpg));
+    @include flexDiv(column,flex-start,center);
+    .text{
+        z-index: 10;
+        margin-left: 100px;
+        h1{
+            color: map-get($homePageColorFirstSection, "headerColor" );
+            font-size: map-get($homePageFontSizesFirstSection, "headerSize" );
+            width: 70%;
+            margin-bottom: 100px;
+        }
+        p{
+            color: map-get($homePageColorFirstSection, "textColor" );
+            font-size: map-get($homePageFontSizesFirstSection, "textSize" );
+            width: 50%;
+        }
+    }
+}
+.info{
+    @include flexDiv(column,center,center);
+    .top{
+        @include flexDiv(row,center,space-around);
+        margin-bottom: 100px;
+        .leftImg{
+            flex-basis: 400px;
+            margin-top: 70px;
+            img{
+                border-radius: 15px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .rightText{
+            flex-basis: 500px;
+            h1{
+                margin-bottom: 50px;
+                color: map-get($homePageColorSecondSection, "headerColor" );
+                font-size: map-get($homePageFontSizesSecondSection, "headerSize");
+            }
+            p{
+                margin-bottom: 50px;
+                color: map-get($homePageColorSecondSection, "textColor" );
+                font-size: map-get($homePageFontSizesSecondSection, "textSize"); 
+            }
+            a{
+                margin-bottom: 50px;
+                @include links(map-get($homePageColorSecondSection, "buttonColor" ),8px,16px)
+            }
+        }
+    }
+    .bottom{
+        @include flexDiv(row,center,space-around);
+        margin-bottom: 70px;
+        .leftText{
+            flex-basis: 500px;
+            h1{
+                margin-bottom: 50px;
+                color: map-get($homePageColorSecondSection, "headerColor" );
+                font-size: map-get($homePageFontSizesSecondSection, "headerSize");
+            }
+            p{
+                margin-bottom: 50px;
+                color: map-get($homePageColorSecondSection, "textColor" );
+                font-size: map-get($homePageFontSizesSecondSection, "textSize"); 
+            }
+            a{
+                margin-bottom: 50px;
+                @include links(map-get($homePageColorSecondSection, "buttonColor" ),8px,16px)
+            }
+        }
+        .rightImg{
+            flex-basis: 700px;
+            img{
+                border-radius: 15px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+.qoute{
+    background: map-get($qoute, "bgColor");
+    padding: 70px 150px;
+    margin-bottom: 100px;
+    .qouteText{
+        text-align: center;
+        h1{
+            background: map-get($qoute, "textColor");
+            background-clip: text ;
+            color: transparent;
+            font-size: map-get($qoute, "textSize");
+        }
+    }
+}
+.listImages{
+    @include gridDiv(3,350px);
+    justify-content: center;
+    row-gap: 50px;
+    margin-bottom: 100px;
+    .one{
+        width: 300px;
+        grid-column: 1/2;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .two{
+        width: 300px;
+        grid-column:2/3;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .three{
+        width: 300px;
+        grid-column:3/4;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .four{
+        width: 300px;
+        grid-column:1/2;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .five{
+        width: 300px;
+        grid-column:2/3;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .six{
+        width: 300px;
+        grid-column:3/4;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.footer{
+    @include flexDiv(column,center,center);
+    @include bgFilter;
+    .upperPart{
+        width: 100%;
+        @include flexDiv(row,baseline,space-between);
+        .logo{
+            @include logo;
+        }
+            .firstLinks ,.secLinks,.thiredLinks{
+                h1{
+                    color: map-get($footer, "headerColor" );
+                    font-size: map-get($footer, "headerSize" );
+                    margin-bottom: 20px;
+                }
+                a{
+                    display: block;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    color: map-get($footer, "linkTextColor" );
+                    font-size: map-get($footer, "linkTextSize" );
+                }
+            }
+            .thiredLinks{
+                margin-right: 100px;
+            }
+    }
+    .hr{
+        width: 80%;
+        height: 0.3px;
+        border-radius: 50px;
+        margin: 50px 0px;
+        background-color: #F0EDDD;
+    }
+    .lowerPart{
+        .follow{
+            h1{
+                color: map-get($footer, "headerColor" );
+                font-size: map-get($footer, "headerSize" );
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        .socailLogos{
+            margin-bottom: 20px;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}

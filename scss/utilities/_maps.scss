@@ -1,0 +1,152 @@
+$welcomePageColors : (
+    "headerColor" : #7F7A63,
+    "textColor" : #7F7A63,
+    "buttonColor" : linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.70) 100%),
+    "buttonHoverColor" : linear-gradient(90deg, rgba(127, 122, 99, 0.70) 0%, #9B9782 63.12%, #BEBAA5 100%),
+    "buttonBorderColor" : linear-gradient( 90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.70) 100%),
+    "buttonHoverBorderColor" :linear-gradient(90deg, rgba(127, 122, 99, 0.70) 0%, #9B9782 63.12%, #BEBAA5 100%),
+    "filterBGColor" : linear-gradient(90deg, #433E26 0.29%, rgba(127, 122, 99, 0.70) 45.94%, rgba(155, 151, 130, 0.50) 74.4%, rgba(240, 237, 221, 0.50) 99.65%)
+);
+
+$welcomePageFontSizes : (
+    "headerSize" : 70px,
+    "textSize" : 50px,
+    "buttonSize" : 35px
+);
+
+$homePageColorFirstSection : (
+    "headerColor" : #BEBAA5,
+    "textColor" : #BEBAA5,
+    "redLoginColor" : #7F7A63,
+);
+
+$homePageFontSizesFirstSection : (
+    "headerSize" : 70px,
+    "textSize" : 40px,
+    "redLoginSize" :18px
+);
+
+$homePageColorSecondSection : (
+    "headerColor" : #433E26,
+    "textColor" : #433E26,
+    "buttonColor" : linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.70) 100%),
+    "buttonBorderColor" : 1px solid linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.70) 100%),
+);
+
+$homePageFontSizesSecondSection : (
+    "headerSize" : 50px,
+    "textSize" : 20px,
+    "buttonSize" : 30px
+);
+
+$qoute :(
+    "textSize" : 60px,
+    "textColor" : linear-gradient(94deg, #7F7A63 0%, #433E26 48.4%, #BEBAA5 99.17%),
+    "bgColor" : linear-gradient(90deg, #433E26 0.29%, rgba(127, 122, 99, 0.70) 45.94%, rgba(155, 151, 130, 0.50) 74.4%, rgba(240, 237, 221, 0.50) 99.65%),
+);
+
+$footer :(
+    "headerColor" : #433E26,
+    "headerSize" : 30px,
+    "linkTextColor" : #908A6F,
+    "linkTextSize" : 20px,
+);
+
+$authForm :(
+    "headerColor" :#BEBAA5,
+    "labelColor" : #BEBAA5,
+    "borderColor" : #BEBAA5,
+    "buttonColor" : linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.70) 100%),
+    "buttonHoverColor" : linear-gradient(90deg, rgba(127, 122, 99, 0.70) 0%, #9B9782 63.12%, #BEBAA5 100%),
+    "alreadyColor" : #BEBAA5,
+    "headerSize" : 50px,
+    "labelSize" : 20px,
+    "buttonSize" : 20px,
+    "alreadySize" : 15px,
+    "inputFontSize" : 15px,
+    "inputSizeWidth" : 450px,
+    "inputSizeHeight" : 35px,
+);
+
+$createFirstList:(
+    "textColor" : #433E26,
+    "headerSize" :50px,
+    "textSize":25px,
+    "labelSize":15px,
+    "inputBorderColor":#433E26,
+    "inputSizeWidth" : 450px,
+    "inputSizeHeight" : 35px,
+);
+
+$side : (
+    "bgColor" : rgba(190, 186, 165, 0.37),
+    "textColor" :  #7F7A63,
+    "numColor" :rgba(127, 122, 99, 0.50),
+    "hrColor":#7F7A63,
+    "labelSize":13px,
+);
+
+$createForms :(
+    "headColor":#433E26,
+    "labelColor" : #433E26,
+    "headSize" : 50px,
+    "labelSize" : 15px,
+    "inputBorderColor":#433E26,
+    "inputSizeWidth" : 450px,
+    "inputSizeHeight" : 35px,
+    "inputTypeColorWidth" : 35px,
+    "inputTypeColorHeight" : 35px,
+);
+
+$showAll:(
+    "headSize":60px,
+    "headColor":#433E26,
+    "secSize":35px,
+    "secColor":#433E26,
+    "unSecAddInputWidth":400px,
+    "unSecAddInputHeight":38px,
+    "unSecAddInputFontSize":20px,
+    "unSubmitWidth":50px,
+    "unSubmitHeight":50px,
+    "inputColor" :rgba(127, 122, 99, 0.50),
+    "SecAddInputWidth":400px,
+    "SecAddInputHeight":27px,
+    "SecAddInputFontSize":15px,
+    "submitWidth":40px,
+    "submitHeight":40px,
+    "borderColor": #BEBAA5,
+);
+
+$eleColors :(
+    "borderColorWait":#433E26,
+    "cheackBtnColorWait":transparent,
+    "taskNameColorWait":#433E26,
+    "timeColorWait":rgba(134, 43, 13, 0.50),
+    "ltColorWait":rgba(127, 122, 99, 0.50),
+    "ltBgColorWait":transparent,
+    "ltBorderColorWait":#BEBAA5,
+    "createdAtColorWiat":#433E26,
+    "spanColorWait":rgba(127, 122, 99, 0.50),
+// completed
+    "borderColorCompleted":#265073,
+    "cheackBtnColorCompleted":#265073,
+    "taskNameColorCompleted":#265073,
+    "timeColorCompleted":rgba(134, 43, 13, 0.50),
+    "ltColorCompleted":#265073,
+    "ltBgColorCompleted":rgba(147, 185, 185, 0.50),
+    "ltBorderColorCompleted":rgba(147, 185, 185, 0.50),
+    "createdAtColorCompleted":#265073,
+    "spanColorCompleted":rgba(38, 80, 115, 0.50),
+    // deleted
+    "borderColorDeleted":rgba(134, 43, 13, 0.92),
+    "cheackBtnColorDeleted":rgba(134, 43, 13, 0.92),
+    "taskNameColorDeleted":rgba(134, 43, 13, 0.92),
+    "timeColorDeleted":rgba(134, 43, 13, 0.50),
+    "ltColorDeleted":rgba(134, 43, 13, 0.92),
+    "ltBgColorDeleted":rgba(134, 43, 13, 0.50),
+    "ltBorderColorDeleted":rgba(134, 43, 13, 0.92),
+    "createdAtColorDeleted":rgba(134, 43, 13, 0.92),
+    "spanColorDeleted":rgba(134, 43, 13, 0.50),
+);
+
+

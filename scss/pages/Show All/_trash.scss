@@ -1,0 +1,42 @@
+@import '../../utilities/mixin'; 
+
+.trash{
+    @include bgColor;
+    @include flexDiv(row,normal,space-between);
+    .side{
+        @include aside;
+        // overflow-y: auto;
+        position: fixed;
+    }
+    .rightSide{
+        @include rightSideFromProfile;
+        margin-left: 300px;
+        .profile{
+            @include profile;
+        }
+        .allBody{
+            width: 80vw;
+            @include flexDiv(column,normal,normal);
+            gap: 30px;
+            .head{
+                @include headAllName;
+            }
+            // .todayInnerName{
+            //     @include name; 
+            // } 
+            .trashContant{
+                    @include contantAll;
+                .ele{
+                    @include ele(map-get($eleColors,"borderColorDeleted"),map-get($eleColors,"taskNameColorDeleted"),map-get($eleColors,"cheackBtnColorDeleted"),
+                    map-get($eleColors,"timeColorDeleted"),map-get($eleColors,"ltColorDeleted"),map-get($eleColors,"ltBgColorDeleted"),map-get($eleColors,"ltBorderColorDeleted"),
+                    map-get($eleColors,"createdAtColorDeleted"),map-get($eleColors,"spanColorDeleted"));
+                }
+
+                
+
+            }
+            
+        }
+
+    }
+}

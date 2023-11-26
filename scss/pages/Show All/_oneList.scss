@@ -1,0 +1,57 @@
+@import '../../utilities/mixin'; 
+
+.list{
+    @include bgColor;
+    @include flexDiv(row,normal,space-between);
+    .side{
+        @include aside;
+        // overflow-y: auto;
+        position: fixed;
+    }
+    .rightSide{
+        @include rightSideFromProfile;
+        margin-left: 300px;
+        .profile{
+            @include profile;
+        }
+        .allBody{
+            width: 80vw;
+            @include flexDiv(column,normal,normal);
+            gap: 30px;
+            .head{
+                @include headAllName;
+            }
+            .listName{
+                @include name;
+            }
+            .listContant{
+                    @include contantAll;
+                .ele{
+                    @include ele(map-get($eleColors,"borderColorWait"),map-get($eleColors,"taskNameColorWait"),map-get($eleColors,"cheackBtnColorWait"),
+                    map-get($eleColors,"timeColorWait"),map-get($eleColors,"ltColorWait"),map-get($eleColors,"ltBgColorWait"),map-get($eleColors,"ltBorderColorWait"),
+                    map-get($eleColors,"createdAtColorWiat"),map-get($eleColors,"spanColorWait"));
+                }
+                .eleWait{
+                    @include ele(map-get($eleColors,"borderColorWait"),map-get($eleColors,"taskNameColorWait"),map-get($eleColors,"cheackBtnColorWait"),
+                    map-get($eleColors,"timeColorWait"),map-get($eleColors,"ltColorWait"),map-get($eleColors,"ltBgColorWait"),map-get($eleColors,"ltBorderColorWait"),
+                    map-get($eleColors,"createdAtColorWiat"),map-get($eleColors,"spanColorWait"));
+                }
+                .eleCompleted{
+                    @include ele(map-get($eleColors,"borderColorCompleted"),map-get($eleColors,"taskNameColorCompleted"),map-get($eleColors,"cheackBtnColorCompleted"),
+                    map-get($eleColors,"timeColorCompleted"),map-get($eleColors,"ltColorCompleted"),map-get($eleColors,"ltBgColorCompleted"),map-get($eleColors,"ltBorderColorCompleted"),
+                    map-get($eleColors,"createdAtColorCompleted"),map-get($eleColors,"spanColorCompleted"));
+                }
+                .eleDeleted{
+                    @include ele(map-get($eleColors,"borderColorDeleted"),map-get($eleColors,"taskNameColorDeleted"),map-get($eleColors,"cheackBtnColorDeleted"),
+                    map-get($eleColors,"timeColorDeleted"),map-get($eleColors,"ltColorDeleted"),map-get($eleColors,"ltBgColorDeleted"),map-get($eleColors,"ltBorderColorDeleted"),
+                    map-get($eleColors,"createdAtColorDeleted"),map-get($eleColors,"spanColorDeleted"));
+                }
+            }
+            .addSection{
+                @include addSectionLink;
+            }
+            
+        }
+
+    }
+}

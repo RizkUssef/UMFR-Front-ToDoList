@@ -1,0 +1,20 @@
+@import '../../utilities/mixin'; 
+
+.createSection{
+    @include bgColor;
+    @include flexDiv(row,normal,space-between);
+    .side{
+        @include aside;
+        overflow-y: auto;
+        // position: fixed;
+    }
+    .rightSide{
+        @include rightSideFromProfile;
+        .profile{
+            @include profile;
+        }
+        .createSectionForm{
+            @include createForm;
+        } 
+    }
+}

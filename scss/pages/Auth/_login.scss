@@ -1,0 +1,26 @@
+@import '../../utilities/mixin'; 
+
+.introLogin{
+    @include bgImageFilter(url(../../../images/auth/Login.jpeg));
+    @include flexDiv(column,flex-start,center);
+    .form{
+        @include form;
+        .forgetPass{
+            @include flexDiv(row,baseline,space-between);
+            .left{
+                a{
+                    text-decoration: none;
+                }
+            }
+            .right{
+                a{
+                    color: map-get($authForm, "alreadyColor");
+                    text-decoration: none;
+                }
+            }
+        }
+        .btnCenter{
+            @include flexDiv(row,center,center);
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@import '../../utilities/mixin'; 
+
+.inbox{
+    @include bgColor;
+    @include flexDiv(row,normal,space-between);
+    .side{
+        @include aside;
+        // overflow-y: auto;
+        position: fixed;
+    }
+    .rightSide{
+        @include rightSideFromProfile;
+        margin-left: 300px;
+        .profile{
+            @include profile;
+        }
+        .allBody{
+            width: 80vw;
+            @include flexDiv(column,normal,normal);
+            gap: 30px;
+            .head{
+                @include headAllName;
+            }
+            .secName{
+                @include name;
+            }
+            .secContant{
+                    @include contantAll;
+                .ele{
+                    @include ele(map-get($eleColors,"borderColorWait"),map-get($eleColors,"taskNameColorWait"),map-get($eleColors,"cheackBtnColorWait"),
+                    map-get($eleColors,"timeColorWait"),map-get($eleColors,"ltColorWait"),map-get($eleColors,"ltBgColorWait"),map-get($eleColors,"ltBorderColorWait"),
+                    map-get($eleColors,"createdAtColorWiat"),map-get($eleColors,"spanColorWait"));
+                }
+            }
+            .addSection{
+                @include addSectionLink;
+            }
+            
+        }
+
+    }
+}

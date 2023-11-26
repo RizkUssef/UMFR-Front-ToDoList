@@ -1,0 +1,15 @@
+@import '../../utilities/mixin'; 
+
+.introForgetPass{
+    @include bgImageFilter(url("../../../images/auth/Forget\ Password.jpeg"));
+    @include flexDiv(column,flex-start,center);
+    .form{
+        @include form;
+        h1{
+            width: 300px;
+        }
+        .btnCenter{
+            @include flexDiv(row,center,center);
+        }
+    }
+}

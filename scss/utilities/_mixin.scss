@@ -1,0 +1,650 @@
+@import 'maps';
+
+@mixin flexDiv($direction,$align,$justify){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin bgColor{
+    background-color: #F0EDDD;
+}
+
+@mixin header{
+    position: fixed;
+    @include flexDiv(row, center,space-between);
+
+}
+
+@mixin bgFilter{
+    background: map-get($welcomePageColors, 'filterBGColor');
+    background-repeat: no-repeat;
+}
+
+@mixin gridDiv($count,$size){
+    display: grid;
+    grid-template-columns: repeat($count,$size);
+}
+
+@mixin logo{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 130px;
+    img{
+        width: 100%;
+        height: 100%
+    }
+}
+
+@mixin links($fontSize,$paddingTB,$paddinRL){
+    text-decoration: none;
+    font-size: $fontSize;
+    background-image: map-get($welcomePageColors, "buttonColor" ); 
+    border: 1px solid transparent; /* Set a solid border with initial transparency */
+    border-image: map-get($welcomePageColors, "buttonBorderColor"); /* Apply the linear gradient */
+    border-image-slice: 1;
+    background-clip: text ;
+    color: transparent;
+    padding: $paddingTB $paddinRL;
+    transition: 1s ease-in-out;
+    border-radius: 15px;
+    &:hover{
+        font-size: $fontSize;
+        background-image: map-get($welcomePageColors, "buttonHoverColor" ); 
+        background-clip: text;
+        color: transparent;
+        border: 1px solid transparent; /* Set a solid border with initial transparency */
+        border-image: map-get($welcomePageColors, "buttonHoverBorderColor"); /* Apply the linear gradient */
+        border-image-slice: 1;
+    }
+}
+
+@mixin bgImageFilter($image){
+    height: 100vh;
+    background-image: $image;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        @include bgFilter;
+    }
+}
+
+@mixin btn($fontSize,$paddingTB,$paddinRL){
+    text-decoration: none;
+    font-size: $fontSize;
+    background-image: map-get($authForm, "buttonColor" ); 
+    border: 1px solid transparent; /* Set a solid border with initial transparency */
+    border-image: map-get($welcomePageColors, "buttonBorderColor"); /* Apply the linear gradient */
+    border-image-slice: 1;
+    background-clip: text ;
+    color: transparent;
+    padding: $paddingTB $paddinRL;
+    transition: 1s ease-in-out;
+    // margin-left: 155px;
+    &:hover{
+        cursor: pointer;
+        font-size: $fontSize;
+        background-image: map-get($authForm, "buttonHoverColor" ); 
+        background-clip: text;
+        color: transparent;
+        border: 1px solid transparent; /* Set a solid border with initial transparency */
+        border-image: map-get($welcomePageColors, "buttonHoverBorderColor"); /* Apply the linear gradient */
+        border-image-slice: 1;
+    }
+}
+
+@mixin form{
+    z-index: 10;
+    margin-left: 100px;
+    h1{
+        color: map-get($authForm, "headerColor" );
+        font-size: map-get($authForm, "headerSize" );
+        margin-bottom: 30px;
+    }
+    label{
+        display: block;
+        color: map-get($authForm, "labelColor" );
+        font-size: map-get($authForm, "labelSize" );
+        margin-bottom: 10px;
+    }
+    input{
+        display: block;
+        color: map-get($authForm, "labelColor" );
+        background-color: transparent;
+        border:1px solid map-get($authForm, "borderColor" );
+        font-size: map-get($authForm, "inputFontSize" );
+        margin-bottom: 30px;
+        width: map-get($authForm, "inputSizeWidth" ) ;
+        height: map-get($authForm, "inputSizeHeight" );
+        padding: 5px 10px;
+        &:focus{
+            outline: none;
+        }
+    }
+    p{
+        color: map-get($authForm, "alreadyColor" );
+        margin: auto;
+        width: fit-content;
+        margin-bottom: 20px;
+        span{
+            a{
+                text-decoration: none;
+                color: map-get($authForm, "alreadyColor" );
+            }
+        }
+    }
+    .submit{
+        @include btn(map-get($authForm,"buttonSize"),8px,16px)
+    }
+}
+
+@mixin createFirstForm{
+    h1{
+        color: map-get($createFirstList, "textColor" );
+        font-size: map-get($createFirstList, "headerSize" );
+        margin-bottom: 30px;
+    }
+    label{
+        display: block;
+        color: map-get($createFirstList, "textColor" );
+        font-size: map-get($createFirstList, "labelSize" );
+        margin-bottom: 10px;
+    }
+
+    input,select,textarea{
+        display: block;
+        color: map-get($createFirstList, "textColor" );
+        background-color: transparent;
+        border:1px solid map-get($createFirstList, "inputBorderColor" );
+        font-size: map-get($authForm, "inputFontSize" );
+        margin-bottom: 30px;
+        width: map-get($createFirstList, "inputSizeWidth" ) ;
+        height: map-get($createFirstList, "inputSizeHeight" );
+        padding: 5px 10px;
+        &:focus{
+            outline: none;
+        }
+    }
+    select{
+        width: calc(map-get($createFirstList, "inputSizeWidth" ) + 21px);
+        height: calc(map-get($createFirstList, "inputSizeHeight" ) + 10px);
+    }
+    textarea{
+        resize: none;
+        max-width: 450px;
+        max-height: 200px;
+        min-width: 450px;
+        min-height: 200px;
+    }
+    p{
+        color: map-get($authForm, "alreadyColor" );
+        margin: auto;
+        width: fit-content;
+        margin-bottom: 20px;
+        span{
+            a{
+                text-decoration: none;
+                color: map-get($authForm, "alreadyColor" );
+            }
+        }
+    }
+    .submit{
+        @include btn(map-get($authForm,"buttonSize"),8px,16px)
+    }
+}
+
+@mixin aside{
+    width: 15vw;
+    min-height: 100vh;
+    background-color: map-get($side, "bgColor");
+    @include flexDiv(column,baseline,flex-start);
+    .logo{
+        @include logo;
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+    .first,.third,.logout{
+        @include flexDiv(column,center,space-evenly);
+        width: 90%;
+        // height: 20%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap: 12px;
+        .ladelList, .ladelTag{
+            color: map-get($side, "textColor");
+            font-size: map-get($side, "labelSize" );
+            align-self: flex-start;
+            width: 100%;
+            @include flexDiv(row,center,space-between);
+            .addShow{
+                margin-right: 10px;
+                cursor: pointer;
+                img{
+                    width: 13px;
+                }
+            }
+
+        }
+        .fullLink{
+            @include flexDiv(row,center,space-between);
+            width: 100%;
+            .right{
+                @include flexDiv(row,center,center);
+                gap: 20px;
+                .icon{
+                    width: 25px;
+                    height: 25px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .link{
+                    a {
+                        position: relative;
+                        text-decoration: none;
+                        color: map-get($side, "textColor");
+                        overflow: hidden;
+                        padding-bottom: 8px;
+                        &::after {
+                          content: '';
+                          position: absolute;
+                          bottom: 0;
+                          left: 0;
+                          width: 0;
+                          height: 1px;
+                          background-color: map-get($side, "textColor");
+                          transition: width 2s ease-in-out; /* Transition for width change */
+                        }
+                        
+                        &:hover::after {
+                          width: 70%; /* Expand width on hover */
+                          animation: borderAnimation 1s forwards; /* Apply animation on hover */
+                        }
+                        
+                        @keyframes borderAnimation {
+                          from {
+                            width: 0; /* Start with no width */
+                          }
+                          to {
+                            width: 70%; /* Gradually expand to full width */
+                          }
+                        }
+                      }
+                      
+                      
+                }
+            }
+            .left{
+                margin-right: 10px;
+                .num{
+                    p{
+                        color: map-get($side, "numColor");
+                    }
+                }
+            }
+        }
+    }
+    .first{
+        margin-top: 30px;
+    }
+    .second{
+        @include flexDiv(column,center,space-evenly);
+        width: 90%;
+        height: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        gap: 12px;
+        .ladelList, .ladelTag{
+            color: map-get($side, "textColor");
+            font-size: map-get($side, "labelSize" );
+            align-self: flex-start;
+            width: 100%;
+            @include flexDiv(row,center,space-between);
+            .addShow{
+                margin-right: 10px;
+                cursor: pointer;
+                img{
+                    width: 13px;
+                }
+            }
+
+        }
+        .fullLink{
+            @include flexDiv(row,center,space-between);
+            width: 100%;
+            .right{
+                @include flexDiv(row,center,center);
+                gap: 20px;
+                .icon{
+                    width: 25px;
+                    height: 25px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .link{
+                    a {
+                        position: relative;
+                        text-decoration: none;
+                        color: map-get($side, "textColor");
+                        overflow: hidden;
+                        padding-bottom: 8px;
+                        &::after {
+                          content: '';
+                          position: absolute;
+                          bottom: 0;
+                          left: 0;
+                          width: 0;
+                          height: 1px;
+                          background-color: map-get($side, "textColor");
+                          transition: width 2s ease-in-out; /* Transition for width change */
+                        }
+                        
+                        &:hover::after {
+                          width: 70%; /* Expand width on hover */
+                          animation: borderAnimation 1s forwards; /* Apply animation on hover */
+                        }
+                        
+                        @keyframes borderAnimation {
+                          from {
+                            width: 0; /* Start with no width */
+                          }
+                          to {
+                            width: 70%; /* Gradually expand to full width */
+                          }
+                        }
+                      }
+                      
+                      
+                }
+            }
+            .left{
+                margin-right: 10px;
+                .num{
+                    p{
+                        color: map-get($side, "numColor");
+                    }
+                }
+            }
+        }
+    }
+    .logout{
+        height: fit-content;
+        margin-top: 20px;
+    }
+    .hr{
+        width: 80%;
+        height: 0.3px;
+        border-radius: 50px;
+        background-color: map-get($side, "hrColor");
+    }
+}
+
+@mixin rightSideFromProfile{
+    width:80vw;
+    @include flexDiv(column,baseline,space-between);
+    height: 60vh;
+}
+
+@mixin profile{
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 64px;
+    height: 64px;
+    border-radius: 15px;
+    border: 1px solid #BEBAA5;
+    @include flexDiv(row,center,center);
+    img{
+        width: 60px;
+        height: 60px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
+    }
+}
+
+@mixin createForm{
+    width: 80%;
+    .head{
+        margin-bottom: 40px;
+        h1{
+            color: map-get($createForms, "headColor" );
+            font-size: map-get($createForms, "headSize" );
+        }
+    }
+    .form{
+        width: fit-content;
+        margin: auto;
+        form{
+            @include flexDiv(column,baseline,center);
+        }
+        label{
+            color: map-get($createForms, "labelColor" );
+            font-size: map-get($createForms, "labelSize" );
+            margin-bottom: 8px;
+        }
+        input[type="text"],input[type="color"]{
+            margin-bottom: 20px;
+            width: map-get($createForms, "inputSizeWidth" );
+            height: map-get($createForms, "inputSizeHeight" );
+            background-color: transparent;
+            border: 0.5px solid map-get($createForms, "inputBorderColor" );
+            padding: 5px 10px;
+            font-size: map-get($createForms, "labelSize" );
+            color: map-get($createForms, "labelColor" );
+            &:focus{
+                outline: none;
+            }
+        }
+        input[type="color"]{
+            width: map-get($createForms, "inputTypeColorWidth" );
+            height: map-get($createForms, "inputTypeColorHeight" );
+            padding: 0px;
+            &::-webkit-color-swatch-wrapper {
+                padding: 0;
+            }
+        }
+        .submit{
+            @include btn(map-get($createForms, "labelSize" ),8px,16px);
+            align-self:end;
+        }
+    }
+}
+
+@mixin name{
+    @include flexDiv(row,center,space-between);
+    h1{
+        font-size: map-get($showAll, "secSize");
+        color: map-get($showAll, "secColor");
+    }
+    .addTaskForm{
+        @include flexDiv(row,center,center);
+        margin-right: 30px;
+        .vis{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+        input{
+            background-color: transparent;
+            width: map-get($showAll, "SecAddInputWidth");
+            height: map-get($showAll, "SecAddInputHeight");
+            color: map-get($showAll, "inputColor");
+            font-size: map-get($showAll, "SecAddInputFontSize");
+            border: 1px solid map-get($showAll, "borderColor"); 
+            border-radius: 10px;
+            padding: 5px 10px;
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            width: map-get($showAll, "submitWidth");
+            height: map-get($showAll, "submitHeight");
+            background-color: transparent;
+            border: 1px solid map-get($showAll, "borderColor"); 
+            border-radius: 10px;
+            img{
+                width: 15px;
+                height: 15px;
+            }
+        }
+        .clickToAdd{
+            cursor: pointer;
+            width: map-get($showAll, "submitWidth");
+            height: map-get($showAll, "submitHeight");
+            @include flexDiv(row,center,center);
+            border: 1px solid map-get($showAll, "borderColor"); 
+            border-radius: 10px;
+        }
+
+    }
+}
+
+@mixin contantAll{
+    @include flexDiv(row,baseline,flex-start);
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+@mixin ele($borderColor,$taskNameColor,$cheackBtnColor,$timeColor,$ltColor,$ltBgColor,$ltBorderColor,$createdAtColor,$spanColor){
+    min-width: 320px;
+    max-width: 320px;
+    border-radius: 15px;
+    border: 1px solid $borderColor;
+    padding: 15px;
+    .top{
+        @include flexDiv(row,center,space-between);
+        margin-bottom: 20px;
+        .cName{
+            @include flexDiv(row,baseline,center);
+            gap: 20px;
+            h1{
+                color: $taskNameColor
+            }
+            form{
+                .cheack{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 6px;
+                        border: 1px solid #BEBAA5;
+                        background-color: $cheackBtnColor;
+                        cursor: pointer;
+                        &:focus{
+                            background-color: $cheackBtnColor;
+                        }
+                }
+            }
+        }
+        form{
+            .delete{
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    .middle{
+        @include flexDiv(row,baseline,flex-start);
+        gap: 10px;
+        margin-bottom: 20px;
+        .time,.list,.tag{
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .time{
+            color:$timeColor;
+        }
+        .list,.tag{
+            color:$ltColor;
+            border-radius: 15px;
+            border: 1px solid $ltBorderColor;
+            padding: 5px 20px;
+            background-color: $ltBgColor;
+        }
+    }
+    .bottom{
+        @include flexDiv(row,center ,space-between );
+        p{
+            color: $createdAtColor;
+            font-size: 12px;
+            span{
+                color: $spanColor;
+            }
+        }
+    }
+}
+
+@mixin headAllName{
+    @include flexDiv(row,center,space-between);
+    margin-top: 30px;
+    h1{
+        font-size: map-get($showAll, "headSize");
+        color: map-get($showAll, "headColor");
+    }
+    .addTaskForm{
+        @include flexDiv(row,center,center);
+        margin-right: 30px;
+        .vis{
+            display: none;
+        }
+        input{
+            background-color: transparent;
+            width: map-get($showAll, "unSecAddInputWidth");
+            height: map-get($showAll, "unSecAddInputHeight");
+            color: map-get($showAll, "inputColor");
+            font-size: map-get($showAll, "unSecAddInputFontSize");
+            border: 1px solid map-get($showAll, "borderColor"); 
+            border-radius: 10px;
+            padding: 5px 10px;
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            width: map-get($showAll, "unSubmitWidth");
+            height: map-get($showAll, "unSubmitHeight");
+            background-color: transparent;
+            border: 1px solid map-get($showAll, "borderColor"); 
+            border-radius: 10px;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .clickToAdd{
+            cursor: pointer;
+            width: map-get($showAll, "unSubmitWidth");
+            height: map-get($showAll, "unSubmitHeight");
+            @include flexDiv(row,center,center);
+            border: 1px solid map-get($showAll, "borderColor"); 
+            border-radius: 10px;
+        }
+    }
+}
+
+@mixin addSectionLink{
+    align-self: flex-end;
+    width: fit-content;
+    margin-right: 74px;
+    margin-bottom: 100px;
+    a{
+        @include links(20px,8px,20px);
+    }
+}
+

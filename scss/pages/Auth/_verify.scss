@@ -1,0 +1,22 @@
+@import '../../utilities/mixin'; 
+
+.introVerify{
+    @include bgImageFilter(url("../../../images/auth/Verify Email.png"));
+    @include flexDiv(column,flex-start,center);
+    .verifyDiv{
+        @include form;
+        h1{
+            width: 300px;
+        }
+        p{
+            width: 100%;
+        }
+        .btnCenter{
+            @include flexDiv(row,center,center);
+            margin-top: 30px;
+            a{
+                @include links(20px,8px,16px);
+            }
+        }
+    }
+}
