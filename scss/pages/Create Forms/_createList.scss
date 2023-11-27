@@ -6,7 +6,9 @@
     .side{
         @include aside;
         overflow-y: auto;
-        // position: fixed;
+        position: fixed;
+        bottom: 0;
+        right: 0;
     }
     .rightSide{
         @include rightSideFromProfile;

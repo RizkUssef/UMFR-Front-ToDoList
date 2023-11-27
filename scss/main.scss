@@ -18,4 +18,7 @@
 @use 'pages/Show All/today';
 @use 'pages/Show All/completed';
 @use 'pages/Show All/trash';
+@use 'pages/Show One/oneTask';
+@use 'pages/Edit/editOneTask';
+@use 'pages/Edit/editSubTask';
 

@@ -406,7 +406,7 @@ body::-webkit-scrollbar {
 
 .introRegister {
   height: 100vh;
-  background-image: url(../../../images/auth/Register.jpeg);
+  background-image: url("../../../images/auth/Register.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -431,7 +431,7 @@ body::-webkit-scrollbar {
 }
 .introRegister .form h1 {
   color: #BEBAA5;
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 30px;
 }
 .introRegister .form label {
@@ -524,7 +524,7 @@ body::-webkit-scrollbar {
 }
 .introLogin .form h1 {
   color: #BEBAA5;
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 30px;
 }
 .introLogin .form label {
@@ -630,7 +630,7 @@ body::-webkit-scrollbar {
 }
 .introForgetPass .form h1 {
   color: #BEBAA5;
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 30px;
 }
 .introForgetPass .form label {
@@ -726,7 +726,7 @@ body::-webkit-scrollbar {
 }
 .introResetPass .form h1 {
   color: #BEBAA5;
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 30px;
 }
 .introResetPass .form label {
@@ -822,7 +822,7 @@ body::-webkit-scrollbar {
 }
 .introVerify .verifyDiv h1 {
   color: #BEBAA5;
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 30px;
 }
 .introVerify .verifyDiv label {
@@ -931,6 +931,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   flex-direction: row;
   height: 100vh;
+  width: 100vw;
 }
 .createList .contant .allFlex {
   display: flex;
@@ -1057,6 +1058,10 @@ body::-webkit-scrollbar {
   align-items: baseline;
   justify-content: flex-start;
   flex-direction: column;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
   overflow-y: auto;
 }
 .createSection .side .logo {
@@ -1384,6 +1389,10 @@ body::-webkit-scrollbar {
   align-items: baseline;
   justify-content: flex-start;
   flex-direction: column;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
   overflow-y: auto;
 }
 .createTag .side .logo {
@@ -1711,7 +1720,14 @@ body::-webkit-scrollbar {
   align-items: baseline;
   justify-content: flex-start;
   flex-direction: column;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
   overflow-y: auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 .createList .side .logo {
   margin-top: 20px;
@@ -2054,6 +2070,10 @@ body::-webkit-scrollbar {
   align-items: baseline;
   justify-content: flex-start;
   flex-direction: column;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
   position: fixed;
 }
 .inbox .side .logo {
@@ -2379,9 +2399,10 @@ body::-webkit-scrollbar {
 .inbox .rightSide .allBody .secName .addTaskForm {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: row;
   margin-right: 30px;
+  width: 100%;
 }
 .inbox .rightSide .allBody .secName .addTaskForm .vis {
   display: none;
@@ -2399,6 +2420,12 @@ body::-webkit-scrollbar {
   border-radius: 10px;
   padding: 5px 10px;
 }
+.inbox .rightSide .allBody .secName .addTaskForm input::-moz-placeholder {
+  color: rgba(127, 122, 99, 0.5);
+}
+.inbox .rightSide .allBody .secName .addTaskForm input::placeholder {
+  color: rgba(127, 122, 99, 0.5);
+}
 .inbox .rightSide .allBody .secName .addTaskForm input:focus {
   outline: none;
 }
@@ -2414,6 +2441,71 @@ body::-webkit-scrollbar {
   height: 15px;
 }
 .inbox .rightSide .allBody .secName .addTaskForm .clickToAdd {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.inbox .rightSide .allBody .downForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.inbox .rightSide .allBody .downForm h1 {
+  font-size: 35px;
+  color: #433E26;
+}
+.inbox .rightSide .allBody .downForm .addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-right: 30px;
+  width: 100%;
+}
+.inbox .rightSide .allBody .downForm .addTaskForm .vis {
+  display: none;
+}
+.inbox .rightSide .allBody .downForm .addTaskForm .show {
+  display: block;
+}
+.inbox .rightSide .allBody .downForm .addTaskForm input {
+  background-color: transparent;
+  width: 400px;
+  height: 27px;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 15px;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.inbox .rightSide .allBody .downForm .addTaskForm input::-moz-placeholder {
+  color: rgba(127, 122, 99, 0.5);
+}
+.inbox .rightSide .allBody .downForm .addTaskForm input::placeholder {
+  color: rgba(127, 122, 99, 0.5);
+}
+.inbox .rightSide .allBody .downForm .addTaskForm input:focus {
+  outline: none;
+}
+.inbox .rightSide .allBody .downForm .addTaskForm button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.inbox .rightSide .allBody .downForm .addTaskForm button img {
+  width: 15px;
+  height: 15px;
+}
+.inbox .rightSide .allBody .downForm .addTaskForm .clickToAdd {
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -2580,6 +2672,10 @@ body::-webkit-scrollbar {
   align-items: baseline;
   justify-content: flex-start;
   flex-direction: column;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
   position: fixed;
 }
 .list .side .logo {
@@ -2905,9 +3001,10 @@ body::-webkit-scrollbar {
 .list .rightSide .allBody .listName .addTaskForm {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: row;
   margin-right: 30px;
+  width: 100%;
 }
 .list .rightSide .allBody .listName .addTaskForm .vis {
   display: none;
@@ -2924,6 +3021,12 @@ body::-webkit-scrollbar {
   border: 1px solid #BEBAA5;
   border-radius: 10px;
   padding: 5px 10px;
+}
+.list .rightSide .allBody .listName .addTaskForm input::-moz-placeholder {
+  color: rgba(127, 122, 99, 0.5);
+}
+.list .rightSide .allBody .listName .addTaskForm input::placeholder {
+  color: rgba(127, 122, 99, 0.5);
 }
 .list .rightSide .allBody .listName .addTaskForm input:focus {
   outline: none;
@@ -3361,6 +3464,10 @@ body::-webkit-scrollbar {
   align-items: baseline;
   justify-content: flex-start;
   flex-direction: column;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
   position: fixed;
 }
 .tag .side .logo {
@@ -3686,9 +3793,10 @@ body::-webkit-scrollbar {
 .tag .rightSide .allBody .tagName .addTaskForm {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: row;
   margin-right: 30px;
+  width: 100%;
 }
 .tag .rightSide .allBody .tagName .addTaskForm .vis {
   display: none;
@@ -3705,6 +3813,12 @@ body::-webkit-scrollbar {
   border: 1px solid #BEBAA5;
   border-radius: 10px;
   padding: 5px 10px;
+}
+.tag .rightSide .allBody .tagName .addTaskForm input::-moz-placeholder {
+  color: rgba(127, 122, 99, 0.5);
+}
+.tag .rightSide .allBody .tagName .addTaskForm input::placeholder {
+  color: rgba(127, 122, 99, 0.5);
 }
 .tag .rightSide .allBody .tagName .addTaskForm input:focus {
   outline: none;
@@ -4142,6 +4256,11 @@ body::-webkit-scrollbar {
   align-items: baseline;
   justify-content: flex-start;
   flex-direction: column;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+  overflow-y: auto;
   position: fixed;
 }
 .todayPage .side .logo {
@@ -4467,9 +4586,10 @@ body::-webkit-scrollbar {
 .todayPage .rightSide .allBody .todayInnerName .addTaskForm {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: row;
   margin-right: 30px;
+  width: 100%;
 }
 .todayPage .rightSide .allBody .todayInnerName .addTaskForm .vis {
   display: none;
@@ -4486,6 +4606,12 @@ body::-webkit-scrollbar {
   border: 1px solid #BEBAA5;
   border-radius: 10px;
   padding: 5px 10px;
+}
+.todayPage .rightSide .allBody .todayInnerName .addTaskForm input::-moz-placeholder {
+  color: rgba(127, 122, 99, 0.5);
+}
+.todayPage .rightSide .allBody .todayInnerName .addTaskForm input::placeholder {
+  color: rgba(127, 122, 99, 0.5);
 }
 .todayPage .rightSide .allBody .todayInnerName .addTaskForm input:focus {
   outline: none;
@@ -4923,6 +5049,10 @@ body::-webkit-scrollbar {
   align-items: baseline;
   justify-content: flex-start;
   flex-direction: column;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
   position: fixed;
 }
 .completed .side .logo {
@@ -5608,6 +5738,10 @@ body::-webkit-scrollbar {
   align-items: baseline;
   justify-content: flex-start;
   flex-direction: column;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
   position: fixed;
 }
 .trash .side .logo {
@@ -6021,4 +6155,1379 @@ body::-webkit-scrollbar {
 }
 .trash .rightSide .allBody .trashContant .ele .bottom p span {
   color: rgba(134, 43, 13, 0.5);
+}
+
+.oneTask {
+  background-color: #F0EDDD;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.oneTask .side {
+  width: 20vw;
+  min-height: 100vh;
+  background-color: rgba(190, 186, 165, 0.37);
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+  position: fixed;
+}
+.oneTask .side .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.oneTask .side .logo img {
+  width: 100%;
+  height: 100%;
+}
+.oneTask .side .first, .oneTask .side .third, .oneTask .side .logout {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+.oneTask .side .first .ladelList, .oneTask .side .first .ladelTag, .oneTask .side .third .ladelList, .oneTask .side .third .ladelTag, .oneTask .side .logout .ladelList, .oneTask .side .logout .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.oneTask .side .first .ladelList .addShow, .oneTask .side .first .ladelTag .addShow, .oneTask .side .third .ladelList .addShow, .oneTask .side .third .ladelTag .addShow, .oneTask .side .logout .ladelList .addShow, .oneTask .side .logout .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.oneTask .side .first .ladelList .addShow img, .oneTask .side .first .ladelTag .addShow img, .oneTask .side .third .ladelList .addShow img, .oneTask .side .third .ladelTag .addShow img, .oneTask .side .logout .ladelList .addShow img, .oneTask .side .logout .ladelTag .addShow img {
+  width: 13px;
+}
+.oneTask .side .first .fullLink, .oneTask .side .third .fullLink, .oneTask .side .logout .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.oneTask .side .first .fullLink .right, .oneTask .side .third .fullLink .right, .oneTask .side .logout .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.oneTask .side .first .fullLink .right .icon, .oneTask .side .third .fullLink .right .icon, .oneTask .side .logout .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.oneTask .side .first .fullLink .right .icon img, .oneTask .side .third .fullLink .right .icon img, .oneTask .side .logout .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.oneTask .side .first .fullLink .right .link a, .oneTask .side .third .fullLink .right .link a, .oneTask .side .logout .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.oneTask .side .first .fullLink .right .link a::after, .oneTask .side .third .fullLink .right .link a::after, .oneTask .side .logout .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.oneTask .side .first .fullLink .right .link a:hover::after, .oneTask .side .third .fullLink .right .link a:hover::after, .oneTask .side .logout .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.oneTask .side .first .fullLink .left, .oneTask .side .third .fullLink .left, .oneTask .side .logout .fullLink .left {
+  margin-right: 10px;
+}
+.oneTask .side .first .fullLink .left .num p, .oneTask .side .third .fullLink .left .num p, .oneTask .side .logout .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.oneTask .side .first {
+  margin-top: 30px;
+}
+.oneTask .side .second {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+.oneTask .side .second .ladelList, .oneTask .side .second .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.oneTask .side .second .ladelList .addShow, .oneTask .side .second .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.oneTask .side .second .ladelList .addShow img, .oneTask .side .second .ladelTag .addShow img {
+  width: 13px;
+}
+.oneTask .side .second .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.oneTask .side .second .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.oneTask .side .second .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.oneTask .side .second .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.oneTask .side .second .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.oneTask .side .second .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.oneTask .side .second .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.oneTask .side .second .fullLink .left {
+  margin-right: 10px;
+}
+.oneTask .side .second .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.oneTask .side .logout {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20px;
+}
+.oneTask .side .hr {
+  width: 80%;
+  height: 0.3px;
+  border-radius: 50px;
+  background-color: #7F7A63;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .oneTask .side {
+    width: 15vw;
+  }
+}
+.oneTask .rightSide {
+  width: 70vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 300px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .oneTask .rightSide {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .oneTask .rightSide {
+    width: 80vw;
+  }
+}
+.oneTask .rightSide .profile {
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.oneTask .rightSide .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
+}
+.oneTask .rightSide .allBody {
+  width: 70vw;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .oneTask .rightSide .allBody {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .oneTask .rightSide .allBody {
+    width: 80vw;
+  }
+}
+.oneTask .rightSide .allBody .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.oneTask .rightSide .allBody .head h1 {
+  font-size: 60px;
+  color: #433E26;
+}
+.oneTask .rightSide .allBody .head .addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.oneTask .rightSide .allBody .head .addTaskForm .vis {
+  display: none;
+}
+.oneTask .rightSide .allBody .head .addTaskForm input {
+  background-color: transparent;
+  width: 400px;
+  height: 38px;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 20px;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.oneTask .rightSide .allBody .head .addTaskForm input:focus {
+  outline: none;
+}
+.oneTask .rightSide .allBody .head .addTaskForm button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.oneTask .rightSide .allBody .head .addTaskForm button img {
+  width: 20px;
+  height: 20px;
+}
+.oneTask .rightSide .allBody .head .addTaskForm .clickToAdd {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.oneTask .rightSide .allBody .infoLinks {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 20px;
+}
+.oneTask .rightSide .allBody .infoLinks a {
+  text-decoration: none;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 20px;
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  padding: 5px 15px;
+}
+.oneTask .rightSide .allBody .infoLinks .today {
+  border: none;
+  padding: 0px;
+  color: rgba(134, 43, 13, 0.5);
+}
+.oneTask .rightSide .allBody .taskDescription {
+  padding-right: 50px;
+}
+.oneTask .rightSide .allBody .taskDescription p {
+  color: #7F7A63;
+  font-size: 15px;
+}
+.oneTask .rightSide .allBody .taskDetails {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.oneTask .rightSide .allBody .taskDetails .priority, .oneTask .rightSide .allBody .taskDetails .date, .oneTask .rightSide .allBody .taskDetails .subTask, .oneTask .rightSide .allBody .taskDetails .taskSection {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.oneTask .rightSide .allBody .taskDetails .priority .top h1, .oneTask .rightSide .allBody .taskDetails .date .top h1, .oneTask .rightSide .allBody .taskDetails .subTask .top h1, .oneTask .rightSide .allBody .taskDetails .taskSection .top h1 {
+  color: #433E26;
+  font-size: 20px;
+}
+.oneTask .rightSide .allBody .taskDetails .priority .value, .oneTask .rightSide .allBody .taskDetails .date .value, .oneTask .rightSide .allBody .taskDetails .subTask .value, .oneTask .rightSide .allBody .taskDetails .taskSection .value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.oneTask .rightSide .allBody .taskDetails .priority .value p, .oneTask .rightSide .allBody .taskDetails .date .value p, .oneTask .rightSide .allBody .taskDetails .subTask .value p, .oneTask .rightSide .allBody .taskDetails .taskSection .value p {
+  color: #7F7A63;
+  font-size: 15px;
+}
+.oneTask .rightSide .allBody .taskDetails .priority .value img, .oneTask .rightSide .allBody .taskDetails .date .value img, .oneTask .rightSide .allBody .taskDetails .subTask .value img, .oneTask .rightSide .allBody .taskDetails .taskSection .value img {
+  width: 20px;
+  height: 20px;
+}
+.oneTask .rightSide .allBody .taskDetails .taskSection {
+  margin-right: 50px;
+}
+.oneTask .rightSide .allBody .options {
+  align-self: flex-end;
+  margin-right: 50px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+}
+.oneTask .rightSide .allBody .options a {
+  text-decoration: none;
+}
+.oneTask .rightSide .allBody .options a img {
+  width: 30px;
+  height: 30px;
+}
+.oneTask .rightSide .allBody .options form button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.oneTask .rightSide .allBody .options form button img {
+  width: 30px;
+  height: 30px;
+}
+
+.editOneTask {
+  background-color: #F0EDDD;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.editOneTask .side {
+  width: 20vw;
+  min-height: 100vh;
+  background-color: rgba(190, 186, 165, 0.37);
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+  position: fixed;
+  overflow-y: auto;
+}
+.editOneTask .side .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.editOneTask .side .logo img {
+  width: 100%;
+  height: 100%;
+}
+.editOneTask .side .first, .editOneTask .side .third, .editOneTask .side .logout {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+.editOneTask .side .first .ladelList, .editOneTask .side .first .ladelTag, .editOneTask .side .third .ladelList, .editOneTask .side .third .ladelTag, .editOneTask .side .logout .ladelList, .editOneTask .side .logout .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.editOneTask .side .first .ladelList .addShow, .editOneTask .side .first .ladelTag .addShow, .editOneTask .side .third .ladelList .addShow, .editOneTask .side .third .ladelTag .addShow, .editOneTask .side .logout .ladelList .addShow, .editOneTask .side .logout .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.editOneTask .side .first .ladelList .addShow img, .editOneTask .side .first .ladelTag .addShow img, .editOneTask .side .third .ladelList .addShow img, .editOneTask .side .third .ladelTag .addShow img, .editOneTask .side .logout .ladelList .addShow img, .editOneTask .side .logout .ladelTag .addShow img {
+  width: 13px;
+}
+.editOneTask .side .first .fullLink, .editOneTask .side .third .fullLink, .editOneTask .side .logout .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.editOneTask .side .first .fullLink .right, .editOneTask .side .third .fullLink .right, .editOneTask .side .logout .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.editOneTask .side .first .fullLink .right .icon, .editOneTask .side .third .fullLink .right .icon, .editOneTask .side .logout .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.editOneTask .side .first .fullLink .right .icon img, .editOneTask .side .third .fullLink .right .icon img, .editOneTask .side .logout .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.editOneTask .side .first .fullLink .right .link a, .editOneTask .side .third .fullLink .right .link a, .editOneTask .side .logout .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.editOneTask .side .first .fullLink .right .link a::after, .editOneTask .side .third .fullLink .right .link a::after, .editOneTask .side .logout .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.editOneTask .side .first .fullLink .right .link a:hover::after, .editOneTask .side .third .fullLink .right .link a:hover::after, .editOneTask .side .logout .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.editOneTask .side .first .fullLink .left, .editOneTask .side .third .fullLink .left, .editOneTask .side .logout .fullLink .left {
+  margin-right: 10px;
+}
+.editOneTask .side .first .fullLink .left .num p, .editOneTask .side .third .fullLink .left .num p, .editOneTask .side .logout .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.editOneTask .side .first {
+  margin-top: 30px;
+}
+.editOneTask .side .second {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+.editOneTask .side .second .ladelList, .editOneTask .side .second .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.editOneTask .side .second .ladelList .addShow, .editOneTask .side .second .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.editOneTask .side .second .ladelList .addShow img, .editOneTask .side .second .ladelTag .addShow img {
+  width: 13px;
+}
+.editOneTask .side .second .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.editOneTask .side .second .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.editOneTask .side .second .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.editOneTask .side .second .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.editOneTask .side .second .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.editOneTask .side .second .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.editOneTask .side .second .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.editOneTask .side .second .fullLink .left {
+  margin-right: 10px;
+}
+.editOneTask .side .second .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.editOneTask .side .logout {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20px;
+}
+.editOneTask .side .hr {
+  width: 80%;
+  height: 0.3px;
+  border-radius: 50px;
+  background-color: #7F7A63;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .editOneTask .side {
+    width: 15vw;
+  }
+}
+.editOneTask .rightSide {
+  width: 70vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 300px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .editOneTask .rightSide {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .editOneTask .rightSide {
+    width: 80vw;
+  }
+}
+.editOneTask .rightSide .profile {
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.editOneTask .rightSide .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
+}
+.editOneTask .rightSide .allBody {
+  width: 70vw;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .editOneTask .rightSide .allBody {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .editOneTask .rightSide .allBody {
+    width: 80vw;
+  }
+}
+.editOneTask .rightSide .allBody .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.editOneTask .rightSide .allBody .head h1 {
+  font-size: 60px;
+  color: #433E26;
+}
+.editOneTask .rightSide .allBody .head .addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.editOneTask .rightSide .allBody .head .addTaskForm .vis {
+  display: none;
+}
+.editOneTask .rightSide .allBody .head .addTaskForm input {
+  background-color: transparent;
+  width: 400px;
+  height: 38px;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 20px;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.editOneTask .rightSide .allBody .head .addTaskForm input:focus {
+  outline: none;
+}
+.editOneTask .rightSide .allBody .head .addTaskForm button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.editOneTask .rightSide .allBody .head .addTaskForm button img {
+  width: 20px;
+  height: 20px;
+}
+.editOneTask .rightSide .allBody .head .addTaskForm .clickToAdd {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.editOneTask .rightSide .allBody .formAll .first {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  row-gap: 25px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  flex-wrap: wrap;
+}
+.editOneTask .rightSide .allBody .formAll .first .name, .editOneTask .rightSide .allBody .formAll .first .moveList, .editOneTask .rightSide .allBody .formAll .first .selectSection, .editOneTask .rightSide .allBody .formAll .first .addInNewSection, .editOneTask .rightSide .allBody .formAll .first .selectTag, .editOneTask .rightSide .allBody .formAll .first .addInNewTag, .editOneTask .rightSide .allBody .formAll .first .priority, .editOneTask .rightSide .allBody .formAll .first .date {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.editOneTask .rightSide .allBody .formAll .first .name label, .editOneTask .rightSide .allBody .formAll .first .moveList label, .editOneTask .rightSide .allBody .formAll .first .selectSection label, .editOneTask .rightSide .allBody .formAll .first .addInNewSection label, .editOneTask .rightSide .allBody .formAll .first .selectTag label, .editOneTask .rightSide .allBody .formAll .first .addInNewTag label, .editOneTask .rightSide .allBody .formAll .first .priority label, .editOneTask .rightSide .allBody .formAll .first .date label {
+  color: #433E26;
+  font-size: 15px;
+}
+.editOneTask .rightSide .allBody .formAll .first .name input, .editOneTask .rightSide .allBody .formAll .first .name select, .editOneTask .rightSide .allBody .formAll .first .moveList input, .editOneTask .rightSide .allBody .formAll .first .moveList select, .editOneTask .rightSide .allBody .formAll .first .selectSection input, .editOneTask .rightSide .allBody .formAll .first .selectSection select, .editOneTask .rightSide .allBody .formAll .first .addInNewSection input, .editOneTask .rightSide .allBody .formAll .first .addInNewSection select, .editOneTask .rightSide .allBody .formAll .first .selectTag input, .editOneTask .rightSide .allBody .formAll .first .selectTag select, .editOneTask .rightSide .allBody .formAll .first .addInNewTag input, .editOneTask .rightSide .allBody .formAll .first .addInNewTag select, .editOneTask .rightSide .allBody .formAll .first .priority input, .editOneTask .rightSide .allBody .formAll .first .priority select, .editOneTask .rightSide .allBody .formAll .first .date input, .editOneTask .rightSide .allBody .formAll .first .date select {
+  width: 300px;
+  height: 30px;
+  padding: 5px 10px;
+  border: 1px solid #433E26;
+  background-color: transparent;
+  font-size: 15px;
+  color: #433E26;
+}
+.editOneTask .rightSide .allBody .formAll .first .name input:focus, .editOneTask .rightSide .allBody .formAll .first .name select:focus, .editOneTask .rightSide .allBody .formAll .first .moveList input:focus, .editOneTask .rightSide .allBody .formAll .first .moveList select:focus, .editOneTask .rightSide .allBody .formAll .first .selectSection input:focus, .editOneTask .rightSide .allBody .formAll .first .selectSection select:focus, .editOneTask .rightSide .allBody .formAll .first .addInNewSection input:focus, .editOneTask .rightSide .allBody .formAll .first .addInNewSection select:focus, .editOneTask .rightSide .allBody .formAll .first .selectTag input:focus, .editOneTask .rightSide .allBody .formAll .first .selectTag select:focus, .editOneTask .rightSide .allBody .formAll .first .addInNewTag input:focus, .editOneTask .rightSide .allBody .formAll .first .addInNewTag select:focus, .editOneTask .rightSide .allBody .formAll .first .priority input:focus, .editOneTask .rightSide .allBody .formAll .first .priority select:focus, .editOneTask .rightSide .allBody .formAll .first .date input:focus, .editOneTask .rightSide .allBody .formAll .first .date select:focus {
+  outline: none;
+}
+.editOneTask .rightSide .allBody .formAll .first .name input option, .editOneTask .rightSide .allBody .formAll .first .name select option, .editOneTask .rightSide .allBody .formAll .first .moveList input option, .editOneTask .rightSide .allBody .formAll .first .moveList select option, .editOneTask .rightSide .allBody .formAll .first .selectSection input option, .editOneTask .rightSide .allBody .formAll .first .selectSection select option, .editOneTask .rightSide .allBody .formAll .first .addInNewSection input option, .editOneTask .rightSide .allBody .formAll .first .addInNewSection select option, .editOneTask .rightSide .allBody .formAll .first .selectTag input option, .editOneTask .rightSide .allBody .formAll .first .selectTag select option, .editOneTask .rightSide .allBody .formAll .first .addInNewTag input option, .editOneTask .rightSide .allBody .formAll .first .addInNewTag select option, .editOneTask .rightSide .allBody .formAll .first .priority input option, .editOneTask .rightSide .allBody .formAll .first .priority select option, .editOneTask .rightSide .allBody .formAll .first .date input option, .editOneTask .rightSide .allBody .formAll .first .date select option {
+  width: 300px;
+  height: 30px;
+  padding: 5px 10px;
+  border: 1px solid #433E26;
+  background-color: transparent;
+  font-size: 15px;
+  color: #433E26;
+}
+.editOneTask .rightSide .allBody .formAll .first .name select, .editOneTask .rightSide .allBody .formAll .first .moveList select, .editOneTask .rightSide .allBody .formAll .first .selectSection select, .editOneTask .rightSide .allBody .formAll .first .addInNewSection select, .editOneTask .rightSide .allBody .formAll .first .selectTag select, .editOneTask .rightSide .allBody .formAll .first .addInNewTag select, .editOneTask .rightSide .allBody .formAll .first .priority select, .editOneTask .rightSide .allBody .formAll .first .date select {
+  width: 322px;
+  height: 42px;
+}
+.editOneTask .rightSide .allBody .formAll .second {
+  margin-bottom: 50px;
+}
+.editOneTask .rightSide .allBody .formAll .second .head {
+  margin-bottom: 10px;
+}
+.editOneTask .rightSide .allBody .formAll .second .head h1 {
+  color: #433E26;
+  font-size: 15px;
+}
+.editOneTask .rightSide .allBody .formAll .second .allSub {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.editOneTask .rightSide .allBody .formAll .second .allSub .subTaskCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 150px;
+  padding: 8px 15px;
+  border: 1px solid #433E26;
+}
+.editOneTask .rightSide .allBody .formAll .second .allSub .subTaskCont h3 {
+  color: #433E26;
+  font-size: 15px;
+}
+.editOneTask .rightSide .allBody .formAll .second .allSub .subTaskCont div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.editOneTask .rightSide .allBody .formAll .second .allSub .subTaskCont div a {
+  text-decoration: none;
+}
+.editOneTask .rightSide .allBody .formAll .second .allSub .subTaskCont div a img {
+  width: 25px;
+  height: 25px;
+}
+.editOneTask .rightSide .allBody .formAll .second .allSub .subTaskCont div button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.editOneTask .rightSide .allBody .formAll .second .allSub .subTaskCont div button img {
+  width: 25px;
+  height: 25px;
+}
+.editOneTask .rightSide .allBody .formAll .second .allSub .addNew {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #433E26;
+}
+.editOneTask .rightSide .allBody .formAll .third {
+  margin-right: 85px;
+  margin-bottom: 50px;
+}
+.editOneTask .rightSide .allBody .formAll .third .description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.editOneTask .rightSide .allBody .formAll .third .description label {
+  color: #433E26;
+  font-size: 15px;
+}
+.editOneTask .rightSide .allBody .formAll .third .description textarea {
+  background-color: transparent;
+  width: 100%;
+  height: 180px;
+  padding: 5px 10px;
+}
+.editOneTask .rightSide .allBody .formAll .third .description textarea:focus {
+  outline: none;
+}
+.editOneTask .rightSide .allBody .formAll .submit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-right: 65px;
+  margin-bottom: 50px;
+}
+.editOneTask .rightSide .allBody .formAll .submit button {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+}
+.editOneTask .rightSide .allBody .formAll .submit button:hover {
+  cursor: pointer;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+
+.editSubTask {
+  background-color: #F0EDDD;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.editSubTask .side {
+  width: 20vw;
+  min-height: 100vh;
+  background-color: rgba(190, 186, 165, 0.37);
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+  position: fixed;
+  overflow-y: auto;
+}
+.editSubTask .side .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 130px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.editSubTask .side .logo img {
+  width: 100%;
+  height: 100%;
+}
+.editSubTask .side .first, .editSubTask .side .third, .editSubTask .side .logout {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+.editSubTask .side .first .ladelList, .editSubTask .side .first .ladelTag, .editSubTask .side .third .ladelList, .editSubTask .side .third .ladelTag, .editSubTask .side .logout .ladelList, .editSubTask .side .logout .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.editSubTask .side .first .ladelList .addShow, .editSubTask .side .first .ladelTag .addShow, .editSubTask .side .third .ladelList .addShow, .editSubTask .side .third .ladelTag .addShow, .editSubTask .side .logout .ladelList .addShow, .editSubTask .side .logout .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.editSubTask .side .first .ladelList .addShow img, .editSubTask .side .first .ladelTag .addShow img, .editSubTask .side .third .ladelList .addShow img, .editSubTask .side .third .ladelTag .addShow img, .editSubTask .side .logout .ladelList .addShow img, .editSubTask .side .logout .ladelTag .addShow img {
+  width: 13px;
+}
+.editSubTask .side .first .fullLink, .editSubTask .side .third .fullLink, .editSubTask .side .logout .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.editSubTask .side .first .fullLink .right, .editSubTask .side .third .fullLink .right, .editSubTask .side .logout .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.editSubTask .side .first .fullLink .right .icon, .editSubTask .side .third .fullLink .right .icon, .editSubTask .side .logout .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.editSubTask .side .first .fullLink .right .icon img, .editSubTask .side .third .fullLink .right .icon img, .editSubTask .side .logout .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.editSubTask .side .first .fullLink .right .link a, .editSubTask .side .third .fullLink .right .link a, .editSubTask .side .logout .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.editSubTask .side .first .fullLink .right .link a::after, .editSubTask .side .third .fullLink .right .link a::after, .editSubTask .side .logout .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.editSubTask .side .first .fullLink .right .link a:hover::after, .editSubTask .side .third .fullLink .right .link a:hover::after, .editSubTask .side .logout .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.editSubTask .side .first .fullLink .left, .editSubTask .side .third .fullLink .left, .editSubTask .side .logout .fullLink .left {
+  margin-right: 10px;
+}
+.editSubTask .side .first .fullLink .left .num p, .editSubTask .side .third .fullLink .left .num p, .editSubTask .side .logout .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.editSubTask .side .first {
+  margin-top: 30px;
+}
+.editSubTask .side .second {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+.editSubTask .side .second .ladelList, .editSubTask .side .second .ladelTag {
+  color: #7F7A63;
+  font-size: 13px;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.editSubTask .side .second .ladelList .addShow, .editSubTask .side .second .ladelTag .addShow {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.editSubTask .side .second .ladelList .addShow img, .editSubTask .side .second .ladelTag .addShow img {
+  width: 13px;
+}
+.editSubTask .side .second .fullLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.editSubTask .side .second .fullLink .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.editSubTask .side .second .fullLink .right .icon {
+  width: 25px;
+  height: 25px;
+}
+.editSubTask .side .second .fullLink .right .icon img {
+  width: 100%;
+  height: 100%;
+}
+.editSubTask .side .second .fullLink .right .link a {
+  position: relative;
+  text-decoration: none;
+  color: #7F7A63;
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.editSubTask .side .second .fullLink .right .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #7F7A63;
+  transition: width 2s ease-in-out; /* Transition for width change */
+}
+.editSubTask .side .second .fullLink .right .link a:hover::after {
+  width: 70%; /* Expand width on hover */
+  animation: borderAnimation 1s forwards; /* Apply animation on hover */
+}
+@keyframes borderAnimation {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 70%; /* Gradually expand to full width */
+  }
+}
+.editSubTask .side .second .fullLink .left {
+  margin-right: 10px;
+}
+.editSubTask .side .second .fullLink .left .num p {
+  color: rgba(127, 122, 99, 0.5);
+}
+.editSubTask .side .logout {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20px;
+}
+.editSubTask .side .hr {
+  width: 80%;
+  height: 0.3px;
+  border-radius: 50px;
+  background-color: #7F7A63;
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .editSubTask .side {
+    width: 15vw;
+  }
+}
+.editSubTask .rightSide {
+  width: 70vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 300px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .editSubTask .rightSide {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .editSubTask .rightSide {
+    width: 80vw;
+  }
+}
+.editSubTask .rightSide .profile {
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  border: 1px solid #BEBAA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.editSubTask .rightSide .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 3px rgba(127, 122, 99, 0.66);
+}
+.editSubTask .rightSide .allBody {
+  width: 70vw;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .editSubTask .rightSide .allBody {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .editSubTask .rightSide .allBody {
+    width: 80vw;
+  }
+}
+.editSubTask .rightSide .allBody .mainTask {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 5px;
+}
+.editSubTask .rightSide .allBody .mainTask h3 {
+  color: #7F7A63;
+  font-size: 15px;
+}
+.editSubTask .rightSide .allBody .mainTask img {
+  width: 12px;
+  height: 12px;
+}
+.editSubTask .rightSide .allBody .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-top: -10px;
+}
+.editSubTask .rightSide .allBody .head h1 {
+  font-size: 60px;
+  color: #433E26;
+}
+.editSubTask .rightSide .allBody .head .addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.editSubTask .rightSide .allBody .head .addTaskForm .vis {
+  display: none;
+}
+.editSubTask .rightSide .allBody .head .addTaskForm input {
+  background-color: transparent;
+  width: 400px;
+  height: 38px;
+  color: rgba(127, 122, 99, 0.5);
+  font-size: 20px;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.editSubTask .rightSide .allBody .head .addTaskForm input:focus {
+  outline: none;
+}
+.editSubTask .rightSide .allBody .head .addTaskForm button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.editSubTask .rightSide .allBody .head .addTaskForm button img {
+  width: 20px;
+  height: 20px;
+}
+.editSubTask .rightSide .allBody .head .addTaskForm .clickToAdd {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #BEBAA5;
+  border-radius: 10px;
+}
+.editSubTask .rightSide .allBody .formAll .firstSub {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  row-gap: 25px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+.editSubTask .rightSide .allBody .formAll .firstSub .name, .editSubTask .rightSide .allBody .formAll .firstSub .selectTag, .editSubTask .rightSide .allBody .formAll .firstSub .addInNewTag, .editSubTask .rightSide .allBody .formAll .firstSub .priority, .editSubTask .rightSide .allBody .formAll .firstSub .date {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.editSubTask .rightSide .allBody .formAll .firstSub .name label, .editSubTask .rightSide .allBody .formAll .firstSub .selectTag label, .editSubTask .rightSide .allBody .formAll .firstSub .addInNewTag label, .editSubTask .rightSide .allBody .formAll .firstSub .priority label, .editSubTask .rightSide .allBody .formAll .firstSub .date label {
+  color: #433E26;
+  font-size: 15px;
+}
+.editSubTask .rightSide .allBody .formAll .firstSub .name input, .editSubTask .rightSide .allBody .formAll .firstSub .name select, .editSubTask .rightSide .allBody .formAll .firstSub .selectTag input, .editSubTask .rightSide .allBody .formAll .firstSub .selectTag select, .editSubTask .rightSide .allBody .formAll .firstSub .addInNewTag input, .editSubTask .rightSide .allBody .formAll .firstSub .addInNewTag select, .editSubTask .rightSide .allBody .formAll .firstSub .priority input, .editSubTask .rightSide .allBody .formAll .firstSub .priority select, .editSubTask .rightSide .allBody .formAll .firstSub .date input, .editSubTask .rightSide .allBody .formAll .firstSub .date select {
+  width: 300px;
+  height: 30px;
+  padding: 5px 10px;
+  border: 1px solid #433E26;
+  background-color: transparent;
+  font-size: 15px;
+  color: #433E26;
+}
+.editSubTask .rightSide .allBody .formAll .firstSub .name input:focus, .editSubTask .rightSide .allBody .formAll .firstSub .name select:focus, .editSubTask .rightSide .allBody .formAll .firstSub .selectTag input:focus, .editSubTask .rightSide .allBody .formAll .firstSub .selectTag select:focus, .editSubTask .rightSide .allBody .formAll .firstSub .addInNewTag input:focus, .editSubTask .rightSide .allBody .formAll .firstSub .addInNewTag select:focus, .editSubTask .rightSide .allBody .formAll .firstSub .priority input:focus, .editSubTask .rightSide .allBody .formAll .firstSub .priority select:focus, .editSubTask .rightSide .allBody .formAll .firstSub .date input:focus, .editSubTask .rightSide .allBody .formAll .firstSub .date select:focus {
+  outline: none;
+}
+.editSubTask .rightSide .allBody .formAll .firstSub .name input option, .editSubTask .rightSide .allBody .formAll .firstSub .name select option, .editSubTask .rightSide .allBody .formAll .firstSub .selectTag input option, .editSubTask .rightSide .allBody .formAll .firstSub .selectTag select option, .editSubTask .rightSide .allBody .formAll .firstSub .addInNewTag input option, .editSubTask .rightSide .allBody .formAll .firstSub .addInNewTag select option, .editSubTask .rightSide .allBody .formAll .firstSub .priority input option, .editSubTask .rightSide .allBody .formAll .firstSub .priority select option, .editSubTask .rightSide .allBody .formAll .firstSub .date input option, .editSubTask .rightSide .allBody .formAll .firstSub .date select option {
+  width: 300px;
+  height: 30px;
+  padding: 5px 10px;
+  border: 1px solid #433E26;
+  background-color: transparent;
+  font-size: 15px;
+  color: #433E26;
+}
+.editSubTask .rightSide .allBody .formAll .firstSub .name select, .editSubTask .rightSide .allBody .formAll .firstSub .selectTag select, .editSubTask .rightSide .allBody .formAll .firstSub .addInNewTag select, .editSubTask .rightSide .allBody .formAll .firstSub .priority select, .editSubTask .rightSide .allBody .formAll .firstSub .date select {
+  width: 322px;
+  height: 42px;
+}
+.editSubTask .rightSide .allBody .formAll .secondSub {
+  margin-right: 85px;
+  margin-bottom: 50px;
+}
+.editSubTask .rightSide .allBody .formAll .secondSub .description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.editSubTask .rightSide .allBody .formAll .secondSub .description label {
+  color: #433E26;
+  font-size: 15px;
+}
+.editSubTask .rightSide .allBody .formAll .secondSub .description textarea {
+  background-color: transparent;
+  width: 100%;
+  height: 180px;
+  padding: 5px 10px;
+}
+.editSubTask .rightSide .allBody .formAll .secondSub .description textarea:focus {
+  outline: none;
+}
+.editSubTask .rightSide .allBody .formAll .submit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-right: 65px;
+  margin-bottom: 50px;
+}
+.editSubTask .rightSide .allBody .formAll .submit button {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+}
+.editSubTask .rightSide .allBody .formAll .submit button:hover {
+  cursor: pointer;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
 }/*# sourceMappingURL=main.css.map */

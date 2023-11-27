@@ -1,0 +1,152 @@
+@import '../../utilities/mixin'; 
+
+.editOneTask{
+    @include bgColor;
+    @include flexDiv(row,normal,space-between);
+    .side{
+        @include aside;
+        position: fixed;
+        overflow-y: auto;
+    }
+    .rightSide{
+        @include rightSideFromProfile;
+        margin-left: 300px;
+        .profile{
+            @include profile;
+        }
+        .allBody{
+            @include allBodyRightSideWidthResponsive;
+            @include flexDiv(column,normal,normal);
+            gap: 30px;
+            .head{
+                @include headAllName;
+            }
+            .formAll{
+                .first{
+                    @include flexDiv(row,center,flex-start);
+                    // gap: 100px;
+                    row-gap: 25px;
+                    column-gap: 100px;
+                    flex-wrap: wrap;
+                    .name,.moveList,.selectSection,.addInNewSection,.selectTag,.addInNewTag,.priority,.date{
+                        @include flexDiv(column,flex-start,center);
+                        gap: 10px;
+                        label{
+                            color: map-get($editTask, "labelColor" ) ;
+                            font-size: map-get($editTask, "labelSize" ) ;
+                        }
+                        input,select{
+                            width: map-get($editTask, "inputSizeWidth" ) ;
+                            height: map-get($editTask, "inputSizeHeight" );
+                            padding: 5px 10px;
+                            border: 1px solid map-get($editTask, "inputBorderColor" );
+                            background-color: transparent;
+                            font-size: map-get($editTask, "inputTextSize" );
+                            color: map-get($editTask, "inputTextColor" );
+                            &:focus{
+                                outline: none;
+                            }
+                            option{
+                                width: map-get($editTask, "inputSizeWidth" ) ;
+                                height: map-get($editTask, "inputSizeHeight" );
+                                padding: 5px 10px;
+                                border: 1px solid map-get($editTask, "inputBorderColor" );
+                                background-color: transparent;
+                                font-size: map-get($editTask, "inputTextSize" );
+                                color: map-get($editTask, "inputTextColor" );
+                            }
+                        }
+                        select{
+                            width:322px ;
+                            height: 42px;
+                        }
+                    }
+
+                }
+                .second{
+                    margin-bottom: 50px;
+                    .head{
+                        margin-bottom: 10px;
+                        h1{
+                            color: map-get($editTask, "labelColor" );
+                            font-size: map-get($editTask, "labelSize" );
+                        }
+                    }
+                    .allSub{
+                        @include flexDiv(row,center,flex-start);
+                        gap: 50px;
+                        flex-wrap: wrap;
+                        .subTaskCont{
+                            @include flexDiv(row,center,space-between);
+                            width: 150px;
+                            padding:8px 15px;
+                            border: 1px solid map-get($editTask, "inputBorderColor" );
+                            h3{
+                                color: map-get($editTask, "labelColor" );
+                                font-size: map-get($editTask, "labelSize" );  
+                            }
+                            div{
+                                @include flexDiv(row,center,center);
+                                gap: 10px;
+                                a{
+                                    text-decoration: none;
+                                    img{
+                                        width: 25px;
+                                        height: 25px;
+                                    }
+                                }
+                                button{
+                                    background-color: transparent;
+                                    border: none;
+                                    cursor: pointer;
+                                    img{
+                                        width: 25px;
+                                        height: 25px;
+                                    }
+                                }
+                            }
+                        }
+                        .addNew{
+                            @include flexDiv(row,center,center);
+                            cursor: pointer;
+                            width: 42px;
+                            height: 42px;
+                            border: 1px solid map-get($editTask, "inputBorderColor" );
+                        }
+                    }
+                }
+                .third{
+                    margin-right: 85px;
+                    margin-bottom: 50px;
+                    .description{
+                        @include flexDiv(column,flex-start,flex-start);
+                        gap: 10px;
+                        label{
+                            color: map-get($editTask, "labelColor" ) ;
+                            font-size: map-get($editTask, "labelSize" ) ;
+                        }
+                        textarea{
+                            background-color: transparent;
+                            width: 100%;
+                            height: 180px;
+                            padding: 5px 10px;
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+                .submit{
+                    @include flexDiv(row,center,flex-end);
+                    margin-right: 65px;
+                    margin-bottom: 50px;
+                    button{
+                        @include btn(20px,8px,16px);
+                    }
+                }
+            }
+            
+        }
+
+    }
+}

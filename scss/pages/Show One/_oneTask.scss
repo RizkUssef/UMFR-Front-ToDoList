@@ -1,0 +1,105 @@
+@import '../../utilities/mixin'; 
+
+.oneTask{
+    @include bgColor;
+    @include flexDiv(row,normal,space-between);
+    .side{
+        @include aside;
+        // overflow-y: auto;
+        position: fixed;
+    }
+    .rightSide{
+        @include rightSideFromProfile;
+        margin-left: 300px;
+        .profile{
+            @include profile;
+        }
+        .allBody{
+            @include allBodyRightSideWidthResponsive;
+            @include flexDiv(column,normal,normal);
+            gap: 30px;
+            .head{
+                @include headAllName;
+            }
+            .infoLinks{
+                @include flexDiv(row,baseline,flex-start);
+                gap: 20px;
+                a{
+                    text-decoration: none;
+                    color: map-get($oneTask, "ltColor" );
+                    font-size: map-get($oneTask, "linksSize" );
+                    border-radius: 15px;
+                    border: 1px solid map-get($oneTask, "ltBorderColor" );
+                    padding: 5px 15px;
+                }
+                .today{
+                    border:none;
+                    padding: 0px;
+                    color: map-get($oneTask, "timeColor" );
+                }
+            }
+            .taskDescription{
+                padding-right: 50px;
+                p{
+                    color: map-get($oneTask, "descColor" );
+                    font-size: map-get($oneTask, "descSize" );
+                }
+            }
+            .taskDetails{
+                @include flexDiv(row,baseline,space-between);
+                margin-bottom: 30px;
+                .priority,.date,.subTask,.taskSection{
+                    @include flexDiv(column,baseline,center);
+                    gap: 15px;
+                    .top{
+                        h1{
+                            color: map-get($oneTask, "topColor" );
+                            font-size: map-get($oneTask, "topSize" );
+                        }
+                    }
+                    .value{
+                        @include flexDiv(row,center,center);
+                        gap: 10px;
+                        p{ 
+                        color: map-get($oneTask, "valueColor" );
+                           font-size: map-get($oneTask, "valueSize" );
+                        } 
+                        img{
+                            width: map-get($oneTask, "valueImgSize" );
+                            height: map-get($oneTask, "valueImgSize" );
+                        }
+                    }
+                }
+                .taskSection{
+                    margin-right: 50px;
+                }
+            }
+            .options{
+                align-self: flex-end;
+                margin-right: 50px;
+                @include flexDiv(row,baseline,center);
+                gap: 30px;
+                a{
+                    text-decoration: none;
+                    img{
+                        width: map-get($oneTask, "optionsSize" );
+                        height: map-get($oneTask, "optionsSize" );
+                    }
+                }
+                form{
+                    button{
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                        img{
+                            width: map-get($oneTask, "optionsSize" );
+                            height: map-get($oneTask, "optionsSize" );
+                        }
+                    }
+                }
+            }
+            
+        }
+
+    }
+}

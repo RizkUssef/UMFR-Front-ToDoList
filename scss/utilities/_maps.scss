@@ -16,7 +16,7 @@ $welcomePageFontSizes : (
 
 $homePageColorFirstSection : (
     "headerColor" : #BEBAA5,
-    "textColor" : #BEBAA5,
+    "textColor" : #BEBAA5, 
     "redLoginColor" : #7F7A63,
 );
 
@@ -59,7 +59,7 @@ $authForm :(
     "buttonColor" : linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.70) 100%),
     "buttonHoverColor" : linear-gradient(90deg, rgba(127, 122, 99, 0.70) 0%, #9B9782 63.12%, #BEBAA5 100%),
     "alreadyColor" : #BEBAA5,
-    "headerSize" : 50px,
+    "headerSize" : 40px,
     "labelSize" : 20px,
     "buttonSize" : 20px,
     "alreadySize" : 15px,
@@ -149,4 +149,30 @@ $eleColors :(
     "spanColorDeleted":rgba(134, 43, 13, 0.50),
 );
 
+$oneTask:(
+    "linksSize":20px,
+    "timeColor":rgba(134, 43, 13, 0.50),
+    "ltColor":rgba(127, 122, 99, 0.50),
+    "ltBgColor":transparent,
+    "ltBorderColor":#BEBAA5,
+    "descSize":15px,
+    "descColor":#7F7A63,
+    "topColor":#433E26,
+    "topSize":20px,
+    "valueColor":#7F7A63,
+    "valueSize":15px,
+    "valueImgSize":20px,
+    "optionsSize":30px,
+);
 
+$editTask:(
+    "labelColor" : #433E26,
+    "labelSize" : 15px,
+    "inputBorderColor":#433E26,
+    "inputSizeWidth" : 300px,
+    "inputSizeHeight" : 30px,
+    "inputTextSize":15px,
+    "inputTextColor":#433E26,
+    "mainTaskColor": #7F7A63,
+    "mainTaskSize": 15px,
+);

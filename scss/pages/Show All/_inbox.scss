@@ -24,6 +24,9 @@
             .secName{
                 @include name;
             }
+            .downForm{
+                @include name;
+            }
             .secContant{
                     @include contantAll;
                 .ele{

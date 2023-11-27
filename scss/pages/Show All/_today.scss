@@ -5,7 +5,7 @@
     @include flexDiv(row,normal,space-between);
     .side{
         @include aside;
-        // overflow-y: auto;
+        overflow-y: auto;
         position: fixed;
     }
     .rightSide{

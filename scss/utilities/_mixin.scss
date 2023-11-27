@@ -9,14 +9,14 @@
 
 @mixin bgColor{
     background-color: #F0EDDD;
-}
+} 
 
 @mixin header{
     position: fixed;
     @include flexDiv(row, center,space-between);
 
 }
-
+ 
 @mixin bgFilter{
     background: map-get($welcomePageColors, 'filterBGColor');
     background-repeat: no-repeat;
@@ -205,6 +205,11 @@
     min-height: 100vh;
     background-color: map-get($side, "bgColor");
     @include flexDiv(column,baseline,flex-start);
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+
     .logo{
         @include logo;
         margin-top: 0px;
@@ -481,8 +486,9 @@
         color: map-get($showAll, "secColor");
     }
     .addTaskForm{
-        @include flexDiv(row,center,center);
+        @include flexDiv(row,center,flex-end);
         margin-right: 30px;
+        width: 100%;
         .vis{
             display: none;
         }
@@ -498,6 +504,9 @@
             border: 1px solid map-get($showAll, "borderColor"); 
             border-radius: 10px;
             padding: 5px 10px;
+            &::placeholder{
+                color: map-get($showAll, "inputColor");
+            }
             &:focus{
                 outline: none;
             }
