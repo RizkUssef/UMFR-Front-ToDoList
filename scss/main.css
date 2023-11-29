@@ -5,8 +5,18 @@
   font-weight: 400;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
+}
+
+::-moz-selection {
+  color: #F0EDDD;
+  background: #7F7A63;
+}
+
+::selection {
+  color: #F0EDDD;
+  background: #7F7A63;
 }
 
 .filter {
@@ -18,7 +28,7 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
 }
 .filter .header {
-  position: fixed;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,7 +56,7 @@ body::-webkit-scrollbar {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 100px;
+  gap: 60px;
   padding-right: 50px;
 }
 .filter .welcome .text h1 {
@@ -85,6 +95,11 @@ body::-webkit-scrollbar {
   border-image-slice: 1;
 }
 
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .filter .welcome .text {
+    gap: 100px;
+  }
+}
 .homeBody {
   background-color: #F0EDDD;
 }
@@ -92,7 +107,7 @@ body::-webkit-scrollbar {
 .home_header {
   width: 100%;
   z-index: 10;
-  position: fixed;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -119,7 +134,7 @@ body::-webkit-scrollbar {
 
 .intro {
   height: 100vh;
-  background-image: url(../../images/bg/Home\ bg.jpg);
+  background-image: url("../../images/bg/Home bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -432,13 +447,13 @@ body::-webkit-scrollbar {
 .introRegister .form h1 {
   color: #BEBAA5;
   font-size: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .introRegister .form label {
   display: block;
   color: #BEBAA5;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .introRegister .form input {
   display: block;
@@ -446,7 +461,7 @@ body::-webkit-scrollbar {
   background-color: transparent;
   border: 1px solid #BEBAA5;
   font-size: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   width: 450px;
   height: 35px;
   padding: 5px 10px;
@@ -459,7 +474,7 @@ body::-webkit-scrollbar {
   margin: auto;
   width: -moz-fit-content;
   width: fit-content;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .introRegister .form p span a {
   text-decoration: none;
@@ -500,7 +515,7 @@ body::-webkit-scrollbar {
 
 .introLogin {
   height: 100vh;
-  background-image: url(../../../images/auth/Login.jpeg);
+  background-image: url("../../../images/auth/Login.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -525,13 +540,13 @@ body::-webkit-scrollbar {
 .introLogin .form h1 {
   color: #BEBAA5;
   font-size: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .introLogin .form label {
   display: block;
   color: #BEBAA5;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .introLogin .form input {
   display: block;
@@ -539,7 +554,7 @@ body::-webkit-scrollbar {
   background-color: transparent;
   border: 1px solid #BEBAA5;
   font-size: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   width: 450px;
   height: 35px;
   padding: 5px 10px;
@@ -552,7 +567,7 @@ body::-webkit-scrollbar {
   margin: auto;
   width: -moz-fit-content;
   width: fit-content;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .introLogin .form p span a {
   text-decoration: none;
@@ -631,13 +646,13 @@ body::-webkit-scrollbar {
 .introForgetPass .form h1 {
   color: #BEBAA5;
   font-size: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .introForgetPass .form label {
   display: block;
   color: #BEBAA5;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .introForgetPass .form input {
   display: block;
@@ -645,7 +660,7 @@ body::-webkit-scrollbar {
   background-color: transparent;
   border: 1px solid #BEBAA5;
   font-size: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   width: 450px;
   height: 35px;
   padding: 5px 10px;
@@ -658,7 +673,7 @@ body::-webkit-scrollbar {
   margin: auto;
   width: -moz-fit-content;
   width: fit-content;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .introForgetPass .form p span a {
   text-decoration: none;
@@ -727,13 +742,13 @@ body::-webkit-scrollbar {
 .introResetPass .form h1 {
   color: #BEBAA5;
   font-size: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .introResetPass .form label {
   display: block;
   color: #BEBAA5;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .introResetPass .form input {
   display: block;
@@ -741,7 +756,7 @@ body::-webkit-scrollbar {
   background-color: transparent;
   border: 1px solid #BEBAA5;
   font-size: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   width: 450px;
   height: 35px;
   padding: 5px 10px;
@@ -754,7 +769,7 @@ body::-webkit-scrollbar {
   margin: auto;
   width: -moz-fit-content;
   width: fit-content;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .introResetPass .form p span a {
   text-decoration: none;
@@ -823,13 +838,13 @@ body::-webkit-scrollbar {
 .introVerify .verifyDiv h1 {
   color: #BEBAA5;
   font-size: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .introVerify .verifyDiv label {
   display: block;
   color: #BEBAA5;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .introVerify .verifyDiv input {
   display: block;
@@ -837,7 +852,7 @@ body::-webkit-scrollbar {
   background-color: transparent;
   border: 1px solid #BEBAA5;
   font-size: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   width: 450px;
   height: 35px;
   padding: 5px 10px;
@@ -850,7 +865,7 @@ body::-webkit-scrollbar {
   margin: auto;
   width: -moz-fit-content;
   width: fit-content;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .introVerify .verifyDiv p span a {
   text-decoration: none;
@@ -942,8 +957,8 @@ body::-webkit-scrollbar {
 }
 .createList .contant .allFlex .text {
   background-image: url("../../../images/vectors/create blob.svg");
-  width: 35vw;
-  height: 63.5vh;
+  width: 41.5vw;
+  height: 79.3vh;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -1043,6 +1058,12 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .createList .contant .allFlex .text {
+    width: 35vw;
+    height: 63.5vh;
+  }
+}
 .createSection {
   background-color: #F0EDDD;
   display: flex;
@@ -1051,7 +1072,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .createSection .side {
-  width: 20vw;
+  width: 17vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -1062,6 +1083,7 @@ body::-webkit-scrollbar {
   left: 0;
   top: 0;
   position: fixed;
+  overflow-y: auto;
   overflow-y: auto;
 }
 .createSection .side .logo {
@@ -1256,7 +1278,10 @@ body::-webkit-scrollbar {
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  background-color: #7F7A63;
+  border-bottom: 0.1px solid #7F7A63;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .createSection .side {
@@ -1264,6 +1289,7 @@ body::-webkit-scrollbar {
   }
 }
 .createSection .rightSide {
+  margin-left: 24.5%;
   width: 70vw;
   display: flex;
   align-items: baseline;
@@ -1382,7 +1408,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .createTag .side {
-  width: 20vw;
+  width: 17vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -1393,6 +1419,7 @@ body::-webkit-scrollbar {
   left: 0;
   top: 0;
   position: fixed;
+  overflow-y: auto;
   overflow-y: auto;
 }
 .createTag .side .logo {
@@ -1587,7 +1614,10 @@ body::-webkit-scrollbar {
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  background-color: #7F7A63;
+  border-bottom: 0.1px solid #7F7A63;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .createTag .side {
@@ -1595,6 +1625,7 @@ body::-webkit-scrollbar {
   }
 }
 .createTag .rightSide {
+  margin-left: 24.5%;
   width: 70vw;
   display: flex;
   align-items: baseline;
@@ -1713,7 +1744,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .createList .side {
-  width: 20vw;
+  width: 17vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -1724,6 +1755,7 @@ body::-webkit-scrollbar {
   left: 0;
   top: 0;
   position: fixed;
+  overflow-y: auto;
   overflow-y: auto;
   position: fixed;
   bottom: 0;
@@ -1921,7 +1953,10 @@ body::-webkit-scrollbar {
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  background-color: #7F7A63;
+  border-bottom: 0.1px solid #7F7A63;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .createList .side {
@@ -1929,6 +1964,7 @@ body::-webkit-scrollbar {
   }
 }
 .createList .rightSide {
+  margin-left: 24.5%;
   width: 70vw;
   display: flex;
   align-items: baseline;
@@ -2047,9 +2083,9 @@ body::-webkit-scrollbar {
   margin-bottom: 30px;
   resize: none;
   max-width: 450px;
-  max-height: 150px;
+  max-height: 120px;
   min-width: 450px;
-  min-height: 150px;
+  min-height: 120px;
 }
 .createList .rightSide .createListForm .textDesc:focus {
   outline: none;
@@ -2063,7 +2099,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .inbox .side {
-  width: 20vw;
+  width: 17vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -2074,6 +2110,7 @@ body::-webkit-scrollbar {
   left: 0;
   top: 0;
   position: fixed;
+  overflow-y: auto;
   position: fixed;
 }
 .inbox .side .logo {
@@ -2268,7 +2305,10 @@ body::-webkit-scrollbar {
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  background-color: #7F7A63;
+  border-bottom: 0.1px solid #7F7A63;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .inbox .side {
@@ -2276,6 +2316,7 @@ body::-webkit-scrollbar {
   }
 }
 .inbox .rightSide {
+  margin-left: 24.5%;
   width: 70vw;
   display: flex;
   align-items: baseline;
@@ -2665,7 +2706,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .list .side {
-  width: 20vw;
+  width: 17vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -2676,6 +2717,7 @@ body::-webkit-scrollbar {
   left: 0;
   top: 0;
   position: fixed;
+  overflow-y: auto;
   position: fixed;
 }
 .list .side .logo {
@@ -2870,7 +2912,10 @@ body::-webkit-scrollbar {
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  background-color: #7F7A63;
+  border-bottom: 0.1px solid #7F7A63;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .list .side {
@@ -2878,6 +2923,7 @@ body::-webkit-scrollbar {
   }
 }
 .list .rightSide {
+  margin-left: 24.5%;
   width: 70vw;
   display: flex;
   align-items: baseline;
@@ -3457,7 +3503,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .tag .side {
-  width: 20vw;
+  width: 17vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -3468,6 +3514,7 @@ body::-webkit-scrollbar {
   left: 0;
   top: 0;
   position: fixed;
+  overflow-y: auto;
   position: fixed;
 }
 .tag .side .logo {
@@ -3662,7 +3709,10 @@ body::-webkit-scrollbar {
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  background-color: #7F7A63;
+  border-bottom: 0.1px solid #7F7A63;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .tag .side {
@@ -3670,6 +3720,7 @@ body::-webkit-scrollbar {
   }
 }
 .tag .rightSide {
+  margin-left: 24.5%;
   width: 70vw;
   display: flex;
   align-items: baseline;
@@ -4249,7 +4300,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .todayPage .side {
-  width: 20vw;
+  width: 17vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -4260,6 +4311,7 @@ body::-webkit-scrollbar {
   left: 0;
   top: 0;
   position: fixed;
+  overflow-y: auto;
   overflow-y: auto;
   position: fixed;
 }
@@ -4455,7 +4507,10 @@ body::-webkit-scrollbar {
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  background-color: #7F7A63;
+  border-bottom: 0.1px solid #7F7A63;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .todayPage .side {
@@ -4463,6 +4518,7 @@ body::-webkit-scrollbar {
   }
 }
 .todayPage .rightSide {
+  margin-left: 24.5%;
   width: 70vw;
   display: flex;
   align-items: baseline;
@@ -5042,7 +5098,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .completed .side {
-  width: 20vw;
+  width: 17vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -5053,6 +5109,7 @@ body::-webkit-scrollbar {
   left: 0;
   top: 0;
   position: fixed;
+  overflow-y: auto;
   position: fixed;
 }
 .completed .side .logo {
@@ -5247,7 +5304,10 @@ body::-webkit-scrollbar {
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  background-color: #7F7A63;
+  border-bottom: 0.1px solid #7F7A63;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .completed .side {
@@ -5255,6 +5315,7 @@ body::-webkit-scrollbar {
   }
 }
 .completed .rightSide {
+  margin-left: 24.5%;
   width: 70vw;
   display: flex;
   align-items: baseline;
@@ -5722,6 +5783,37 @@ body::-webkit-scrollbar {
 .completed .rightSide .allBody .completedContant .eleDeleted .bottom p span {
   color: rgba(134, 43, 13, 0.5);
 }
+.completed .rightSide .allBody .deleteAll {
+  align-self: flex-end;
+  margin-bottom: 30px;
+  margin-right: 80px;
+}
+.completed .rightSide .allBody .deleteAll button {
+  text-decoration: none;
+  font-size: 16px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+}
+.completed .rightSide .allBody .deleteAll button:hover {
+  cursor: pointer;
+  font-size: 16px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
 
 .trash {
   background-color: #F0EDDD;
@@ -5731,7 +5823,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .trash .side {
-  width: 20vw;
+  width: 17vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -5742,6 +5834,7 @@ body::-webkit-scrollbar {
   left: 0;
   top: 0;
   position: fixed;
+  overflow-y: auto;
   position: fixed;
 }
 .trash .side .logo {
@@ -5936,7 +6029,10 @@ body::-webkit-scrollbar {
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  background-color: #7F7A63;
+  border-bottom: 0.1px solid #7F7A63;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .trash .side {
@@ -5944,6 +6040,7 @@ body::-webkit-scrollbar {
   }
 }
 .trash .rightSide {
+  margin-left: 24.5%;
   width: 70vw;
   display: flex;
   align-items: baseline;
@@ -6156,6 +6253,37 @@ body::-webkit-scrollbar {
 .trash .rightSide .allBody .trashContant .ele .bottom p span {
   color: rgba(134, 43, 13, 0.5);
 }
+.trash .rightSide .allBody .deleteAll {
+  align-self: flex-end;
+  margin-bottom: 30px;
+  margin-right: 80px;
+}
+.trash .rightSide .allBody .deleteAll button {
+  text-decoration: none;
+  font-size: 16px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 16px;
+  transition: 1s ease-in-out;
+}
+.trash .rightSide .allBody .deleteAll button:hover {
+  cursor: pointer;
+  font-size: 16px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
 
 .oneTask {
   background-color: #F0EDDD;
@@ -6165,7 +6293,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .oneTask .side {
-  width: 20vw;
+  width: 17vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -6176,6 +6304,7 @@ body::-webkit-scrollbar {
   left: 0;
   top: 0;
   position: fixed;
+  overflow-y: auto;
   position: fixed;
 }
 .oneTask .side .logo {
@@ -6370,7 +6499,10 @@ body::-webkit-scrollbar {
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  background-color: #7F7A63;
+  border-bottom: 0.1px solid #7F7A63;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .oneTask .side {
@@ -6378,6 +6510,7 @@ body::-webkit-scrollbar {
   }
 }
 .oneTask .rightSide {
+  margin-left: 24.5%;
   width: 70vw;
   display: flex;
   align-items: baseline;
@@ -6585,7 +6718,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .editOneTask .side {
-  width: 20vw;
+  width: 17vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -6596,6 +6729,7 @@ body::-webkit-scrollbar {
   left: 0;
   top: 0;
   position: fixed;
+  overflow-y: auto;
   position: fixed;
   overflow-y: auto;
 }
@@ -6791,7 +6925,10 @@ body::-webkit-scrollbar {
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  background-color: #7F7A63;
+  border-bottom: 0.1px solid #7F7A63;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .editOneTask .side {
@@ -6799,6 +6936,7 @@ body::-webkit-scrollbar {
   }
 }
 .editOneTask .rightSide {
+  margin-left: 24.5%;
   width: 70vw;
   display: flex;
   align-items: baseline;
@@ -7039,6 +7177,7 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 180px;
   padding: 5px 10px;
+  resize: none;
 }
 .editOneTask .rightSide .allBody .formAll .third .description textarea:focus {
   outline: none;
@@ -7086,7 +7225,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 .editSubTask .side {
-  width: 20vw;
+  width: 17vw;
   min-height: 100vh;
   background-color: rgba(190, 186, 165, 0.37);
   display: flex;
@@ -7097,6 +7236,7 @@ body::-webkit-scrollbar {
   left: 0;
   top: 0;
   position: fixed;
+  overflow-y: auto;
   position: fixed;
   overflow-y: auto;
 }
@@ -7292,7 +7432,10 @@ body::-webkit-scrollbar {
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  background-color: #7F7A63;
+  border-bottom: 0.1px solid #7F7A63;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .editSubTask .side {
@@ -7300,6 +7443,7 @@ body::-webkit-scrollbar {
   }
 }
 .editSubTask .rightSide {
+  margin-left: 24.5%;
   width: 70vw;
   display: flex;
   align-items: baseline;
@@ -7493,6 +7637,7 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 180px;
   padding: 5px 10px;
+  resize: none;
 }
 .editSubTask .rightSide .allBody .formAll .secondSub .description textarea:focus {
   outline: none;

@@ -35,6 +35,14 @@
                 
 
             }
+            .deleteAll{
+                align-self: flex-end;
+                margin-bottom: 30px;
+                margin-right: 80px;
+                button{
+                    @include btn(16px,8px,16px);
+                }
+            }
             
         }
 

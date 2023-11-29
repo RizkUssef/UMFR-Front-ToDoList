@@ -1,7 +1,7 @@
 @import '../../utilities/mixin'; 
 
 .introLogin{
-    @include bgImageFilter(url(../../../images/auth/Login.jpeg));
+    @include bgImageFilter(url("../../../images/auth/Login.jpeg"));
     @include flexDiv(column,flex-start,center);
     .form{
         @include form;

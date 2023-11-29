@@ -21,9 +21,7 @@
             .head{
                 @include headAllName;
             }
-            // .todayInnerName{
-            //     @include name; 
-            // } 
+ 
             .completedContant{
                     @include contantAll;
                 .ele{
@@ -48,7 +46,14 @@
                     map-get($eleColors,"createdAtColorDeleted"),map-get($eleColors,"spanColorDeleted"));
                 }
             }
-
+            .deleteAll{
+                align-self: flex-end;
+                margin-bottom: 30px;
+                margin-right: 80px;
+                button{
+                    @include btn(16px,8px,16px);
+                }
+            }
             
         }
 

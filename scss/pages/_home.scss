@@ -22,7 +22,7 @@
     }
 }
 .intro{
-    @include bgImageFilter(url(../../images/bg/Home\ bg.jpg));
+    @include bgImageFilter(url("../../images/bg/Home bg.jpg"));
     @include flexDiv(column,flex-start,center);
     .text{
         z-index: 10;

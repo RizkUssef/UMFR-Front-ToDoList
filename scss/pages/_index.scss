@@ -22,7 +22,7 @@
         }
         .text{
             @include flexDiv(column,flex-start,center);
-            gap: 100px;
+            gap: 60px;
             padding-right: 50px;
             h1{
                 width: 410px;
@@ -35,6 +35,16 @@
             }
             a{
                 @include links(map-get($welcomePageFontSizes, "buttonSize"),8px,16px);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+    .filter{
+        .welcome{
+            .text{
+                gap: 100px;
             }
         }
     }

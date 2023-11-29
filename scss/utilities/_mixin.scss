@@ -12,7 +12,7 @@
 } 
 
 @mixin header{
-    position: fixed;
+    position: absolute;
     @include flexDiv(row, center,space-between);
 
 }
@@ -106,13 +106,13 @@
     h1{
         color: map-get($authForm, "headerColor" );
         font-size: map-get($authForm, "headerSize" );
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     label{
         display: block;
         color: map-get($authForm, "labelColor" );
         font-size: map-get($authForm, "labelSize" );
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     input{
         display: block;
@@ -120,7 +120,7 @@
         background-color: transparent;
         border:1px solid map-get($authForm, "borderColor" );
         font-size: map-get($authForm, "inputFontSize" );
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         width: map-get($authForm, "inputSizeWidth" ) ;
         height: map-get($authForm, "inputSizeHeight" );
         padding: 5px 10px;
@@ -132,7 +132,7 @@
         color: map-get($authForm, "alreadyColor" );
         margin: auto;
         width: fit-content;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         span{
             a{
                 text-decoration: none;
@@ -201,7 +201,7 @@
 }
 
 @mixin aside{
-    width: 20vw;
+    width: 17vw;
     min-height: 100vh;
     background-color: map-get($side, "bgColor");
     @include flexDiv(column,baseline,flex-start);
@@ -209,7 +209,7 @@
     left: 0;
     top: 0;
     position: fixed;
-
+    overflow-y: auto;
     .logo{
         @include logo;
         margin-top: 0px;
@@ -390,7 +390,12 @@
         width: 80%;
         height: 0.3px;
         border-radius: 50px;
-        background-color: map-get($side, "hrColor");
+        // color: map-get($side, "hrColor");
+        // background-color: map-get($side, "hrColor");
+        border-bottom: 0.1px solid #7F7A63;
+        border-top: none;
+        border-left: none;
+        border-right: none;
     }
 
     @media screen and (min-width: 1500px) and (max-width: 2000px) {
@@ -399,6 +404,7 @@
 }
 
 @mixin rightSideFromProfile{
+    margin-left: 24.5%;
     @include allBodyRightSideWidthResponsive;
     @include flexDiv(column,baseline,space-between);
 

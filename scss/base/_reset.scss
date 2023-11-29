@@ -5,6 +5,19 @@
     font-weight: 400;
 }
 
-body::-webkit-scrollbar {
+// body::-webkit-scrollbar {
+//     display: none;
+// }
+
+// aside::-webkit-scrollbar {
+//     display: none;
+// }
+
+::-webkit-scrollbar {
     display: none;
 }
+
+::selection {
+    color: #F0EDDD;
+    background: #7F7A63;
+  }

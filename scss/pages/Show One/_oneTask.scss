@@ -20,18 +20,42 @@
             gap: 30px;
             .head{
                 @include headAllName;
-            }
+                // .options{
+                //     align-self: flex-end;
+                //     margin-right: 50px;
+                //     @include flexDiv(row,baseline,center);
+                //     gap: 30px;
+                //     a{
+                //         text-decoration: none;
+                //         img{
+                //             width: map-get($oneTask, "optionsSize" );
+                //             height: map-get($oneTask, "optionsSize" );
+                //         }
+                //     }
+                //     form{
+                //         button{
+                //             background-color: transparent;
+                //             border: none;
+                //             cursor: pointer;
+                //             img{
+                //                 width: map-get($oneTask, "optionsSize" );
+                //                 height: map-get($oneTask, "optionsSize" );
+                //             }
+                //         }
+                //     }
+                // }
+            } 
             .infoLinks{
                 @include flexDiv(row,baseline,flex-start);
-                gap: 20px;
-                a{
-                    text-decoration: none;
-                    color: map-get($oneTask, "ltColor" );
-                    font-size: map-get($oneTask, "linksSize" );
-                    border-radius: 15px;
-                    border: 1px solid map-get($oneTask, "ltBorderColor" );
-                    padding: 5px 15px;
-                }
+                gap: 20px; 
+                a{ 
+                    text-decoration: none; 
+                    color: map-get($oneTask, "ltColor" ); 
+                    font-size: map-get($oneTask, "linksSize" ); 
+                    border-radius: 15px; 
+                    border: 1px solid map-get($oneTask, "ltBorderColor" ); 
+                    padding: 5px 15px; 
+                } 
                 .today{
                     border:none;
                     padding: 0px;
@@ -98,8 +122,6 @@
                     }
                 }
             }
-            
         }
-
     }
 }
