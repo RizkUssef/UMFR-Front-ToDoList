@@ -218,7 +218,6 @@
     .first,.third,.logout{
         @include flexDiv(column,center,space-evenly);
         width: 90%;
-        // height: 20%;
         margin-top: 20px;
         margin-bottom: 20px;
         gap: 12px;
