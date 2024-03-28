@@ -88,9 +88,9 @@
                         color: map-get($oneTask, "valueColor" );
                            font-size: map-get($oneTask, "valueSize" );
                         } 
-                        img{
-                            width: map-get($oneTask, "valueImgSize" );
-                            height: map-get($oneTask, "valueImgSize" );
+                        i{
+                            font-size: 20px;
+                            color: #7F7A63;
                         }
                     }
                 }
@@ -105,9 +105,9 @@
                 gap: 30px;
                 a{
                     text-decoration: none;
-                    img{
-                        width: map-get($oneTask, "optionsSize" );
-                        height: map-get($oneTask, "optionsSize" );
+                    i{
+                        font-size: 25px;
+                        color: #7F7A63;
                     }
                 }
                 form{
@@ -115,9 +115,9 @@
                         background-color: transparent;
                         border: none;
                         cursor: pointer;
-                        img{
-                            width: map-get($oneTask, "optionsSize" );
-                            height: map-get($oneTask, "optionsSize" );
+                        i{
+                            font-size: 25px;
+                            color: #7F7A63;
                         }
                     }
                 }

@@ -1142,9 +1142,9 @@
   width: 25px;
   height: 25px;
 }
-.createSection .side .first .fullLink .right .icon img, .createSection .side .third .fullLink .right .icon img, .createSection .side .logout .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.createSection .side .first .fullLink .right .icon i, .createSection .side .third .fullLink .right .icon i, .createSection .side .logout .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .createSection .side .first .fullLink .right .link a, .createSection .side .third .fullLink .right .link a, .createSection .side .logout .fullLink .right .link a {
   position: relative;
@@ -1230,9 +1230,9 @@
   width: 25px;
   height: 25px;
 }
-.createSection .side .second .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.createSection .side .second .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .createSection .side .second .fullLink .right .link a {
   position: relative;
@@ -1478,9 +1478,9 @@
   width: 25px;
   height: 25px;
 }
-.createTag .side .first .fullLink .right .icon img, .createTag .side .third .fullLink .right .icon img, .createTag .side .logout .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.createTag .side .first .fullLink .right .icon i, .createTag .side .third .fullLink .right .icon i, .createTag .side .logout .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .createTag .side .first .fullLink .right .link a, .createTag .side .third .fullLink .right .link a, .createTag .side .logout .fullLink .right .link a {
   position: relative;
@@ -1566,9 +1566,9 @@
   width: 25px;
   height: 25px;
 }
-.createTag .side .second .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.createTag .side .second .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .createTag .side .second .fullLink .right .link a {
   position: relative;
@@ -1817,9 +1817,9 @@
   width: 25px;
   height: 25px;
 }
-.createList .side .first .fullLink .right .icon img, .createList .side .third .fullLink .right .icon img, .createList .side .logout .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.createList .side .first .fullLink .right .icon i, .createList .side .third .fullLink .right .icon i, .createList .side .logout .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .createList .side .first .fullLink .right .link a, .createList .side .third .fullLink .right .link a, .createList .side .logout .fullLink .right .link a {
   position: relative;
@@ -1905,9 +1905,9 @@
   width: 25px;
   height: 25px;
 }
-.createList .side .second .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.createList .side .second .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .createList .side .second .fullLink .right .link a {
   position: relative;
@@ -2169,9 +2169,9 @@
   width: 25px;
   height: 25px;
 }
-.inbox .side .first .fullLink .right .icon img, .inbox .side .third .fullLink .right .icon img, .inbox .side .logout .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.inbox .side .first .fullLink .right .icon i, .inbox .side .third .fullLink .right .icon i, .inbox .side .logout .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .inbox .side .first .fullLink .right .link a, .inbox .side .third .fullLink .right .link a, .inbox .side .logout .fullLink .right .link a {
   position: relative;
@@ -2257,9 +2257,9 @@
   width: 25px;
   height: 25px;
 }
-.inbox .side .second .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.inbox .side .second .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .inbox .side .second .fullLink .right .link a {
   position: relative;
@@ -2412,9 +2412,9 @@
   border: 1px solid #BEBAA5;
   border-radius: 10px;
 }
-.inbox .rightSide .allBody .head .addTaskForm button img {
-  width: 20px;
-  height: 20px;
+.inbox .rightSide .allBody .head .addTaskForm button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .inbox .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -2426,6 +2426,10 @@
   flex-direction: row;
   border: 1px solid #BEBAA5;
   border-radius: 10px;
+}
+.inbox .rightSide .allBody .head .addTaskForm .clickToAdd i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .inbox .rightSide .allBody .secName {
   display: flex;
@@ -2477,9 +2481,9 @@
   border: 1px solid #BEBAA5;
   border-radius: 10px;
 }
-.inbox .rightSide .allBody .secName .addTaskForm button img {
-  width: 15px;
-  height: 15px;
+.inbox .rightSide .allBody .secName .addTaskForm button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .inbox .rightSide .allBody .secName .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -2491,6 +2495,10 @@
   flex-direction: row;
   border: 1px solid #BEBAA5;
   border-radius: 10px;
+}
+.inbox .rightSide .allBody .secName .addTaskForm .clickToAdd i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .inbox .rightSide .allBody .downForm {
   display: flex;
@@ -2542,9 +2550,9 @@
   border: 1px solid #BEBAA5;
   border-radius: 10px;
 }
-.inbox .rightSide .allBody .downForm .addTaskForm button img {
-  width: 15px;
-  height: 15px;
+.inbox .rightSide .allBody .downForm .addTaskForm button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .inbox .rightSide .allBody .downForm .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -2556,6 +2564,10 @@
   flex-direction: row;
   border: 1px solid #BEBAA5;
   border-radius: 10px;
+}
+.inbox .rightSide .allBody .downForm .addTaskForm .clickToAdd i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .inbox .rightSide .allBody .secContant {
   display: flex;
@@ -2620,9 +2632,9 @@
   border: none;
   cursor: pointer;
 }
-.inbox .rightSide .allBody .secContant .ele .top form .delete img {
-  width: 20px;
-  height: 20px;
+.inbox .rightSide .allBody .secContant .ele .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .inbox .rightSide .allBody .secContant .ele .middle {
   display: flex;
@@ -2776,9 +2788,9 @@
   width: 25px;
   height: 25px;
 }
-.list .side .first .fullLink .right .icon img, .list .side .third .fullLink .right .icon img, .list .side .logout .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.list .side .first .fullLink .right .icon i, .list .side .third .fullLink .right .icon i, .list .side .logout .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .list .side .first .fullLink .right .link a, .list .side .third .fullLink .right .link a, .list .side .logout .fullLink .right .link a {
   position: relative;
@@ -2864,9 +2876,9 @@
   width: 25px;
   height: 25px;
 }
-.list .side .second .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.list .side .second .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .list .side .second .fullLink .right .link a {
   position: relative;
@@ -3019,9 +3031,9 @@
   border: 1px solid #BEBAA5;
   border-radius: 10px;
 }
-.list .rightSide .allBody .head .addTaskForm button img {
-  width: 20px;
-  height: 20px;
+.list .rightSide .allBody .head .addTaskForm button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .list .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -3033,6 +3045,10 @@
   flex-direction: row;
   border: 1px solid #BEBAA5;
   border-radius: 10px;
+}
+.list .rightSide .allBody .head .addTaskForm .clickToAdd i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .list .rightSide .allBody .listName {
   display: flex;
@@ -3084,9 +3100,9 @@
   border: 1px solid #BEBAA5;
   border-radius: 10px;
 }
-.list .rightSide .allBody .listName .addTaskForm button img {
-  width: 15px;
-  height: 15px;
+.list .rightSide .allBody .listName .addTaskForm button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .list .rightSide .allBody .listName .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -3098,6 +3114,10 @@
   flex-direction: row;
   border: 1px solid #BEBAA5;
   border-radius: 10px;
+}
+.list .rightSide .allBody .listName .addTaskForm .clickToAdd i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .list .rightSide .allBody .listContant {
   display: flex;
@@ -3162,9 +3182,9 @@
   border: none;
   cursor: pointer;
 }
-.list .rightSide .allBody .listContant .ele .top form .delete img {
-  width: 20px;
-  height: 20px;
+.list .rightSide .allBody .listContant .ele .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .list .rightSide .allBody .listContant .ele .middle {
   display: flex;
@@ -3247,9 +3267,9 @@
   border: none;
   cursor: pointer;
 }
-.list .rightSide .allBody .listContant .eleWait .top form .delete img {
-  width: 20px;
-  height: 20px;
+.list .rightSide .allBody .listContant .eleWait .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .list .rightSide .allBody .listContant .eleWait .middle {
   display: flex;
@@ -3332,9 +3352,9 @@
   border: none;
   cursor: pointer;
 }
-.list .rightSide .allBody .listContant .eleCompleted .top form .delete img {
-  width: 20px;
-  height: 20px;
+.list .rightSide .allBody .listContant .eleCompleted .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .list .rightSide .allBody .listContant .eleCompleted .middle {
   display: flex;
@@ -3417,9 +3437,9 @@
   border: none;
   cursor: pointer;
 }
-.list .rightSide .allBody .listContant .eleDeleted .top form .delete img {
-  width: 20px;
-  height: 20px;
+.list .rightSide .allBody .listContant .eleDeleted .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .list .rightSide .allBody .listContant .eleDeleted .middle {
   display: flex;
@@ -3573,9 +3593,9 @@
   width: 25px;
   height: 25px;
 }
-.tag .side .first .fullLink .right .icon img, .tag .side .third .fullLink .right .icon img, .tag .side .logout .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.tag .side .first .fullLink .right .icon i, .tag .side .third .fullLink .right .icon i, .tag .side .logout .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .tag .side .first .fullLink .right .link a, .tag .side .third .fullLink .right .link a, .tag .side .logout .fullLink .right .link a {
   position: relative;
@@ -3661,9 +3681,9 @@
   width: 25px;
   height: 25px;
 }
-.tag .side .second .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.tag .side .second .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .tag .side .second .fullLink .right .link a {
   position: relative;
@@ -3816,9 +3836,9 @@
   border: 1px solid #BEBAA5;
   border-radius: 10px;
 }
-.tag .rightSide .allBody .head .addTaskForm button img {
-  width: 20px;
-  height: 20px;
+.tag .rightSide .allBody .head .addTaskForm button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .tag .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -3830,6 +3850,10 @@
   flex-direction: row;
   border: 1px solid #BEBAA5;
   border-radius: 10px;
+}
+.tag .rightSide .allBody .head .addTaskForm .clickToAdd i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .tag .rightSide .allBody .tagName {
   display: flex;
@@ -3881,9 +3905,9 @@
   border: 1px solid #BEBAA5;
   border-radius: 10px;
 }
-.tag .rightSide .allBody .tagName .addTaskForm button img {
-  width: 15px;
-  height: 15px;
+.tag .rightSide .allBody .tagName .addTaskForm button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .tag .rightSide .allBody .tagName .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -3895,6 +3919,10 @@
   flex-direction: row;
   border: 1px solid #BEBAA5;
   border-radius: 10px;
+}
+.tag .rightSide .allBody .tagName .addTaskForm .clickToAdd i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .tag .rightSide .allBody .tagContant {
   display: flex;
@@ -3959,9 +3987,9 @@
   border: none;
   cursor: pointer;
 }
-.tag .rightSide .allBody .tagContant .ele .top form .delete img {
-  width: 20px;
-  height: 20px;
+.tag .rightSide .allBody .tagContant .ele .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .tag .rightSide .allBody .tagContant .ele .middle {
   display: flex;
@@ -4044,9 +4072,9 @@
   border: none;
   cursor: pointer;
 }
-.tag .rightSide .allBody .tagContant .eleWait .top form .delete img {
-  width: 20px;
-  height: 20px;
+.tag .rightSide .allBody .tagContant .eleWait .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .tag .rightSide .allBody .tagContant .eleWait .middle {
   display: flex;
@@ -4129,9 +4157,9 @@
   border: none;
   cursor: pointer;
 }
-.tag .rightSide .allBody .tagContant .eleCompleted .top form .delete img {
-  width: 20px;
-  height: 20px;
+.tag .rightSide .allBody .tagContant .eleCompleted .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .tag .rightSide .allBody .tagContant .eleCompleted .middle {
   display: flex;
@@ -4214,9 +4242,9 @@
   border: none;
   cursor: pointer;
 }
-.tag .rightSide .allBody .tagContant .eleDeleted .top form .delete img {
-  width: 20px;
-  height: 20px;
+.tag .rightSide .allBody .tagContant .eleDeleted .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .tag .rightSide .allBody .tagContant .eleDeleted .middle {
   display: flex;
@@ -4371,9 +4399,9 @@
   width: 25px;
   height: 25px;
 }
-.todayPage .side .first .fullLink .right .icon img, .todayPage .side .third .fullLink .right .icon img, .todayPage .side .logout .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.todayPage .side .first .fullLink .right .icon i, .todayPage .side .third .fullLink .right .icon i, .todayPage .side .logout .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .todayPage .side .first .fullLink .right .link a, .todayPage .side .third .fullLink .right .link a, .todayPage .side .logout .fullLink .right .link a {
   position: relative;
@@ -4459,9 +4487,9 @@
   width: 25px;
   height: 25px;
 }
-.todayPage .side .second .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.todayPage .side .second .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .todayPage .side .second .fullLink .right .link a {
   position: relative;
@@ -4614,9 +4642,9 @@
   border: 1px solid #BEBAA5;
   border-radius: 10px;
 }
-.todayPage .rightSide .allBody .head .addTaskForm button img {
-  width: 20px;
-  height: 20px;
+.todayPage .rightSide .allBody .head .addTaskForm button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .todayPage .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -4628,6 +4656,10 @@
   flex-direction: row;
   border: 1px solid #BEBAA5;
   border-radius: 10px;
+}
+.todayPage .rightSide .allBody .head .addTaskForm .clickToAdd i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .todayPage .rightSide .allBody .todayInnerName {
   display: flex;
@@ -4679,9 +4711,9 @@
   border: 1px solid #BEBAA5;
   border-radius: 10px;
 }
-.todayPage .rightSide .allBody .todayInnerName .addTaskForm button img {
-  width: 15px;
-  height: 15px;
+.todayPage .rightSide .allBody .todayInnerName .addTaskForm button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .todayPage .rightSide .allBody .todayInnerName .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -4693,6 +4725,10 @@
   flex-direction: row;
   border: 1px solid #BEBAA5;
   border-radius: 10px;
+}
+.todayPage .rightSide .allBody .todayInnerName .addTaskForm .clickToAdd i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .todayPage .rightSide .allBody .todayInnerContant {
   display: flex;
@@ -4757,9 +4793,9 @@
   border: none;
   cursor: pointer;
 }
-.todayPage .rightSide .allBody .todayInnerContant .ele .top form .delete img {
-  width: 20px;
-  height: 20px;
+.todayPage .rightSide .allBody .todayInnerContant .ele .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .todayPage .rightSide .allBody .todayInnerContant .ele .middle {
   display: flex;
@@ -4842,9 +4878,9 @@
   border: none;
   cursor: pointer;
 }
-.todayPage .rightSide .allBody .todayInnerContant .eleWait .top form .delete img {
-  width: 20px;
-  height: 20px;
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleWait .middle {
   display: flex;
@@ -4927,9 +4963,9 @@
   border: none;
   cursor: pointer;
 }
-.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top form .delete img {
-  width: 20px;
-  height: 20px;
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle {
   display: flex;
@@ -5012,9 +5048,9 @@
   border: none;
   cursor: pointer;
 }
-.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top form .delete img {
-  width: 20px;
-  height: 20px;
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle {
   display: flex;
@@ -5168,9 +5204,9 @@
   width: 25px;
   height: 25px;
 }
-.completed .side .first .fullLink .right .icon img, .completed .side .third .fullLink .right .icon img, .completed .side .logout .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.completed .side .first .fullLink .right .icon i, .completed .side .third .fullLink .right .icon i, .completed .side .logout .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .completed .side .first .fullLink .right .link a, .completed .side .third .fullLink .right .link a, .completed .side .logout .fullLink .right .link a {
   position: relative;
@@ -5256,9 +5292,9 @@
   width: 25px;
   height: 25px;
 }
-.completed .side .second .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.completed .side .second .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .completed .side .second .fullLink .right .link a {
   position: relative;
@@ -5411,9 +5447,9 @@
   border: 1px solid #BEBAA5;
   border-radius: 10px;
 }
-.completed .rightSide .allBody .head .addTaskForm button img {
-  width: 20px;
-  height: 20px;
+.completed .rightSide .allBody .head .addTaskForm button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .completed .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -5425,6 +5461,10 @@
   flex-direction: row;
   border: 1px solid #BEBAA5;
   border-radius: 10px;
+}
+.completed .rightSide .allBody .head .addTaskForm .clickToAdd i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .completed .rightSide .allBody .completedContant {
   display: flex;
@@ -5489,9 +5529,9 @@
   border: none;
   cursor: pointer;
 }
-.completed .rightSide .allBody .completedContant .ele .top form .delete img {
-  width: 20px;
-  height: 20px;
+.completed .rightSide .allBody .completedContant .ele .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .completed .rightSide .allBody .completedContant .ele .middle {
   display: flex;
@@ -5574,9 +5614,9 @@
   border: none;
   cursor: pointer;
 }
-.completed .rightSide .allBody .completedContant .eleWait .top form .delete img {
-  width: 20px;
-  height: 20px;
+.completed .rightSide .allBody .completedContant .eleWait .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .completed .rightSide .allBody .completedContant .eleWait .middle {
   display: flex;
@@ -5659,9 +5699,9 @@
   border: none;
   cursor: pointer;
 }
-.completed .rightSide .allBody .completedContant .eleCompleted .top form .delete img {
-  width: 20px;
-  height: 20px;
+.completed .rightSide .allBody .completedContant .eleCompleted .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .completed .rightSide .allBody .completedContant .eleCompleted .middle {
   display: flex;
@@ -5744,9 +5784,9 @@
   border: none;
   cursor: pointer;
 }
-.completed .rightSide .allBody .completedContant .eleDeleted .top form .delete img {
-  width: 20px;
-  height: 20px;
+.completed .rightSide .allBody .completedContant .eleDeleted .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .completed .rightSide .allBody .completedContant .eleDeleted .middle {
   display: flex;
@@ -5893,9 +5933,9 @@
   width: 25px;
   height: 25px;
 }
-.trash .side .first .fullLink .right .icon img, .trash .side .third .fullLink .right .icon img, .trash .side .logout .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.trash .side .first .fullLink .right .icon i, .trash .side .third .fullLink .right .icon i, .trash .side .logout .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .trash .side .first .fullLink .right .link a, .trash .side .third .fullLink .right .link a, .trash .side .logout .fullLink .right .link a {
   position: relative;
@@ -5981,9 +6021,9 @@
   width: 25px;
   height: 25px;
 }
-.trash .side .second .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.trash .side .second .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .trash .side .second .fullLink .right .link a {
   position: relative;
@@ -6136,9 +6176,9 @@
   border: 1px solid #BEBAA5;
   border-radius: 10px;
 }
-.trash .rightSide .allBody .head .addTaskForm button img {
-  width: 20px;
-  height: 20px;
+.trash .rightSide .allBody .head .addTaskForm button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .trash .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -6150,6 +6190,10 @@
   flex-direction: row;
   border: 1px solid #BEBAA5;
   border-radius: 10px;
+}
+.trash .rightSide .allBody .head .addTaskForm .clickToAdd i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .trash .rightSide .allBody .trashContant {
   display: flex;
@@ -6214,9 +6258,9 @@
   border: none;
   cursor: pointer;
 }
-.trash .rightSide .allBody .trashContant .ele .top form .delete img {
-  width: 20px;
-  height: 20px;
+.trash .rightSide .allBody .trashContant .ele .top form .delete i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .trash .rightSide .allBody .trashContant .ele .middle {
   display: flex;
@@ -6363,9 +6407,9 @@
   width: 25px;
   height: 25px;
 }
-.oneTask .side .first .fullLink .right .icon img, .oneTask .side .third .fullLink .right .icon img, .oneTask .side .logout .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.oneTask .side .first .fullLink .right .icon i, .oneTask .side .third .fullLink .right .icon i, .oneTask .side .logout .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .oneTask .side .first .fullLink .right .link a, .oneTask .side .third .fullLink .right .link a, .oneTask .side .logout .fullLink .right .link a {
   position: relative;
@@ -6451,9 +6495,9 @@
   width: 25px;
   height: 25px;
 }
-.oneTask .side .second .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.oneTask .side .second .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .oneTask .side .second .fullLink .right .link a {
   position: relative;
@@ -6606,9 +6650,9 @@
   border: 1px solid #BEBAA5;
   border-radius: 10px;
 }
-.oneTask .rightSide .allBody .head .addTaskForm button img {
-  width: 20px;
-  height: 20px;
+.oneTask .rightSide .allBody .head .addTaskForm button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .oneTask .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -6620,6 +6664,10 @@
   flex-direction: row;
   border: 1px solid #BEBAA5;
   border-radius: 10px;
+}
+.oneTask .rightSide .allBody .head .addTaskForm .clickToAdd i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .oneTask .rightSide .allBody .infoLinks {
   display: flex;
@@ -6677,9 +6725,9 @@
   color: #7F7A63;
   font-size: 15px;
 }
-.oneTask .rightSide .allBody .taskDetails .priority .value img, .oneTask .rightSide .allBody .taskDetails .date .value img, .oneTask .rightSide .allBody .taskDetails .subTask .value img, .oneTask .rightSide .allBody .taskDetails .taskSection .value img {
-  width: 20px;
-  height: 20px;
+.oneTask .rightSide .allBody .taskDetails .priority .value i, .oneTask .rightSide .allBody .taskDetails .date .value i, .oneTask .rightSide .allBody .taskDetails .subTask .value i, .oneTask .rightSide .allBody .taskDetails .taskSection .value i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .oneTask .rightSide .allBody .taskDetails .taskSection {
   margin-right: 50px;
@@ -6696,18 +6744,18 @@
 .oneTask .rightSide .allBody .options a {
   text-decoration: none;
 }
-.oneTask .rightSide .allBody .options a img {
-  width: 30px;
-  height: 30px;
+.oneTask .rightSide .allBody .options a i {
+  font-size: 25px;
+  color: #7F7A63;
 }
 .oneTask .rightSide .allBody .options form button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
-.oneTask .rightSide .allBody .options form button img {
-  width: 30px;
-  height: 30px;
+.oneTask .rightSide .allBody .options form button i {
+  font-size: 25px;
+  color: #7F7A63;
 }
 
 .editOneTask {
@@ -6789,9 +6837,9 @@
   width: 25px;
   height: 25px;
 }
-.editOneTask .side .first .fullLink .right .icon img, .editOneTask .side .third .fullLink .right .icon img, .editOneTask .side .logout .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.editOneTask .side .first .fullLink .right .icon i, .editOneTask .side .third .fullLink .right .icon i, .editOneTask .side .logout .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .editOneTask .side .first .fullLink .right .link a, .editOneTask .side .third .fullLink .right .link a, .editOneTask .side .logout .fullLink .right .link a {
   position: relative;
@@ -6877,9 +6925,9 @@
   width: 25px;
   height: 25px;
 }
-.editOneTask .side .second .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.editOneTask .side .second .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .editOneTask .side .second .fullLink .right .link a {
   position: relative;
@@ -7032,9 +7080,9 @@
   border: 1px solid #BEBAA5;
   border-radius: 10px;
 }
-.editOneTask .rightSide .allBody .head .addTaskForm button img {
-  width: 20px;
-  height: 20px;
+.editOneTask .rightSide .allBody .head .addTaskForm button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .editOneTask .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -7046,6 +7094,10 @@
   flex-direction: row;
   border: 1px solid #BEBAA5;
   border-radius: 10px;
+}
+.editOneTask .rightSide .allBody .head .addTaskForm .clickToAdd i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .editOneTask .rightSide .allBody .formAll .first {
   display: flex;
@@ -7134,18 +7186,18 @@
 .editOneTask .rightSide .allBody .formAll .second .allSub .subTaskCont div a {
   text-decoration: none;
 }
-.editOneTask .rightSide .allBody .formAll .second .allSub .subTaskCont div a img {
-  width: 25px;
-  height: 25px;
+.editOneTask .rightSide .allBody .formAll .second .allSub .subTaskCont div a i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .editOneTask .rightSide .allBody .formAll .second .allSub .subTaskCont div button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
-.editOneTask .rightSide .allBody .formAll .second .allSub .subTaskCont div button img {
-  width: 25px;
-  height: 25px;
+.editOneTask .rightSide .allBody .formAll .second .allSub .subTaskCont div button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .editOneTask .rightSide .allBody .formAll .second .allSub .addNew {
   display: flex;
@@ -7156,6 +7208,10 @@
   width: 42px;
   height: 42px;
   border: 1px solid #433E26;
+}
+.editOneTask .rightSide .allBody .formAll .second .allSub .addNew i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .editOneTask .rightSide .allBody .formAll .third {
   margin-right: 85px;
@@ -7296,9 +7352,9 @@
   width: 25px;
   height: 25px;
 }
-.editSubTask .side .first .fullLink .right .icon img, .editSubTask .side .third .fullLink .right .icon img, .editSubTask .side .logout .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.editSubTask .side .first .fullLink .right .icon i, .editSubTask .side .third .fullLink .right .icon i, .editSubTask .side .logout .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .editSubTask .side .first .fullLink .right .link a, .editSubTask .side .third .fullLink .right .link a, .editSubTask .side .logout .fullLink .right .link a {
   position: relative;
@@ -7384,9 +7440,9 @@
   width: 25px;
   height: 25px;
 }
-.editSubTask .side .second .fullLink .right .icon img {
-  width: 100%;
-  height: 100%;
+.editSubTask .side .second .fullLink .right .icon i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .editSubTask .side .second .fullLink .right .link a {
   position: relative;
@@ -7555,9 +7611,9 @@
   border: 1px solid #BEBAA5;
   border-radius: 10px;
 }
-.editSubTask .rightSide .allBody .head .addTaskForm button img {
-  width: 20px;
-  height: 20px;
+.editSubTask .rightSide .allBody .head .addTaskForm button i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .editSubTask .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -7569,6 +7625,10 @@
   flex-direction: row;
   border: 1px solid #BEBAA5;
   border-radius: 10px;
+}
+.editSubTask .rightSide .allBody .head .addTaskForm .clickToAdd i {
+  font-size: 20px;
+  color: #7F7A63;
 }
 .editSubTask .rightSide .allBody .formAll .firstSub {
   display: flex;
