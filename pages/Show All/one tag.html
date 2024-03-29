@@ -195,7 +195,7 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <div class="link">
-                        <a href="">Search</a>
+                        <a id="search" href="">Search</a>
                     </div>
                 </div>
                 <div class="left">
@@ -792,7 +792,22 @@
         </div>
     </section>
 
+    <!-- ! search section -->
+    <section id="search_section" class="search hidden">
+        <div class="form_container">
+            <div class="cancel">
+                <a id="cancel" class="cancel_link" href="#"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <form action="#" method="post">
+                <input autocomplete="off" class="search_input" type="text" name="search" id="">
+                <button class="search_submit" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </section>
+
     <script src="../../../js/addNew.js"></script>
+    <script src="../../js/search.js"></script>
+
 </body>
 
 </html>
