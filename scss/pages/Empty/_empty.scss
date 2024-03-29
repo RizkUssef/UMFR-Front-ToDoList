@@ -1,0 +1,33 @@
+@import '../../utilities/mixin'; 
+.empty{
+    @include flexDiv(column,center,center);
+    gap: 50px;
+    height: 100vh;
+    margin-left: 18.5%;
+    .icon{
+        width: 100%;
+        @include gridDiv(1,1fr);
+        i{
+            grid-row: 1/1;
+            grid-column: 1/1;
+            font-size: 200px;
+            place-self: center;
+            color: rgba(#7f7a63,0.8);
+        }
+        .set_position{
+            color: rgba(#7f7a63,0.6);
+            place-self: center;
+            font-size: 120px;   
+
+        }
+    }
+    p{
+        color: #433E26;
+        width: 50%
+    }
+    a{
+        @include links(20px ,8px ,20px);
+        text-transform: capitalize;
+    }
+
+}

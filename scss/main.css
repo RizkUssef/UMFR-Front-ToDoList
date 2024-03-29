@@ -938,7 +938,7 @@
 }
 
 .createList {
-  background-color: #F0EDDD;
+  background-color: #f0eddd;
 }
 .createList .contant {
   display: flex;
@@ -989,7 +989,9 @@
   font-size: 15px;
   margin-bottom: 10px;
 }
-.createList .contant .allFlex .createForm input, .createList .contant .allFlex .createForm select, .createList .contant .allFlex .createForm textarea {
+.createList .contant .allFlex .createForm input,
+.createList .contant .allFlex .createForm select,
+.createList .contant .allFlex .createForm textarea {
   display: block;
   color: #433E26;
   background-color: transparent;
@@ -1000,7 +1002,9 @@
   height: 35px;
   padding: 5px 10px;
 }
-.createList .contant .allFlex .createForm input:focus, .createList .contant .allFlex .createForm select:focus, .createList .contant .allFlex .createForm textarea:focus {
+.createList .contant .allFlex .createForm input:focus,
+.createList .contant .allFlex .createForm select:focus,
+.createList .contant .allFlex .createForm textarea:focus {
   outline: none;
 }
 .createList .contant .allFlex .createForm select {
@@ -1065,7 +1069,7 @@
   }
 }
 .createSection {
-  background-color: #F0EDDD;
+  background-color: #f0eddd;
   display: flex;
   align-items: normal;
   justify-content: space-between;
@@ -1097,7 +1101,9 @@
   width: 100%;
   height: 100%;
 }
-.createSection .side .first, .createSection .side .third, .createSection .side .logout {
+.createSection .side .first,
+.createSection .side .third,
+.createSection .side .logout {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -1107,7 +1113,12 @@
   margin-bottom: 20px;
   gap: 12px;
 }
-.createSection .side .first .ladelList, .createSection .side .first .ladelTag, .createSection .side .third .ladelList, .createSection .side .third .ladelTag, .createSection .side .logout .ladelList, .createSection .side .logout .ladelTag {
+.createSection .side .first .ladelList,
+.createSection .side .first .ladelTag,
+.createSection .side .third .ladelList,
+.createSection .side .third .ladelTag,
+.createSection .side .logout .ladelList,
+.createSection .side .logout .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -1117,43 +1128,65 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.createSection .side .first .ladelList .addShow, .createSection .side .first .ladelTag .addShow, .createSection .side .third .ladelList .addShow, .createSection .side .third .ladelTag .addShow, .createSection .side .logout .ladelList .addShow, .createSection .side .logout .ladelTag .addShow {
+.createSection .side .first .ladelList .addShow,
+.createSection .side .first .ladelTag .addShow,
+.createSection .side .third .ladelList .addShow,
+.createSection .side .third .ladelTag .addShow,
+.createSection .side .logout .ladelList .addShow,
+.createSection .side .logout .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.createSection .side .first .ladelList .addShow img, .createSection .side .first .ladelTag .addShow img, .createSection .side .third .ladelList .addShow img, .createSection .side .third .ladelTag .addShow img, .createSection .side .logout .ladelList .addShow img, .createSection .side .logout .ladelTag .addShow img {
+.createSection .side .first .ladelList .addShow img,
+.createSection .side .first .ladelTag .addShow img,
+.createSection .side .third .ladelList .addShow img,
+.createSection .side .third .ladelTag .addShow img,
+.createSection .side .logout .ladelList .addShow img,
+.createSection .side .logout .ladelTag .addShow img {
   width: 13px;
 }
-.createSection .side .first .fullLink, .createSection .side .third .fullLink, .createSection .side .logout .fullLink {
+.createSection .side .first .fullLink,
+.createSection .side .third .fullLink,
+.createSection .side .logout .fullLink {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
 }
-.createSection .side .first .fullLink .right, .createSection .side .third .fullLink .right, .createSection .side .logout .fullLink .right {
+.createSection .side .first .fullLink .right,
+.createSection .side .third .fullLink .right,
+.createSection .side .logout .fullLink .right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 20px;
 }
-.createSection .side .first .fullLink .right .icon, .createSection .side .third .fullLink .right .icon, .createSection .side .logout .fullLink .right .icon {
+.createSection .side .first .fullLink .right .icon,
+.createSection .side .third .fullLink .right .icon,
+.createSection .side .logout .fullLink .right .icon {
   width: 25px;
   height: 25px;
 }
-.createSection .side .first .fullLink .right .icon i, .createSection .side .third .fullLink .right .icon i, .createSection .side .logout .fullLink .right .icon i {
+.createSection .side .first .fullLink .right .icon i,
+.createSection .side .third .fullLink .right .icon i,
+.createSection .side .logout .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
-.createSection .side .first .fullLink .right .link a, .createSection .side .third .fullLink .right .link a, .createSection .side .logout .fullLink .right .link a {
+.createSection .side .first .fullLink .right .link a,
+.createSection .side .third .fullLink .right .link a,
+.createSection .side .logout .fullLink .right .link a {
   position: relative;
   text-decoration: none;
   color: #7F7A63;
   overflow: hidden;
   padding-bottom: 8px;
 }
-.createSection .side .first .fullLink .right .link a::after, .createSection .side .third .fullLink .right .link a::after, .createSection .side .logout .fullLink .right .link a::after {
+.createSection .side .first .fullLink .right .link a::after,
+.createSection .side .third .fullLink .right .link a::after,
+.createSection .side .logout .fullLink .right .link a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1163,7 +1196,9 @@
   background-color: #7F7A63;
   transition: width 2s ease-in-out; /* Transition for width change */
 }
-.createSection .side .first .fullLink .right .link a:hover::after, .createSection .side .third .fullLink .right .link a:hover::after, .createSection .side .logout .fullLink .right .link a:hover::after {
+.createSection .side .first .fullLink .right .link a:hover::after,
+.createSection .side .third .fullLink .right .link a:hover::after,
+.createSection .side .logout .fullLink .right .link a:hover::after {
   width: 70%; /* Expand width on hover */
   animation: borderAnimation 1s forwards; /* Apply animation on hover */
 }
@@ -1175,10 +1210,14 @@
     width: 70%; /* Gradually expand to full width */
   }
 }
-.createSection .side .first .fullLink .left, .createSection .side .third .fullLink .left, .createSection .side .logout .fullLink .left {
+.createSection .side .first .fullLink .left,
+.createSection .side .third .fullLink .left,
+.createSection .side .logout .fullLink .left {
   margin-right: 10px;
 }
-.createSection .side .first .fullLink .left .num p, .createSection .side .third .fullLink .left .num p, .createSection .side .logout .fullLink .left .num p {
+.createSection .side .first .fullLink .left .num p,
+.createSection .side .third .fullLink .left .num p,
+.createSection .side .logout .fullLink .left .num p {
   color: rgba(127, 122, 99, 0.5);
 }
 .createSection .side .first {
@@ -1195,7 +1234,8 @@
   margin-bottom: 15px;
   gap: 12px;
 }
-.createSection .side .second .ladelList, .createSection .side .second .ladelTag {
+.createSection .side .second .ladelList,
+.createSection .side .second .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -1205,11 +1245,13 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.createSection .side .second .ladelList .addShow, .createSection .side .second .ladelTag .addShow {
+.createSection .side .second .ladelList .addShow,
+.createSection .side .second .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.createSection .side .second .ladelList .addShow img, .createSection .side .second .ladelTag .addShow img {
+.createSection .side .second .ladelList .addShow img,
+.createSection .side .second .ladelTag .addShow img {
   width: 13px;
 }
 .createSection .side .second .fullLink {
@@ -1232,7 +1274,7 @@
 }
 .createSection .side .second .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .createSection .side .second .fullLink .right .link a {
   position: relative;
@@ -1278,7 +1320,7 @@
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  border-bottom: 0.1px solid #7F7A63;
+  border-bottom: 0.1px solid #7f7a63;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -1313,7 +1355,7 @@
   width: 64px;
   height: 64px;
   border-radius: 15px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1351,7 +1393,8 @@
   font-size: 15px;
   margin-bottom: 8px;
 }
-.createSection .rightSide .createSectionForm .form input[type=text], .createSection .rightSide .createSectionForm .form input[type=color] {
+.createSection .rightSide .createSectionForm .form input[type=text],
+.createSection .rightSide .createSectionForm .form input[type=color] {
   margin-bottom: 20px;
   width: 450px;
   height: 35px;
@@ -1361,7 +1404,8 @@
   font-size: 15px;
   color: #433E26;
 }
-.createSection .rightSide .createSectionForm .form input[type=text]:focus, .createSection .rightSide .createSectionForm .form input[type=color]:focus {
+.createSection .rightSide .createSectionForm .form input[type=text]:focus,
+.createSection .rightSide .createSectionForm .form input[type=color]:focus {
   outline: none;
 }
 .createSection .rightSide .createSectionForm .form input[type=color] {
@@ -1401,7 +1445,7 @@
 }
 
 .createTag {
-  background-color: #F0EDDD;
+  background-color: #f0eddd;
   display: flex;
   align-items: normal;
   justify-content: space-between;
@@ -1433,7 +1477,9 @@
   width: 100%;
   height: 100%;
 }
-.createTag .side .first, .createTag .side .third, .createTag .side .logout {
+.createTag .side .first,
+.createTag .side .third,
+.createTag .side .logout {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -1443,7 +1489,12 @@
   margin-bottom: 20px;
   gap: 12px;
 }
-.createTag .side .first .ladelList, .createTag .side .first .ladelTag, .createTag .side .third .ladelList, .createTag .side .third .ladelTag, .createTag .side .logout .ladelList, .createTag .side .logout .ladelTag {
+.createTag .side .first .ladelList,
+.createTag .side .first .ladelTag,
+.createTag .side .third .ladelList,
+.createTag .side .third .ladelTag,
+.createTag .side .logout .ladelList,
+.createTag .side .logout .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -1453,43 +1504,65 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.createTag .side .first .ladelList .addShow, .createTag .side .first .ladelTag .addShow, .createTag .side .third .ladelList .addShow, .createTag .side .third .ladelTag .addShow, .createTag .side .logout .ladelList .addShow, .createTag .side .logout .ladelTag .addShow {
+.createTag .side .first .ladelList .addShow,
+.createTag .side .first .ladelTag .addShow,
+.createTag .side .third .ladelList .addShow,
+.createTag .side .third .ladelTag .addShow,
+.createTag .side .logout .ladelList .addShow,
+.createTag .side .logout .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.createTag .side .first .ladelList .addShow img, .createTag .side .first .ladelTag .addShow img, .createTag .side .third .ladelList .addShow img, .createTag .side .third .ladelTag .addShow img, .createTag .side .logout .ladelList .addShow img, .createTag .side .logout .ladelTag .addShow img {
+.createTag .side .first .ladelList .addShow img,
+.createTag .side .first .ladelTag .addShow img,
+.createTag .side .third .ladelList .addShow img,
+.createTag .side .third .ladelTag .addShow img,
+.createTag .side .logout .ladelList .addShow img,
+.createTag .side .logout .ladelTag .addShow img {
   width: 13px;
 }
-.createTag .side .first .fullLink, .createTag .side .third .fullLink, .createTag .side .logout .fullLink {
+.createTag .side .first .fullLink,
+.createTag .side .third .fullLink,
+.createTag .side .logout .fullLink {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
 }
-.createTag .side .first .fullLink .right, .createTag .side .third .fullLink .right, .createTag .side .logout .fullLink .right {
+.createTag .side .first .fullLink .right,
+.createTag .side .third .fullLink .right,
+.createTag .side .logout .fullLink .right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 20px;
 }
-.createTag .side .first .fullLink .right .icon, .createTag .side .third .fullLink .right .icon, .createTag .side .logout .fullLink .right .icon {
+.createTag .side .first .fullLink .right .icon,
+.createTag .side .third .fullLink .right .icon,
+.createTag .side .logout .fullLink .right .icon {
   width: 25px;
   height: 25px;
 }
-.createTag .side .first .fullLink .right .icon i, .createTag .side .third .fullLink .right .icon i, .createTag .side .logout .fullLink .right .icon i {
+.createTag .side .first .fullLink .right .icon i,
+.createTag .side .third .fullLink .right .icon i,
+.createTag .side .logout .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
-.createTag .side .first .fullLink .right .link a, .createTag .side .third .fullLink .right .link a, .createTag .side .logout .fullLink .right .link a {
+.createTag .side .first .fullLink .right .link a,
+.createTag .side .third .fullLink .right .link a,
+.createTag .side .logout .fullLink .right .link a {
   position: relative;
   text-decoration: none;
   color: #7F7A63;
   overflow: hidden;
   padding-bottom: 8px;
 }
-.createTag .side .first .fullLink .right .link a::after, .createTag .side .third .fullLink .right .link a::after, .createTag .side .logout .fullLink .right .link a::after {
+.createTag .side .first .fullLink .right .link a::after,
+.createTag .side .third .fullLink .right .link a::after,
+.createTag .side .logout .fullLink .right .link a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1499,7 +1572,9 @@
   background-color: #7F7A63;
   transition: width 2s ease-in-out; /* Transition for width change */
 }
-.createTag .side .first .fullLink .right .link a:hover::after, .createTag .side .third .fullLink .right .link a:hover::after, .createTag .side .logout .fullLink .right .link a:hover::after {
+.createTag .side .first .fullLink .right .link a:hover::after,
+.createTag .side .third .fullLink .right .link a:hover::after,
+.createTag .side .logout .fullLink .right .link a:hover::after {
   width: 70%; /* Expand width on hover */
   animation: borderAnimation 1s forwards; /* Apply animation on hover */
 }
@@ -1511,10 +1586,14 @@
     width: 70%; /* Gradually expand to full width */
   }
 }
-.createTag .side .first .fullLink .left, .createTag .side .third .fullLink .left, .createTag .side .logout .fullLink .left {
+.createTag .side .first .fullLink .left,
+.createTag .side .third .fullLink .left,
+.createTag .side .logout .fullLink .left {
   margin-right: 10px;
 }
-.createTag .side .first .fullLink .left .num p, .createTag .side .third .fullLink .left .num p, .createTag .side .logout .fullLink .left .num p {
+.createTag .side .first .fullLink .left .num p,
+.createTag .side .third .fullLink .left .num p,
+.createTag .side .logout .fullLink .left .num p {
   color: rgba(127, 122, 99, 0.5);
 }
 .createTag .side .first {
@@ -1531,7 +1610,8 @@
   margin-bottom: 15px;
   gap: 12px;
 }
-.createTag .side .second .ladelList, .createTag .side .second .ladelTag {
+.createTag .side .second .ladelList,
+.createTag .side .second .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -1541,11 +1621,13 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.createTag .side .second .ladelList .addShow, .createTag .side .second .ladelTag .addShow {
+.createTag .side .second .ladelList .addShow,
+.createTag .side .second .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.createTag .side .second .ladelList .addShow img, .createTag .side .second .ladelTag .addShow img {
+.createTag .side .second .ladelList .addShow img,
+.createTag .side .second .ladelTag .addShow img {
   width: 13px;
 }
 .createTag .side .second .fullLink {
@@ -1568,7 +1650,7 @@
 }
 .createTag .side .second .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .createTag .side .second .fullLink .right .link a {
   position: relative;
@@ -1614,7 +1696,7 @@
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  border-bottom: 0.1px solid #7F7A63;
+  border-bottom: 0.1px solid #7f7a63;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -1649,7 +1731,7 @@
   width: 64px;
   height: 64px;
   border-radius: 15px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1687,7 +1769,8 @@
   font-size: 15px;
   margin-bottom: 8px;
 }
-.createTag .rightSide .createTagForm .form input[type=text], .createTag .rightSide .createTagForm .form input[type=color] {
+.createTag .rightSide .createTagForm .form input[type=text],
+.createTag .rightSide .createTagForm .form input[type=color] {
   margin-bottom: 20px;
   width: 450px;
   height: 35px;
@@ -1697,7 +1780,8 @@
   font-size: 15px;
   color: #433E26;
 }
-.createTag .rightSide .createTagForm .form input[type=text]:focus, .createTag .rightSide .createTagForm .form input[type=color]:focus {
+.createTag .rightSide .createTagForm .form input[type=text]:focus,
+.createTag .rightSide .createTagForm .form input[type=color]:focus {
   outline: none;
 }
 .createTag .rightSide .createTagForm .form input[type=color] {
@@ -1737,7 +1821,7 @@
 }
 
 .createList {
-  background-color: #F0EDDD;
+  background-color: #f0eddd;
   display: flex;
   align-items: normal;
   justify-content: space-between;
@@ -1772,7 +1856,9 @@
   width: 100%;
   height: 100%;
 }
-.createList .side .first, .createList .side .third, .createList .side .logout {
+.createList .side .first,
+.createList .side .third,
+.createList .side .logout {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -1782,7 +1868,12 @@
   margin-bottom: 20px;
   gap: 12px;
 }
-.createList .side .first .ladelList, .createList .side .first .ladelTag, .createList .side .third .ladelList, .createList .side .third .ladelTag, .createList .side .logout .ladelList, .createList .side .logout .ladelTag {
+.createList .side .first .ladelList,
+.createList .side .first .ladelTag,
+.createList .side .third .ladelList,
+.createList .side .third .ladelTag,
+.createList .side .logout .ladelList,
+.createList .side .logout .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -1792,43 +1883,65 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.createList .side .first .ladelList .addShow, .createList .side .first .ladelTag .addShow, .createList .side .third .ladelList .addShow, .createList .side .third .ladelTag .addShow, .createList .side .logout .ladelList .addShow, .createList .side .logout .ladelTag .addShow {
+.createList .side .first .ladelList .addShow,
+.createList .side .first .ladelTag .addShow,
+.createList .side .third .ladelList .addShow,
+.createList .side .third .ladelTag .addShow,
+.createList .side .logout .ladelList .addShow,
+.createList .side .logout .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.createList .side .first .ladelList .addShow img, .createList .side .first .ladelTag .addShow img, .createList .side .third .ladelList .addShow img, .createList .side .third .ladelTag .addShow img, .createList .side .logout .ladelList .addShow img, .createList .side .logout .ladelTag .addShow img {
+.createList .side .first .ladelList .addShow img,
+.createList .side .first .ladelTag .addShow img,
+.createList .side .third .ladelList .addShow img,
+.createList .side .third .ladelTag .addShow img,
+.createList .side .logout .ladelList .addShow img,
+.createList .side .logout .ladelTag .addShow img {
   width: 13px;
 }
-.createList .side .first .fullLink, .createList .side .third .fullLink, .createList .side .logout .fullLink {
+.createList .side .first .fullLink,
+.createList .side .third .fullLink,
+.createList .side .logout .fullLink {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
 }
-.createList .side .first .fullLink .right, .createList .side .third .fullLink .right, .createList .side .logout .fullLink .right {
+.createList .side .first .fullLink .right,
+.createList .side .third .fullLink .right,
+.createList .side .logout .fullLink .right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 20px;
 }
-.createList .side .first .fullLink .right .icon, .createList .side .third .fullLink .right .icon, .createList .side .logout .fullLink .right .icon {
+.createList .side .first .fullLink .right .icon,
+.createList .side .third .fullLink .right .icon,
+.createList .side .logout .fullLink .right .icon {
   width: 25px;
   height: 25px;
 }
-.createList .side .first .fullLink .right .icon i, .createList .side .third .fullLink .right .icon i, .createList .side .logout .fullLink .right .icon i {
+.createList .side .first .fullLink .right .icon i,
+.createList .side .third .fullLink .right .icon i,
+.createList .side .logout .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
-.createList .side .first .fullLink .right .link a, .createList .side .third .fullLink .right .link a, .createList .side .logout .fullLink .right .link a {
+.createList .side .first .fullLink .right .link a,
+.createList .side .third .fullLink .right .link a,
+.createList .side .logout .fullLink .right .link a {
   position: relative;
   text-decoration: none;
   color: #7F7A63;
   overflow: hidden;
   padding-bottom: 8px;
 }
-.createList .side .first .fullLink .right .link a::after, .createList .side .third .fullLink .right .link a::after, .createList .side .logout .fullLink .right .link a::after {
+.createList .side .first .fullLink .right .link a::after,
+.createList .side .third .fullLink .right .link a::after,
+.createList .side .logout .fullLink .right .link a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1838,7 +1951,9 @@
   background-color: #7F7A63;
   transition: width 2s ease-in-out; /* Transition for width change */
 }
-.createList .side .first .fullLink .right .link a:hover::after, .createList .side .third .fullLink .right .link a:hover::after, .createList .side .logout .fullLink .right .link a:hover::after {
+.createList .side .first .fullLink .right .link a:hover::after,
+.createList .side .third .fullLink .right .link a:hover::after,
+.createList .side .logout .fullLink .right .link a:hover::after {
   width: 70%; /* Expand width on hover */
   animation: borderAnimation 1s forwards; /* Apply animation on hover */
 }
@@ -1850,10 +1965,14 @@
     width: 70%; /* Gradually expand to full width */
   }
 }
-.createList .side .first .fullLink .left, .createList .side .third .fullLink .left, .createList .side .logout .fullLink .left {
+.createList .side .first .fullLink .left,
+.createList .side .third .fullLink .left,
+.createList .side .logout .fullLink .left {
   margin-right: 10px;
 }
-.createList .side .first .fullLink .left .num p, .createList .side .third .fullLink .left .num p, .createList .side .logout .fullLink .left .num p {
+.createList .side .first .fullLink .left .num p,
+.createList .side .third .fullLink .left .num p,
+.createList .side .logout .fullLink .left .num p {
   color: rgba(127, 122, 99, 0.5);
 }
 .createList .side .first {
@@ -1870,7 +1989,8 @@
   margin-bottom: 15px;
   gap: 12px;
 }
-.createList .side .second .ladelList, .createList .side .second .ladelTag {
+.createList .side .second .ladelList,
+.createList .side .second .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -1880,11 +2000,13 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.createList .side .second .ladelList .addShow, .createList .side .second .ladelTag .addShow {
+.createList .side .second .ladelList .addShow,
+.createList .side .second .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.createList .side .second .ladelList .addShow img, .createList .side .second .ladelTag .addShow img {
+.createList .side .second .ladelList .addShow img,
+.createList .side .second .ladelTag .addShow img {
   width: 13px;
 }
 .createList .side .second .fullLink {
@@ -1907,7 +2029,7 @@
 }
 .createList .side .second .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .createList .side .second .fullLink .right .link a {
   position: relative;
@@ -1953,7 +2075,7 @@
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  border-bottom: 0.1px solid #7F7A63;
+  border-bottom: 0.1px solid #7f7a63;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -1988,7 +2110,7 @@
   width: 64px;
   height: 64px;
   border-radius: 15px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2026,7 +2148,8 @@
   font-size: 15px;
   margin-bottom: 8px;
 }
-.createList .rightSide .createListForm .form input[type=text], .createList .rightSide .createListForm .form input[type=color] {
+.createList .rightSide .createListForm .form input[type=text],
+.createList .rightSide .createListForm .form input[type=color] {
   margin-bottom: 20px;
   width: 450px;
   height: 35px;
@@ -2036,7 +2159,8 @@
   font-size: 15px;
   color: #433E26;
 }
-.createList .rightSide .createListForm .form input[type=text]:focus, .createList .rightSide .createListForm .form input[type=color]:focus {
+.createList .rightSide .createListForm .form input[type=text]:focus,
+.createList .rightSide .createListForm .form input[type=color]:focus {
   outline: none;
 }
 .createList .rightSide .createListForm .form input[type=color] {
@@ -2092,7 +2216,7 @@
 }
 
 .inbox {
-  background-color: #F0EDDD;
+  background-color: #f0eddd;
   display: flex;
   align-items: normal;
   justify-content: space-between;
@@ -2124,7 +2248,9 @@
   width: 100%;
   height: 100%;
 }
-.inbox .side .first, .inbox .side .third, .inbox .side .logout {
+.inbox .side .first,
+.inbox .side .third,
+.inbox .side .logout {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -2134,7 +2260,12 @@
   margin-bottom: 20px;
   gap: 12px;
 }
-.inbox .side .first .ladelList, .inbox .side .first .ladelTag, .inbox .side .third .ladelList, .inbox .side .third .ladelTag, .inbox .side .logout .ladelList, .inbox .side .logout .ladelTag {
+.inbox .side .first .ladelList,
+.inbox .side .first .ladelTag,
+.inbox .side .third .ladelList,
+.inbox .side .third .ladelTag,
+.inbox .side .logout .ladelList,
+.inbox .side .logout .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -2144,43 +2275,65 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.inbox .side .first .ladelList .addShow, .inbox .side .first .ladelTag .addShow, .inbox .side .third .ladelList .addShow, .inbox .side .third .ladelTag .addShow, .inbox .side .logout .ladelList .addShow, .inbox .side .logout .ladelTag .addShow {
+.inbox .side .first .ladelList .addShow,
+.inbox .side .first .ladelTag .addShow,
+.inbox .side .third .ladelList .addShow,
+.inbox .side .third .ladelTag .addShow,
+.inbox .side .logout .ladelList .addShow,
+.inbox .side .logout .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.inbox .side .first .ladelList .addShow img, .inbox .side .first .ladelTag .addShow img, .inbox .side .third .ladelList .addShow img, .inbox .side .third .ladelTag .addShow img, .inbox .side .logout .ladelList .addShow img, .inbox .side .logout .ladelTag .addShow img {
+.inbox .side .first .ladelList .addShow img,
+.inbox .side .first .ladelTag .addShow img,
+.inbox .side .third .ladelList .addShow img,
+.inbox .side .third .ladelTag .addShow img,
+.inbox .side .logout .ladelList .addShow img,
+.inbox .side .logout .ladelTag .addShow img {
   width: 13px;
 }
-.inbox .side .first .fullLink, .inbox .side .third .fullLink, .inbox .side .logout .fullLink {
+.inbox .side .first .fullLink,
+.inbox .side .third .fullLink,
+.inbox .side .logout .fullLink {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
 }
-.inbox .side .first .fullLink .right, .inbox .side .third .fullLink .right, .inbox .side .logout .fullLink .right {
+.inbox .side .first .fullLink .right,
+.inbox .side .third .fullLink .right,
+.inbox .side .logout .fullLink .right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 20px;
 }
-.inbox .side .first .fullLink .right .icon, .inbox .side .third .fullLink .right .icon, .inbox .side .logout .fullLink .right .icon {
+.inbox .side .first .fullLink .right .icon,
+.inbox .side .third .fullLink .right .icon,
+.inbox .side .logout .fullLink .right .icon {
   width: 25px;
   height: 25px;
 }
-.inbox .side .first .fullLink .right .icon i, .inbox .side .third .fullLink .right .icon i, .inbox .side .logout .fullLink .right .icon i {
+.inbox .side .first .fullLink .right .icon i,
+.inbox .side .third .fullLink .right .icon i,
+.inbox .side .logout .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
-.inbox .side .first .fullLink .right .link a, .inbox .side .third .fullLink .right .link a, .inbox .side .logout .fullLink .right .link a {
+.inbox .side .first .fullLink .right .link a,
+.inbox .side .third .fullLink .right .link a,
+.inbox .side .logout .fullLink .right .link a {
   position: relative;
   text-decoration: none;
   color: #7F7A63;
   overflow: hidden;
   padding-bottom: 8px;
 }
-.inbox .side .first .fullLink .right .link a::after, .inbox .side .third .fullLink .right .link a::after, .inbox .side .logout .fullLink .right .link a::after {
+.inbox .side .first .fullLink .right .link a::after,
+.inbox .side .third .fullLink .right .link a::after,
+.inbox .side .logout .fullLink .right .link a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -2190,7 +2343,9 @@
   background-color: #7F7A63;
   transition: width 2s ease-in-out; /* Transition for width change */
 }
-.inbox .side .first .fullLink .right .link a:hover::after, .inbox .side .third .fullLink .right .link a:hover::after, .inbox .side .logout .fullLink .right .link a:hover::after {
+.inbox .side .first .fullLink .right .link a:hover::after,
+.inbox .side .third .fullLink .right .link a:hover::after,
+.inbox .side .logout .fullLink .right .link a:hover::after {
   width: 70%; /* Expand width on hover */
   animation: borderAnimation 1s forwards; /* Apply animation on hover */
 }
@@ -2202,10 +2357,14 @@
     width: 70%; /* Gradually expand to full width */
   }
 }
-.inbox .side .first .fullLink .left, .inbox .side .third .fullLink .left, .inbox .side .logout .fullLink .left {
+.inbox .side .first .fullLink .left,
+.inbox .side .third .fullLink .left,
+.inbox .side .logout .fullLink .left {
   margin-right: 10px;
 }
-.inbox .side .first .fullLink .left .num p, .inbox .side .third .fullLink .left .num p, .inbox .side .logout .fullLink .left .num p {
+.inbox .side .first .fullLink .left .num p,
+.inbox .side .third .fullLink .left .num p,
+.inbox .side .logout .fullLink .left .num p {
   color: rgba(127, 122, 99, 0.5);
 }
 .inbox .side .first {
@@ -2222,7 +2381,8 @@
   margin-bottom: 15px;
   gap: 12px;
 }
-.inbox .side .second .ladelList, .inbox .side .second .ladelTag {
+.inbox .side .second .ladelList,
+.inbox .side .second .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -2232,11 +2392,13 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.inbox .side .second .ladelList .addShow, .inbox .side .second .ladelTag .addShow {
+.inbox .side .second .ladelList .addShow,
+.inbox .side .second .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.inbox .side .second .ladelList .addShow img, .inbox .side .second .ladelTag .addShow img {
+.inbox .side .second .ladelList .addShow img,
+.inbox .side .second .ladelTag .addShow img {
   width: 13px;
 }
 .inbox .side .second .fullLink {
@@ -2259,7 +2421,7 @@
 }
 .inbox .side .second .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .inbox .side .second .fullLink .right .link a {
   position: relative;
@@ -2305,7 +2467,7 @@
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  border-bottom: 0.1px solid #7F7A63;
+  border-bottom: 0.1px solid #7f7a63;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -2341,7 +2503,7 @@
   width: 64px;
   height: 64px;
   border-radius: 15px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2382,12 +2544,24 @@
   font-size: 60px;
   color: #433E26;
 }
+.inbox .rightSide .allBody .head .inbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 .inbox .rightSide .allBody .head .addTaskForm {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   margin-right: 30px;
+  gap: 20px;
+}
+.inbox .rightSide .allBody .head .addTaskForm a {
+  font-size: 20px;
+  color: #7f7a63;
+  text-decoration: none;
 }
 .inbox .rightSide .allBody .head .addTaskForm .vis {
   display: none;
@@ -2414,7 +2588,7 @@
 }
 .inbox .rightSide .allBody .head .addTaskForm button i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .inbox .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -2429,7 +2603,7 @@
 }
 .inbox .rightSide .allBody .head .addTaskForm .clickToAdd i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .inbox .rightSide .allBody .secName {
   display: flex;
@@ -2448,6 +2622,12 @@
   flex-direction: row;
   margin-right: 30px;
   width: 100%;
+  gap: 20px;
+}
+.inbox .rightSide .allBody .secName .addTaskForm a {
+  font-size: 20px;
+  color: #7f7a63;
+  text-decoration: none;
 }
 .inbox .rightSide .allBody .secName .addTaskForm .vis {
   display: none;
@@ -2483,7 +2663,7 @@
 }
 .inbox .rightSide .allBody .secName .addTaskForm button i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .inbox .rightSide .allBody .secName .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -2498,7 +2678,7 @@
 }
 .inbox .rightSide .allBody .secName .addTaskForm .clickToAdd i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .inbox .rightSide .allBody .downForm {
   display: flex;
@@ -2517,6 +2697,12 @@
   flex-direction: row;
   margin-right: 30px;
   width: 100%;
+  gap: 20px;
+}
+.inbox .rightSide .allBody .downForm .addTaskForm a {
+  font-size: 20px;
+  color: #7f7a63;
+  text-decoration: none;
 }
 .inbox .rightSide .allBody .downForm .addTaskForm .vis {
   display: none;
@@ -2552,7 +2738,7 @@
 }
 .inbox .rightSide .allBody .downForm .addTaskForm button i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .inbox .rightSide .allBody .downForm .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -2567,7 +2753,7 @@
 }
 .inbox .rightSide .allBody .downForm .addTaskForm .clickToAdd i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .inbox .rightSide .allBody .secContant {
   display: flex;
@@ -2613,14 +2799,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.inbox .rightSide .allBody .secContant .ele .top .cName h1 {
+.inbox .rightSide .allBody .secContant .ele .top .cName a {
+  text-decoration: none;
+}
+.inbox .rightSide .allBody .secContant .ele .top .cName a h1 {
   color: #433E26;
 }
 .inbox .rightSide .allBody .secContant .ele .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: transparent;
   cursor: pointer;
 }
@@ -2634,7 +2823,7 @@
 }
 .inbox .rightSide .allBody .secContant .ele .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .inbox .rightSide .allBody .secContant .ele .middle {
   display: flex;
@@ -2644,14 +2833,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.inbox .rightSide .allBody .secContant .ele .middle .time, .inbox .rightSide .allBody .secContant .ele .middle .list, .inbox .rightSide .allBody .secContant .ele .middle .tag {
+.inbox .rightSide .allBody .secContant .ele .middle .time,
+.inbox .rightSide .allBody .secContant .ele .middle .list,
+.inbox .rightSide .allBody .secContant .ele .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .inbox .rightSide .allBody .secContant .ele .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.inbox .rightSide .allBody .secContant .ele .middle .list, .inbox .rightSide .allBody .secContant .ele .middle .tag {
+.inbox .rightSide .allBody .secContant .ele .middle .list,
+.inbox .rightSide .allBody .secContant .ele .middle .tag {
   color: rgba(127, 122, 99, 0.5);
   border-radius: 15px;
   border: 1px solid #BEBAA5;
@@ -2711,7 +2903,7 @@
 }
 
 .list {
-  background-color: #F0EDDD;
+  background-color: #f0eddd;
   display: flex;
   align-items: normal;
   justify-content: space-between;
@@ -2743,7 +2935,9 @@
   width: 100%;
   height: 100%;
 }
-.list .side .first, .list .side .third, .list .side .logout {
+.list .side .first,
+.list .side .third,
+.list .side .logout {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -2753,7 +2947,12 @@
   margin-bottom: 20px;
   gap: 12px;
 }
-.list .side .first .ladelList, .list .side .first .ladelTag, .list .side .third .ladelList, .list .side .third .ladelTag, .list .side .logout .ladelList, .list .side .logout .ladelTag {
+.list .side .first .ladelList,
+.list .side .first .ladelTag,
+.list .side .third .ladelList,
+.list .side .third .ladelTag,
+.list .side .logout .ladelList,
+.list .side .logout .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -2763,43 +2962,65 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.list .side .first .ladelList .addShow, .list .side .first .ladelTag .addShow, .list .side .third .ladelList .addShow, .list .side .third .ladelTag .addShow, .list .side .logout .ladelList .addShow, .list .side .logout .ladelTag .addShow {
+.list .side .first .ladelList .addShow,
+.list .side .first .ladelTag .addShow,
+.list .side .third .ladelList .addShow,
+.list .side .third .ladelTag .addShow,
+.list .side .logout .ladelList .addShow,
+.list .side .logout .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.list .side .first .ladelList .addShow img, .list .side .first .ladelTag .addShow img, .list .side .third .ladelList .addShow img, .list .side .third .ladelTag .addShow img, .list .side .logout .ladelList .addShow img, .list .side .logout .ladelTag .addShow img {
+.list .side .first .ladelList .addShow img,
+.list .side .first .ladelTag .addShow img,
+.list .side .third .ladelList .addShow img,
+.list .side .third .ladelTag .addShow img,
+.list .side .logout .ladelList .addShow img,
+.list .side .logout .ladelTag .addShow img {
   width: 13px;
 }
-.list .side .first .fullLink, .list .side .third .fullLink, .list .side .logout .fullLink {
+.list .side .first .fullLink,
+.list .side .third .fullLink,
+.list .side .logout .fullLink {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
 }
-.list .side .first .fullLink .right, .list .side .third .fullLink .right, .list .side .logout .fullLink .right {
+.list .side .first .fullLink .right,
+.list .side .third .fullLink .right,
+.list .side .logout .fullLink .right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 20px;
 }
-.list .side .first .fullLink .right .icon, .list .side .third .fullLink .right .icon, .list .side .logout .fullLink .right .icon {
+.list .side .first .fullLink .right .icon,
+.list .side .third .fullLink .right .icon,
+.list .side .logout .fullLink .right .icon {
   width: 25px;
   height: 25px;
 }
-.list .side .first .fullLink .right .icon i, .list .side .third .fullLink .right .icon i, .list .side .logout .fullLink .right .icon i {
+.list .side .first .fullLink .right .icon i,
+.list .side .third .fullLink .right .icon i,
+.list .side .logout .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
-.list .side .first .fullLink .right .link a, .list .side .third .fullLink .right .link a, .list .side .logout .fullLink .right .link a {
+.list .side .first .fullLink .right .link a,
+.list .side .third .fullLink .right .link a,
+.list .side .logout .fullLink .right .link a {
   position: relative;
   text-decoration: none;
   color: #7F7A63;
   overflow: hidden;
   padding-bottom: 8px;
 }
-.list .side .first .fullLink .right .link a::after, .list .side .third .fullLink .right .link a::after, .list .side .logout .fullLink .right .link a::after {
+.list .side .first .fullLink .right .link a::after,
+.list .side .third .fullLink .right .link a::after,
+.list .side .logout .fullLink .right .link a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -2809,7 +3030,9 @@
   background-color: #7F7A63;
   transition: width 2s ease-in-out; /* Transition for width change */
 }
-.list .side .first .fullLink .right .link a:hover::after, .list .side .third .fullLink .right .link a:hover::after, .list .side .logout .fullLink .right .link a:hover::after {
+.list .side .first .fullLink .right .link a:hover::after,
+.list .side .third .fullLink .right .link a:hover::after,
+.list .side .logout .fullLink .right .link a:hover::after {
   width: 70%; /* Expand width on hover */
   animation: borderAnimation 1s forwards; /* Apply animation on hover */
 }
@@ -2821,10 +3044,14 @@
     width: 70%; /* Gradually expand to full width */
   }
 }
-.list .side .first .fullLink .left, .list .side .third .fullLink .left, .list .side .logout .fullLink .left {
+.list .side .first .fullLink .left,
+.list .side .third .fullLink .left,
+.list .side .logout .fullLink .left {
   margin-right: 10px;
 }
-.list .side .first .fullLink .left .num p, .list .side .third .fullLink .left .num p, .list .side .logout .fullLink .left .num p {
+.list .side .first .fullLink .left .num p,
+.list .side .third .fullLink .left .num p,
+.list .side .logout .fullLink .left .num p {
   color: rgba(127, 122, 99, 0.5);
 }
 .list .side .first {
@@ -2841,7 +3068,8 @@
   margin-bottom: 15px;
   gap: 12px;
 }
-.list .side .second .ladelList, .list .side .second .ladelTag {
+.list .side .second .ladelList,
+.list .side .second .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -2851,11 +3079,13 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.list .side .second .ladelList .addShow, .list .side .second .ladelTag .addShow {
+.list .side .second .ladelList .addShow,
+.list .side .second .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.list .side .second .ladelList .addShow img, .list .side .second .ladelTag .addShow img {
+.list .side .second .ladelList .addShow img,
+.list .side .second .ladelTag .addShow img {
   width: 13px;
 }
 .list .side .second .fullLink {
@@ -2878,7 +3108,7 @@
 }
 .list .side .second .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .list .side .second .fullLink .right .link a {
   position: relative;
@@ -2924,7 +3154,7 @@
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  border-bottom: 0.1px solid #7F7A63;
+  border-bottom: 0.1px solid #7f7a63;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -2960,7 +3190,7 @@
   width: 64px;
   height: 64px;
   border-radius: 15px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3001,12 +3231,24 @@
   font-size: 60px;
   color: #433E26;
 }
+.list .rightSide .allBody .head .inbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 .list .rightSide .allBody .head .addTaskForm {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   margin-right: 30px;
+  gap: 20px;
+}
+.list .rightSide .allBody .head .addTaskForm a {
+  font-size: 20px;
+  color: #7f7a63;
+  text-decoration: none;
 }
 .list .rightSide .allBody .head .addTaskForm .vis {
   display: none;
@@ -3033,7 +3275,7 @@
 }
 .list .rightSide .allBody .head .addTaskForm button i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .list .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -3048,7 +3290,7 @@
 }
 .list .rightSide .allBody .head .addTaskForm .clickToAdd i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .list .rightSide .allBody .listName {
   display: flex;
@@ -3067,6 +3309,12 @@
   flex-direction: row;
   margin-right: 30px;
   width: 100%;
+  gap: 20px;
+}
+.list .rightSide .allBody .listName .addTaskForm a {
+  font-size: 20px;
+  color: #7f7a63;
+  text-decoration: none;
 }
 .list .rightSide .allBody .listName .addTaskForm .vis {
   display: none;
@@ -3102,7 +3350,7 @@
 }
 .list .rightSide .allBody .listName .addTaskForm button i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .list .rightSide .allBody .listName .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -3117,7 +3365,7 @@
 }
 .list .rightSide .allBody .listName .addTaskForm .clickToAdd i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .list .rightSide .allBody .listContant {
   display: flex;
@@ -3163,14 +3411,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.list .rightSide .allBody .listContant .ele .top .cName h1 {
+.list .rightSide .allBody .listContant .ele .top .cName a {
+  text-decoration: none;
+}
+.list .rightSide .allBody .listContant .ele .top .cName a h1 {
   color: #433E26;
 }
 .list .rightSide .allBody .listContant .ele .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: transparent;
   cursor: pointer;
 }
@@ -3184,7 +3435,7 @@
 }
 .list .rightSide .allBody .listContant .ele .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .list .rightSide .allBody .listContant .ele .middle {
   display: flex;
@@ -3194,14 +3445,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.list .rightSide .allBody .listContant .ele .middle .time, .list .rightSide .allBody .listContant .ele .middle .list, .list .rightSide .allBody .listContant .ele .middle .tag {
+.list .rightSide .allBody .listContant .ele .middle .time,
+.list .rightSide .allBody .listContant .ele .middle .list,
+.list .rightSide .allBody .listContant .ele .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .list .rightSide .allBody .listContant .ele .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.list .rightSide .allBody .listContant .ele .middle .list, .list .rightSide .allBody .listContant .ele .middle .tag {
+.list .rightSide .allBody .listContant .ele .middle .list,
+.list .rightSide .allBody .listContant .ele .middle .tag {
   color: rgba(127, 122, 99, 0.5);
   border-radius: 15px;
   border: 1px solid #BEBAA5;
@@ -3248,14 +3502,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.list .rightSide .allBody .listContant .eleWait .top .cName h1 {
+.list .rightSide .allBody .listContant .eleWait .top .cName a {
+  text-decoration: none;
+}
+.list .rightSide .allBody .listContant .eleWait .top .cName a h1 {
   color: #433E26;
 }
 .list .rightSide .allBody .listContant .eleWait .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: transparent;
   cursor: pointer;
 }
@@ -3269,7 +3526,7 @@
 }
 .list .rightSide .allBody .listContant .eleWait .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .list .rightSide .allBody .listContant .eleWait .middle {
   display: flex;
@@ -3279,14 +3536,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.list .rightSide .allBody .listContant .eleWait .middle .time, .list .rightSide .allBody .listContant .eleWait .middle .list, .list .rightSide .allBody .listContant .eleWait .middle .tag {
+.list .rightSide .allBody .listContant .eleWait .middle .time,
+.list .rightSide .allBody .listContant .eleWait .middle .list,
+.list .rightSide .allBody .listContant .eleWait .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .list .rightSide .allBody .listContant .eleWait .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.list .rightSide .allBody .listContant .eleWait .middle .list, .list .rightSide .allBody .listContant .eleWait .middle .tag {
+.list .rightSide .allBody .listContant .eleWait .middle .list,
+.list .rightSide .allBody .listContant .eleWait .middle .tag {
   color: rgba(127, 122, 99, 0.5);
   border-radius: 15px;
   border: 1px solid #BEBAA5;
@@ -3333,14 +3593,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.list .rightSide .allBody .listContant .eleCompleted .top .cName h1 {
+.list .rightSide .allBody .listContant .eleCompleted .top .cName a {
+  text-decoration: none;
+}
+.list .rightSide .allBody .listContant .eleCompleted .top .cName a h1 {
   color: #265073;
 }
 .list .rightSide .allBody .listContant .eleCompleted .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: #265073;
   cursor: pointer;
 }
@@ -3354,7 +3617,7 @@
 }
 .list .rightSide .allBody .listContant .eleCompleted .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .list .rightSide .allBody .listContant .eleCompleted .middle {
   display: flex;
@@ -3364,14 +3627,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.list .rightSide .allBody .listContant .eleCompleted .middle .time, .list .rightSide .allBody .listContant .eleCompleted .middle .list, .list .rightSide .allBody .listContant .eleCompleted .middle .tag {
+.list .rightSide .allBody .listContant .eleCompleted .middle .time,
+.list .rightSide .allBody .listContant .eleCompleted .middle .list,
+.list .rightSide .allBody .listContant .eleCompleted .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .list .rightSide .allBody .listContant .eleCompleted .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.list .rightSide .allBody .listContant .eleCompleted .middle .list, .list .rightSide .allBody .listContant .eleCompleted .middle .tag {
+.list .rightSide .allBody .listContant .eleCompleted .middle .list,
+.list .rightSide .allBody .listContant .eleCompleted .middle .tag {
   color: #265073;
   border-radius: 15px;
   border: 1px solid rgba(147, 185, 185, 0.5);
@@ -3418,14 +3684,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.list .rightSide .allBody .listContant .eleDeleted .top .cName h1 {
+.list .rightSide .allBody .listContant .eleDeleted .top .cName a {
+  text-decoration: none;
+}
+.list .rightSide .allBody .listContant .eleDeleted .top .cName a h1 {
   color: rgba(134, 43, 13, 0.92);
 }
 .list .rightSide .allBody .listContant .eleDeleted .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: rgba(134, 43, 13, 0.92);
   cursor: pointer;
 }
@@ -3439,7 +3708,7 @@
 }
 .list .rightSide .allBody .listContant .eleDeleted .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .list .rightSide .allBody .listContant .eleDeleted .middle {
   display: flex;
@@ -3449,14 +3718,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.list .rightSide .allBody .listContant .eleDeleted .middle .time, .list .rightSide .allBody .listContant .eleDeleted .middle .list, .list .rightSide .allBody .listContant .eleDeleted .middle .tag {
+.list .rightSide .allBody .listContant .eleDeleted .middle .time,
+.list .rightSide .allBody .listContant .eleDeleted .middle .list,
+.list .rightSide .allBody .listContant .eleDeleted .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .list .rightSide .allBody .listContant .eleDeleted .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.list .rightSide .allBody .listContant .eleDeleted .middle .list, .list .rightSide .allBody .listContant .eleDeleted .middle .tag {
+.list .rightSide .allBody .listContant .eleDeleted .middle .list,
+.list .rightSide .allBody .listContant .eleDeleted .middle .tag {
   color: rgba(134, 43, 13, 0.92);
   border-radius: 15px;
   border: 1px solid rgba(134, 43, 13, 0.92);
@@ -3516,7 +3788,7 @@
 }
 
 .tag {
-  background-color: #F0EDDD;
+  background-color: #f0eddd;
   display: flex;
   align-items: normal;
   justify-content: space-between;
@@ -3548,7 +3820,9 @@
   width: 100%;
   height: 100%;
 }
-.tag .side .first, .tag .side .third, .tag .side .logout {
+.tag .side .first,
+.tag .side .third,
+.tag .side .logout {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -3558,7 +3832,12 @@
   margin-bottom: 20px;
   gap: 12px;
 }
-.tag .side .first .ladelList, .tag .side .first .ladelTag, .tag .side .third .ladelList, .tag .side .third .ladelTag, .tag .side .logout .ladelList, .tag .side .logout .ladelTag {
+.tag .side .first .ladelList,
+.tag .side .first .ladelTag,
+.tag .side .third .ladelList,
+.tag .side .third .ladelTag,
+.tag .side .logout .ladelList,
+.tag .side .logout .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -3568,43 +3847,65 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.tag .side .first .ladelList .addShow, .tag .side .first .ladelTag .addShow, .tag .side .third .ladelList .addShow, .tag .side .third .ladelTag .addShow, .tag .side .logout .ladelList .addShow, .tag .side .logout .ladelTag .addShow {
+.tag .side .first .ladelList .addShow,
+.tag .side .first .ladelTag .addShow,
+.tag .side .third .ladelList .addShow,
+.tag .side .third .ladelTag .addShow,
+.tag .side .logout .ladelList .addShow,
+.tag .side .logout .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.tag .side .first .ladelList .addShow img, .tag .side .first .ladelTag .addShow img, .tag .side .third .ladelList .addShow img, .tag .side .third .ladelTag .addShow img, .tag .side .logout .ladelList .addShow img, .tag .side .logout .ladelTag .addShow img {
+.tag .side .first .ladelList .addShow img,
+.tag .side .first .ladelTag .addShow img,
+.tag .side .third .ladelList .addShow img,
+.tag .side .third .ladelTag .addShow img,
+.tag .side .logout .ladelList .addShow img,
+.tag .side .logout .ladelTag .addShow img {
   width: 13px;
 }
-.tag .side .first .fullLink, .tag .side .third .fullLink, .tag .side .logout .fullLink {
+.tag .side .first .fullLink,
+.tag .side .third .fullLink,
+.tag .side .logout .fullLink {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
 }
-.tag .side .first .fullLink .right, .tag .side .third .fullLink .right, .tag .side .logout .fullLink .right {
+.tag .side .first .fullLink .right,
+.tag .side .third .fullLink .right,
+.tag .side .logout .fullLink .right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 20px;
 }
-.tag .side .first .fullLink .right .icon, .tag .side .third .fullLink .right .icon, .tag .side .logout .fullLink .right .icon {
+.tag .side .first .fullLink .right .icon,
+.tag .side .third .fullLink .right .icon,
+.tag .side .logout .fullLink .right .icon {
   width: 25px;
   height: 25px;
 }
-.tag .side .first .fullLink .right .icon i, .tag .side .third .fullLink .right .icon i, .tag .side .logout .fullLink .right .icon i {
+.tag .side .first .fullLink .right .icon i,
+.tag .side .third .fullLink .right .icon i,
+.tag .side .logout .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
-.tag .side .first .fullLink .right .link a, .tag .side .third .fullLink .right .link a, .tag .side .logout .fullLink .right .link a {
+.tag .side .first .fullLink .right .link a,
+.tag .side .third .fullLink .right .link a,
+.tag .side .logout .fullLink .right .link a {
   position: relative;
   text-decoration: none;
   color: #7F7A63;
   overflow: hidden;
   padding-bottom: 8px;
 }
-.tag .side .first .fullLink .right .link a::after, .tag .side .third .fullLink .right .link a::after, .tag .side .logout .fullLink .right .link a::after {
+.tag .side .first .fullLink .right .link a::after,
+.tag .side .third .fullLink .right .link a::after,
+.tag .side .logout .fullLink .right .link a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -3614,7 +3915,9 @@
   background-color: #7F7A63;
   transition: width 2s ease-in-out; /* Transition for width change */
 }
-.tag .side .first .fullLink .right .link a:hover::after, .tag .side .third .fullLink .right .link a:hover::after, .tag .side .logout .fullLink .right .link a:hover::after {
+.tag .side .first .fullLink .right .link a:hover::after,
+.tag .side .third .fullLink .right .link a:hover::after,
+.tag .side .logout .fullLink .right .link a:hover::after {
   width: 70%; /* Expand width on hover */
   animation: borderAnimation 1s forwards; /* Apply animation on hover */
 }
@@ -3626,10 +3929,14 @@
     width: 70%; /* Gradually expand to full width */
   }
 }
-.tag .side .first .fullLink .left, .tag .side .third .fullLink .left, .tag .side .logout .fullLink .left {
+.tag .side .first .fullLink .left,
+.tag .side .third .fullLink .left,
+.tag .side .logout .fullLink .left {
   margin-right: 10px;
 }
-.tag .side .first .fullLink .left .num p, .tag .side .third .fullLink .left .num p, .tag .side .logout .fullLink .left .num p {
+.tag .side .first .fullLink .left .num p,
+.tag .side .third .fullLink .left .num p,
+.tag .side .logout .fullLink .left .num p {
   color: rgba(127, 122, 99, 0.5);
 }
 .tag .side .first {
@@ -3646,7 +3953,8 @@
   margin-bottom: 15px;
   gap: 12px;
 }
-.tag .side .second .ladelList, .tag .side .second .ladelTag {
+.tag .side .second .ladelList,
+.tag .side .second .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -3656,11 +3964,13 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.tag .side .second .ladelList .addShow, .tag .side .second .ladelTag .addShow {
+.tag .side .second .ladelList .addShow,
+.tag .side .second .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.tag .side .second .ladelList .addShow img, .tag .side .second .ladelTag .addShow img {
+.tag .side .second .ladelList .addShow img,
+.tag .side .second .ladelTag .addShow img {
   width: 13px;
 }
 .tag .side .second .fullLink {
@@ -3683,7 +3993,7 @@
 }
 .tag .side .second .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .tag .side .second .fullLink .right .link a {
   position: relative;
@@ -3729,7 +4039,7 @@
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  border-bottom: 0.1px solid #7F7A63;
+  border-bottom: 0.1px solid #7f7a63;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -3765,7 +4075,7 @@
   width: 64px;
   height: 64px;
   border-radius: 15px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3806,12 +4116,24 @@
   font-size: 60px;
   color: #433E26;
 }
+.tag .rightSide .allBody .head .inbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 .tag .rightSide .allBody .head .addTaskForm {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   margin-right: 30px;
+  gap: 20px;
+}
+.tag .rightSide .allBody .head .addTaskForm a {
+  font-size: 20px;
+  color: #7f7a63;
+  text-decoration: none;
 }
 .tag .rightSide .allBody .head .addTaskForm .vis {
   display: none;
@@ -3838,7 +4160,7 @@
 }
 .tag .rightSide .allBody .head .addTaskForm button i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .tag .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -3853,7 +4175,7 @@
 }
 .tag .rightSide .allBody .head .addTaskForm .clickToAdd i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .tag .rightSide .allBody .tagName {
   display: flex;
@@ -3872,6 +4194,12 @@
   flex-direction: row;
   margin-right: 30px;
   width: 100%;
+  gap: 20px;
+}
+.tag .rightSide .allBody .tagName .addTaskForm a {
+  font-size: 20px;
+  color: #7f7a63;
+  text-decoration: none;
 }
 .tag .rightSide .allBody .tagName .addTaskForm .vis {
   display: none;
@@ -3907,7 +4235,7 @@
 }
 .tag .rightSide .allBody .tagName .addTaskForm button i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .tag .rightSide .allBody .tagName .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -3922,7 +4250,7 @@
 }
 .tag .rightSide .allBody .tagName .addTaskForm .clickToAdd i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .tag .rightSide .allBody .tagContant {
   display: flex;
@@ -3968,14 +4296,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.tag .rightSide .allBody .tagContant .ele .top .cName h1 {
+.tag .rightSide .allBody .tagContant .ele .top .cName a {
+  text-decoration: none;
+}
+.tag .rightSide .allBody .tagContant .ele .top .cName a h1 {
   color: #433E26;
 }
 .tag .rightSide .allBody .tagContant .ele .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: transparent;
   cursor: pointer;
 }
@@ -3989,7 +4320,7 @@
 }
 .tag .rightSide .allBody .tagContant .ele .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .tag .rightSide .allBody .tagContant .ele .middle {
   display: flex;
@@ -3999,14 +4330,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.tag .rightSide .allBody .tagContant .ele .middle .time, .tag .rightSide .allBody .tagContant .ele .middle .list, .tag .rightSide .allBody .tagContant .ele .middle .tag {
+.tag .rightSide .allBody .tagContant .ele .middle .time,
+.tag .rightSide .allBody .tagContant .ele .middle .list,
+.tag .rightSide .allBody .tagContant .ele .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .tag .rightSide .allBody .tagContant .ele .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.tag .rightSide .allBody .tagContant .ele .middle .list, .tag .rightSide .allBody .tagContant .ele .middle .tag {
+.tag .rightSide .allBody .tagContant .ele .middle .list,
+.tag .rightSide .allBody .tagContant .ele .middle .tag {
   color: rgba(127, 122, 99, 0.5);
   border-radius: 15px;
   border: 1px solid #BEBAA5;
@@ -4053,14 +4387,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.tag .rightSide .allBody .tagContant .eleWait .top .cName h1 {
+.tag .rightSide .allBody .tagContant .eleWait .top .cName a {
+  text-decoration: none;
+}
+.tag .rightSide .allBody .tagContant .eleWait .top .cName a h1 {
   color: #433E26;
 }
 .tag .rightSide .allBody .tagContant .eleWait .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: transparent;
   cursor: pointer;
 }
@@ -4074,7 +4411,7 @@
 }
 .tag .rightSide .allBody .tagContant .eleWait .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .tag .rightSide .allBody .tagContant .eleWait .middle {
   display: flex;
@@ -4084,14 +4421,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.tag .rightSide .allBody .tagContant .eleWait .middle .time, .tag .rightSide .allBody .tagContant .eleWait .middle .list, .tag .rightSide .allBody .tagContant .eleWait .middle .tag {
+.tag .rightSide .allBody .tagContant .eleWait .middle .time,
+.tag .rightSide .allBody .tagContant .eleWait .middle .list,
+.tag .rightSide .allBody .tagContant .eleWait .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .tag .rightSide .allBody .tagContant .eleWait .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.tag .rightSide .allBody .tagContant .eleWait .middle .list, .tag .rightSide .allBody .tagContant .eleWait .middle .tag {
+.tag .rightSide .allBody .tagContant .eleWait .middle .list,
+.tag .rightSide .allBody .tagContant .eleWait .middle .tag {
   color: rgba(127, 122, 99, 0.5);
   border-radius: 15px;
   border: 1px solid #BEBAA5;
@@ -4138,14 +4478,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.tag .rightSide .allBody .tagContant .eleCompleted .top .cName h1 {
+.tag .rightSide .allBody .tagContant .eleCompleted .top .cName a {
+  text-decoration: none;
+}
+.tag .rightSide .allBody .tagContant .eleCompleted .top .cName a h1 {
   color: #265073;
 }
 .tag .rightSide .allBody .tagContant .eleCompleted .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: #265073;
   cursor: pointer;
 }
@@ -4159,7 +4502,7 @@
 }
 .tag .rightSide .allBody .tagContant .eleCompleted .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .tag .rightSide .allBody .tagContant .eleCompleted .middle {
   display: flex;
@@ -4169,14 +4512,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.tag .rightSide .allBody .tagContant .eleCompleted .middle .time, .tag .rightSide .allBody .tagContant .eleCompleted .middle .list, .tag .rightSide .allBody .tagContant .eleCompleted .middle .tag {
+.tag .rightSide .allBody .tagContant .eleCompleted .middle .time,
+.tag .rightSide .allBody .tagContant .eleCompleted .middle .list,
+.tag .rightSide .allBody .tagContant .eleCompleted .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .tag .rightSide .allBody .tagContant .eleCompleted .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.tag .rightSide .allBody .tagContant .eleCompleted .middle .list, .tag .rightSide .allBody .tagContant .eleCompleted .middle .tag {
+.tag .rightSide .allBody .tagContant .eleCompleted .middle .list,
+.tag .rightSide .allBody .tagContant .eleCompleted .middle .tag {
   color: #265073;
   border-radius: 15px;
   border: 1px solid rgba(147, 185, 185, 0.5);
@@ -4223,14 +4569,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.tag .rightSide .allBody .tagContant .eleDeleted .top .cName h1 {
+.tag .rightSide .allBody .tagContant .eleDeleted .top .cName a {
+  text-decoration: none;
+}
+.tag .rightSide .allBody .tagContant .eleDeleted .top .cName a h1 {
   color: rgba(134, 43, 13, 0.92);
 }
 .tag .rightSide .allBody .tagContant .eleDeleted .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: rgba(134, 43, 13, 0.92);
   cursor: pointer;
 }
@@ -4244,7 +4593,7 @@
 }
 .tag .rightSide .allBody .tagContant .eleDeleted .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .tag .rightSide .allBody .tagContant .eleDeleted .middle {
   display: flex;
@@ -4254,14 +4603,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.tag .rightSide .allBody .tagContant .eleDeleted .middle .time, .tag .rightSide .allBody .tagContant .eleDeleted .middle .list, .tag .rightSide .allBody .tagContant .eleDeleted .middle .tag {
+.tag .rightSide .allBody .tagContant .eleDeleted .middle .time,
+.tag .rightSide .allBody .tagContant .eleDeleted .middle .list,
+.tag .rightSide .allBody .tagContant .eleDeleted .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .tag .rightSide .allBody .tagContant .eleDeleted .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.tag .rightSide .allBody .tagContant .eleDeleted .middle .list, .tag .rightSide .allBody .tagContant .eleDeleted .middle .tag {
+.tag .rightSide .allBody .tagContant .eleDeleted .middle .list,
+.tag .rightSide .allBody .tagContant .eleDeleted .middle .tag {
   color: rgba(134, 43, 13, 0.92);
   border-radius: 15px;
   border: 1px solid rgba(134, 43, 13, 0.92);
@@ -4321,7 +4673,7 @@
 }
 
 .todayPage {
-  background-color: #F0EDDD;
+  background-color: #f0eddd;
   display: flex;
   align-items: normal;
   justify-content: space-between;
@@ -4354,7 +4706,9 @@
   width: 100%;
   height: 100%;
 }
-.todayPage .side .first, .todayPage .side .third, .todayPage .side .logout {
+.todayPage .side .first,
+.todayPage .side .third,
+.todayPage .side .logout {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -4364,7 +4718,12 @@
   margin-bottom: 20px;
   gap: 12px;
 }
-.todayPage .side .first .ladelList, .todayPage .side .first .ladelTag, .todayPage .side .third .ladelList, .todayPage .side .third .ladelTag, .todayPage .side .logout .ladelList, .todayPage .side .logout .ladelTag {
+.todayPage .side .first .ladelList,
+.todayPage .side .first .ladelTag,
+.todayPage .side .third .ladelList,
+.todayPage .side .third .ladelTag,
+.todayPage .side .logout .ladelList,
+.todayPage .side .logout .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -4374,43 +4733,65 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.todayPage .side .first .ladelList .addShow, .todayPage .side .first .ladelTag .addShow, .todayPage .side .third .ladelList .addShow, .todayPage .side .third .ladelTag .addShow, .todayPage .side .logout .ladelList .addShow, .todayPage .side .logout .ladelTag .addShow {
+.todayPage .side .first .ladelList .addShow,
+.todayPage .side .first .ladelTag .addShow,
+.todayPage .side .third .ladelList .addShow,
+.todayPage .side .third .ladelTag .addShow,
+.todayPage .side .logout .ladelList .addShow,
+.todayPage .side .logout .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.todayPage .side .first .ladelList .addShow img, .todayPage .side .first .ladelTag .addShow img, .todayPage .side .third .ladelList .addShow img, .todayPage .side .third .ladelTag .addShow img, .todayPage .side .logout .ladelList .addShow img, .todayPage .side .logout .ladelTag .addShow img {
+.todayPage .side .first .ladelList .addShow img,
+.todayPage .side .first .ladelTag .addShow img,
+.todayPage .side .third .ladelList .addShow img,
+.todayPage .side .third .ladelTag .addShow img,
+.todayPage .side .logout .ladelList .addShow img,
+.todayPage .side .logout .ladelTag .addShow img {
   width: 13px;
 }
-.todayPage .side .first .fullLink, .todayPage .side .third .fullLink, .todayPage .side .logout .fullLink {
+.todayPage .side .first .fullLink,
+.todayPage .side .third .fullLink,
+.todayPage .side .logout .fullLink {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
 }
-.todayPage .side .first .fullLink .right, .todayPage .side .third .fullLink .right, .todayPage .side .logout .fullLink .right {
+.todayPage .side .first .fullLink .right,
+.todayPage .side .third .fullLink .right,
+.todayPage .side .logout .fullLink .right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 20px;
 }
-.todayPage .side .first .fullLink .right .icon, .todayPage .side .third .fullLink .right .icon, .todayPage .side .logout .fullLink .right .icon {
+.todayPage .side .first .fullLink .right .icon,
+.todayPage .side .third .fullLink .right .icon,
+.todayPage .side .logout .fullLink .right .icon {
   width: 25px;
   height: 25px;
 }
-.todayPage .side .first .fullLink .right .icon i, .todayPage .side .third .fullLink .right .icon i, .todayPage .side .logout .fullLink .right .icon i {
+.todayPage .side .first .fullLink .right .icon i,
+.todayPage .side .third .fullLink .right .icon i,
+.todayPage .side .logout .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
-.todayPage .side .first .fullLink .right .link a, .todayPage .side .third .fullLink .right .link a, .todayPage .side .logout .fullLink .right .link a {
+.todayPage .side .first .fullLink .right .link a,
+.todayPage .side .third .fullLink .right .link a,
+.todayPage .side .logout .fullLink .right .link a {
   position: relative;
   text-decoration: none;
   color: #7F7A63;
   overflow: hidden;
   padding-bottom: 8px;
 }
-.todayPage .side .first .fullLink .right .link a::after, .todayPage .side .third .fullLink .right .link a::after, .todayPage .side .logout .fullLink .right .link a::after {
+.todayPage .side .first .fullLink .right .link a::after,
+.todayPage .side .third .fullLink .right .link a::after,
+.todayPage .side .logout .fullLink .right .link a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -4420,7 +4801,9 @@
   background-color: #7F7A63;
   transition: width 2s ease-in-out; /* Transition for width change */
 }
-.todayPage .side .first .fullLink .right .link a:hover::after, .todayPage .side .third .fullLink .right .link a:hover::after, .todayPage .side .logout .fullLink .right .link a:hover::after {
+.todayPage .side .first .fullLink .right .link a:hover::after,
+.todayPage .side .third .fullLink .right .link a:hover::after,
+.todayPage .side .logout .fullLink .right .link a:hover::after {
   width: 70%; /* Expand width on hover */
   animation: borderAnimation 1s forwards; /* Apply animation on hover */
 }
@@ -4432,10 +4815,14 @@
     width: 70%; /* Gradually expand to full width */
   }
 }
-.todayPage .side .first .fullLink .left, .todayPage .side .third .fullLink .left, .todayPage .side .logout .fullLink .left {
+.todayPage .side .first .fullLink .left,
+.todayPage .side .third .fullLink .left,
+.todayPage .side .logout .fullLink .left {
   margin-right: 10px;
 }
-.todayPage .side .first .fullLink .left .num p, .todayPage .side .third .fullLink .left .num p, .todayPage .side .logout .fullLink .left .num p {
+.todayPage .side .first .fullLink .left .num p,
+.todayPage .side .third .fullLink .left .num p,
+.todayPage .side .logout .fullLink .left .num p {
   color: rgba(127, 122, 99, 0.5);
 }
 .todayPage .side .first {
@@ -4452,7 +4839,8 @@
   margin-bottom: 15px;
   gap: 12px;
 }
-.todayPage .side .second .ladelList, .todayPage .side .second .ladelTag {
+.todayPage .side .second .ladelList,
+.todayPage .side .second .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -4462,11 +4850,13 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.todayPage .side .second .ladelList .addShow, .todayPage .side .second .ladelTag .addShow {
+.todayPage .side .second .ladelList .addShow,
+.todayPage .side .second .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.todayPage .side .second .ladelList .addShow img, .todayPage .side .second .ladelTag .addShow img {
+.todayPage .side .second .ladelList .addShow img,
+.todayPage .side .second .ladelTag .addShow img {
   width: 13px;
 }
 .todayPage .side .second .fullLink {
@@ -4489,7 +4879,7 @@
 }
 .todayPage .side .second .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .todayPage .side .second .fullLink .right .link a {
   position: relative;
@@ -4535,7 +4925,7 @@
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  border-bottom: 0.1px solid #7F7A63;
+  border-bottom: 0.1px solid #7f7a63;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -4571,7 +4961,7 @@
   width: 64px;
   height: 64px;
   border-radius: 15px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4612,12 +5002,24 @@
   font-size: 60px;
   color: #433E26;
 }
+.todayPage .rightSide .allBody .head .inbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 .todayPage .rightSide .allBody .head .addTaskForm {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   margin-right: 30px;
+  gap: 20px;
+}
+.todayPage .rightSide .allBody .head .addTaskForm a {
+  font-size: 20px;
+  color: #7f7a63;
+  text-decoration: none;
 }
 .todayPage .rightSide .allBody .head .addTaskForm .vis {
   display: none;
@@ -4644,7 +5046,7 @@
 }
 .todayPage .rightSide .allBody .head .addTaskForm button i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .todayPage .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -4659,7 +5061,7 @@
 }
 .todayPage .rightSide .allBody .head .addTaskForm .clickToAdd i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .todayPage .rightSide .allBody .todayInnerName {
   display: flex;
@@ -4678,6 +5080,12 @@
   flex-direction: row;
   margin-right: 30px;
   width: 100%;
+  gap: 20px;
+}
+.todayPage .rightSide .allBody .todayInnerName .addTaskForm a {
+  font-size: 20px;
+  color: #7f7a63;
+  text-decoration: none;
 }
 .todayPage .rightSide .allBody .todayInnerName .addTaskForm .vis {
   display: none;
@@ -4713,7 +5121,7 @@
 }
 .todayPage .rightSide .allBody .todayInnerName .addTaskForm button i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .todayPage .rightSide .allBody .todayInnerName .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -4728,7 +5136,7 @@
 }
 .todayPage .rightSide .allBody .todayInnerName .addTaskForm .clickToAdd i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .todayPage .rightSide .allBody .todayInnerContant {
   display: flex;
@@ -4774,14 +5182,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.todayPage .rightSide .allBody .todayInnerContant .ele .top .cName h1 {
+.todayPage .rightSide .allBody .todayInnerContant .ele .top .cName a {
+  text-decoration: none;
+}
+.todayPage .rightSide .allBody .todayInnerContant .ele .top .cName a h1 {
   color: #433E26;
 }
 .todayPage .rightSide .allBody .todayInnerContant .ele .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: transparent;
   cursor: pointer;
 }
@@ -4795,7 +5206,7 @@
 }
 .todayPage .rightSide .allBody .todayInnerContant .ele .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .todayPage .rightSide .allBody .todayInnerContant .ele .middle {
   display: flex;
@@ -4805,14 +5216,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.todayPage .rightSide .allBody .todayInnerContant .ele .middle .time, .todayPage .rightSide .allBody .todayInnerContant .ele .middle .list, .todayPage .rightSide .allBody .todayInnerContant .ele .middle .tag {
+.todayPage .rightSide .allBody .todayInnerContant .ele .middle .time,
+.todayPage .rightSide .allBody .todayInnerContant .ele .middle .list,
+.todayPage .rightSide .allBody .todayInnerContant .ele .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .todayPage .rightSide .allBody .todayInnerContant .ele .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.todayPage .rightSide .allBody .todayInnerContant .ele .middle .list, .todayPage .rightSide .allBody .todayInnerContant .ele .middle .tag {
+.todayPage .rightSide .allBody .todayInnerContant .ele .middle .list,
+.todayPage .rightSide .allBody .todayInnerContant .ele .middle .tag {
   color: rgba(127, 122, 99, 0.5);
   border-radius: 15px;
   border: 1px solid #BEBAA5;
@@ -4859,14 +5273,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.todayPage .rightSide .allBody .todayInnerContant .eleWait .top .cName h1 {
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .top .cName a {
+  text-decoration: none;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .top .cName a h1 {
   color: #433E26;
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleWait .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: transparent;
   cursor: pointer;
 }
@@ -4880,7 +5297,7 @@
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleWait .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleWait .middle {
   display: flex;
@@ -4890,14 +5307,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .time, .todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .list, .todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .tag {
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .time,
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .list,
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .list, .todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .tag {
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .list,
+.todayPage .rightSide .allBody .todayInnerContant .eleWait .middle .tag {
   color: rgba(127, 122, 99, 0.5);
   border-radius: 15px;
   border: 1px solid #BEBAA5;
@@ -4944,14 +5364,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top .cName h1 {
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top .cName a {
+  text-decoration: none;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top .cName a h1 {
   color: #265073;
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: #265073;
   cursor: pointer;
 }
@@ -4965,7 +5388,7 @@
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleCompleted .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle {
   display: flex;
@@ -4975,14 +5398,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .time, .todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .list, .todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .tag {
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .time,
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .list,
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .list, .todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .tag {
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .list,
+.todayPage .rightSide .allBody .todayInnerContant .eleCompleted .middle .tag {
   color: #265073;
   border-radius: 15px;
   border: 1px solid rgba(147, 185, 185, 0.5);
@@ -5029,14 +5455,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top .cName h1 {
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top .cName a {
+  text-decoration: none;
+}
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top .cName a h1 {
   color: rgba(134, 43, 13, 0.92);
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: rgba(134, 43, 13, 0.92);
   cursor: pointer;
 }
@@ -5050,7 +5479,7 @@
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleDeleted .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle {
   display: flex;
@@ -5060,14 +5489,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .time, .todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .list, .todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .tag {
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .time,
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .list,
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .list, .todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .tag {
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .list,
+.todayPage .rightSide .allBody .todayInnerContant .eleDeleted .middle .tag {
   color: rgba(134, 43, 13, 0.92);
   border-radius: 15px;
   border: 1px solid rgba(134, 43, 13, 0.92);
@@ -5127,7 +5559,7 @@
 }
 
 .completed {
-  background-color: #F0EDDD;
+  background-color: #f0eddd;
   display: flex;
   align-items: normal;
   justify-content: space-between;
@@ -5159,7 +5591,9 @@
   width: 100%;
   height: 100%;
 }
-.completed .side .first, .completed .side .third, .completed .side .logout {
+.completed .side .first,
+.completed .side .third,
+.completed .side .logout {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -5169,7 +5603,12 @@
   margin-bottom: 20px;
   gap: 12px;
 }
-.completed .side .first .ladelList, .completed .side .first .ladelTag, .completed .side .third .ladelList, .completed .side .third .ladelTag, .completed .side .logout .ladelList, .completed .side .logout .ladelTag {
+.completed .side .first .ladelList,
+.completed .side .first .ladelTag,
+.completed .side .third .ladelList,
+.completed .side .third .ladelTag,
+.completed .side .logout .ladelList,
+.completed .side .logout .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -5179,43 +5618,65 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.completed .side .first .ladelList .addShow, .completed .side .first .ladelTag .addShow, .completed .side .third .ladelList .addShow, .completed .side .third .ladelTag .addShow, .completed .side .logout .ladelList .addShow, .completed .side .logout .ladelTag .addShow {
+.completed .side .first .ladelList .addShow,
+.completed .side .first .ladelTag .addShow,
+.completed .side .third .ladelList .addShow,
+.completed .side .third .ladelTag .addShow,
+.completed .side .logout .ladelList .addShow,
+.completed .side .logout .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.completed .side .first .ladelList .addShow img, .completed .side .first .ladelTag .addShow img, .completed .side .third .ladelList .addShow img, .completed .side .third .ladelTag .addShow img, .completed .side .logout .ladelList .addShow img, .completed .side .logout .ladelTag .addShow img {
+.completed .side .first .ladelList .addShow img,
+.completed .side .first .ladelTag .addShow img,
+.completed .side .third .ladelList .addShow img,
+.completed .side .third .ladelTag .addShow img,
+.completed .side .logout .ladelList .addShow img,
+.completed .side .logout .ladelTag .addShow img {
   width: 13px;
 }
-.completed .side .first .fullLink, .completed .side .third .fullLink, .completed .side .logout .fullLink {
+.completed .side .first .fullLink,
+.completed .side .third .fullLink,
+.completed .side .logout .fullLink {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
 }
-.completed .side .first .fullLink .right, .completed .side .third .fullLink .right, .completed .side .logout .fullLink .right {
+.completed .side .first .fullLink .right,
+.completed .side .third .fullLink .right,
+.completed .side .logout .fullLink .right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 20px;
 }
-.completed .side .first .fullLink .right .icon, .completed .side .third .fullLink .right .icon, .completed .side .logout .fullLink .right .icon {
+.completed .side .first .fullLink .right .icon,
+.completed .side .third .fullLink .right .icon,
+.completed .side .logout .fullLink .right .icon {
   width: 25px;
   height: 25px;
 }
-.completed .side .first .fullLink .right .icon i, .completed .side .third .fullLink .right .icon i, .completed .side .logout .fullLink .right .icon i {
+.completed .side .first .fullLink .right .icon i,
+.completed .side .third .fullLink .right .icon i,
+.completed .side .logout .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
-.completed .side .first .fullLink .right .link a, .completed .side .third .fullLink .right .link a, .completed .side .logout .fullLink .right .link a {
+.completed .side .first .fullLink .right .link a,
+.completed .side .third .fullLink .right .link a,
+.completed .side .logout .fullLink .right .link a {
   position: relative;
   text-decoration: none;
   color: #7F7A63;
   overflow: hidden;
   padding-bottom: 8px;
 }
-.completed .side .first .fullLink .right .link a::after, .completed .side .third .fullLink .right .link a::after, .completed .side .logout .fullLink .right .link a::after {
+.completed .side .first .fullLink .right .link a::after,
+.completed .side .third .fullLink .right .link a::after,
+.completed .side .logout .fullLink .right .link a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -5225,7 +5686,9 @@
   background-color: #7F7A63;
   transition: width 2s ease-in-out; /* Transition for width change */
 }
-.completed .side .first .fullLink .right .link a:hover::after, .completed .side .third .fullLink .right .link a:hover::after, .completed .side .logout .fullLink .right .link a:hover::after {
+.completed .side .first .fullLink .right .link a:hover::after,
+.completed .side .third .fullLink .right .link a:hover::after,
+.completed .side .logout .fullLink .right .link a:hover::after {
   width: 70%; /* Expand width on hover */
   animation: borderAnimation 1s forwards; /* Apply animation on hover */
 }
@@ -5237,10 +5700,14 @@
     width: 70%; /* Gradually expand to full width */
   }
 }
-.completed .side .first .fullLink .left, .completed .side .third .fullLink .left, .completed .side .logout .fullLink .left {
+.completed .side .first .fullLink .left,
+.completed .side .third .fullLink .left,
+.completed .side .logout .fullLink .left {
   margin-right: 10px;
 }
-.completed .side .first .fullLink .left .num p, .completed .side .third .fullLink .left .num p, .completed .side .logout .fullLink .left .num p {
+.completed .side .first .fullLink .left .num p,
+.completed .side .third .fullLink .left .num p,
+.completed .side .logout .fullLink .left .num p {
   color: rgba(127, 122, 99, 0.5);
 }
 .completed .side .first {
@@ -5257,7 +5724,8 @@
   margin-bottom: 15px;
   gap: 12px;
 }
-.completed .side .second .ladelList, .completed .side .second .ladelTag {
+.completed .side .second .ladelList,
+.completed .side .second .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -5267,11 +5735,13 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.completed .side .second .ladelList .addShow, .completed .side .second .ladelTag .addShow {
+.completed .side .second .ladelList .addShow,
+.completed .side .second .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.completed .side .second .ladelList .addShow img, .completed .side .second .ladelTag .addShow img {
+.completed .side .second .ladelList .addShow img,
+.completed .side .second .ladelTag .addShow img {
   width: 13px;
 }
 .completed .side .second .fullLink {
@@ -5294,7 +5764,7 @@
 }
 .completed .side .second .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .completed .side .second .fullLink .right .link a {
   position: relative;
@@ -5340,7 +5810,7 @@
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  border-bottom: 0.1px solid #7F7A63;
+  border-bottom: 0.1px solid #7f7a63;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -5376,7 +5846,7 @@
   width: 64px;
   height: 64px;
   border-radius: 15px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5417,12 +5887,24 @@
   font-size: 60px;
   color: #433E26;
 }
+.completed .rightSide .allBody .head .inbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 .completed .rightSide .allBody .head .addTaskForm {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   margin-right: 30px;
+  gap: 20px;
+}
+.completed .rightSide .allBody .head .addTaskForm a {
+  font-size: 20px;
+  color: #7f7a63;
+  text-decoration: none;
 }
 .completed .rightSide .allBody .head .addTaskForm .vis {
   display: none;
@@ -5449,7 +5931,7 @@
 }
 .completed .rightSide .allBody .head .addTaskForm button i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .completed .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -5464,7 +5946,7 @@
 }
 .completed .rightSide .allBody .head .addTaskForm .clickToAdd i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .completed .rightSide .allBody .completedContant {
   display: flex;
@@ -5510,14 +5992,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.completed .rightSide .allBody .completedContant .ele .top .cName h1 {
+.completed .rightSide .allBody .completedContant .ele .top .cName a {
+  text-decoration: none;
+}
+.completed .rightSide .allBody .completedContant .ele .top .cName a h1 {
   color: #265073;
 }
 .completed .rightSide .allBody .completedContant .ele .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: #265073;
   cursor: pointer;
 }
@@ -5531,7 +6016,7 @@
 }
 .completed .rightSide .allBody .completedContant .ele .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .completed .rightSide .allBody .completedContant .ele .middle {
   display: flex;
@@ -5541,14 +6026,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.completed .rightSide .allBody .completedContant .ele .middle .time, .completed .rightSide .allBody .completedContant .ele .middle .list, .completed .rightSide .allBody .completedContant .ele .middle .tag {
+.completed .rightSide .allBody .completedContant .ele .middle .time,
+.completed .rightSide .allBody .completedContant .ele .middle .list,
+.completed .rightSide .allBody .completedContant .ele .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .completed .rightSide .allBody .completedContant .ele .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.completed .rightSide .allBody .completedContant .ele .middle .list, .completed .rightSide .allBody .completedContant .ele .middle .tag {
+.completed .rightSide .allBody .completedContant .ele .middle .list,
+.completed .rightSide .allBody .completedContant .ele .middle .tag {
   color: #265073;
   border-radius: 15px;
   border: 1px solid rgba(147, 185, 185, 0.5);
@@ -5595,14 +6083,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.completed .rightSide .allBody .completedContant .eleWait .top .cName h1 {
+.completed .rightSide .allBody .completedContant .eleWait .top .cName a {
+  text-decoration: none;
+}
+.completed .rightSide .allBody .completedContant .eleWait .top .cName a h1 {
   color: #433E26;
 }
 .completed .rightSide .allBody .completedContant .eleWait .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: transparent;
   cursor: pointer;
 }
@@ -5616,7 +6107,7 @@
 }
 .completed .rightSide .allBody .completedContant .eleWait .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .completed .rightSide .allBody .completedContant .eleWait .middle {
   display: flex;
@@ -5626,14 +6117,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.completed .rightSide .allBody .completedContant .eleWait .middle .time, .completed .rightSide .allBody .completedContant .eleWait .middle .list, .completed .rightSide .allBody .completedContant .eleWait .middle .tag {
+.completed .rightSide .allBody .completedContant .eleWait .middle .time,
+.completed .rightSide .allBody .completedContant .eleWait .middle .list,
+.completed .rightSide .allBody .completedContant .eleWait .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .completed .rightSide .allBody .completedContant .eleWait .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.completed .rightSide .allBody .completedContant .eleWait .middle .list, .completed .rightSide .allBody .completedContant .eleWait .middle .tag {
+.completed .rightSide .allBody .completedContant .eleWait .middle .list,
+.completed .rightSide .allBody .completedContant .eleWait .middle .tag {
   color: rgba(127, 122, 99, 0.5);
   border-radius: 15px;
   border: 1px solid #BEBAA5;
@@ -5680,14 +6174,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.completed .rightSide .allBody .completedContant .eleCompleted .top .cName h1 {
+.completed .rightSide .allBody .completedContant .eleCompleted .top .cName a {
+  text-decoration: none;
+}
+.completed .rightSide .allBody .completedContant .eleCompleted .top .cName a h1 {
   color: #265073;
 }
 .completed .rightSide .allBody .completedContant .eleCompleted .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: #265073;
   cursor: pointer;
 }
@@ -5701,7 +6198,7 @@
 }
 .completed .rightSide .allBody .completedContant .eleCompleted .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .completed .rightSide .allBody .completedContant .eleCompleted .middle {
   display: flex;
@@ -5711,14 +6208,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.completed .rightSide .allBody .completedContant .eleCompleted .middle .time, .completed .rightSide .allBody .completedContant .eleCompleted .middle .list, .completed .rightSide .allBody .completedContant .eleCompleted .middle .tag {
+.completed .rightSide .allBody .completedContant .eleCompleted .middle .time,
+.completed .rightSide .allBody .completedContant .eleCompleted .middle .list,
+.completed .rightSide .allBody .completedContant .eleCompleted .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .completed .rightSide .allBody .completedContant .eleCompleted .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.completed .rightSide .allBody .completedContant .eleCompleted .middle .list, .completed .rightSide .allBody .completedContant .eleCompleted .middle .tag {
+.completed .rightSide .allBody .completedContant .eleCompleted .middle .list,
+.completed .rightSide .allBody .completedContant .eleCompleted .middle .tag {
   color: #265073;
   border-radius: 15px;
   border: 1px solid rgba(147, 185, 185, 0.5);
@@ -5765,14 +6265,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.completed .rightSide .allBody .completedContant .eleDeleted .top .cName h1 {
+.completed .rightSide .allBody .completedContant .eleDeleted .top .cName a {
+  text-decoration: none;
+}
+.completed .rightSide .allBody .completedContant .eleDeleted .top .cName a h1 {
   color: rgba(134, 43, 13, 0.92);
 }
 .completed .rightSide .allBody .completedContant .eleDeleted .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: rgba(134, 43, 13, 0.92);
   cursor: pointer;
 }
@@ -5786,7 +6289,7 @@
 }
 .completed .rightSide .allBody .completedContant .eleDeleted .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .completed .rightSide .allBody .completedContant .eleDeleted .middle {
   display: flex;
@@ -5796,14 +6299,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.completed .rightSide .allBody .completedContant .eleDeleted .middle .time, .completed .rightSide .allBody .completedContant .eleDeleted .middle .list, .completed .rightSide .allBody .completedContant .eleDeleted .middle .tag {
+.completed .rightSide .allBody .completedContant .eleDeleted .middle .time,
+.completed .rightSide .allBody .completedContant .eleDeleted .middle .list,
+.completed .rightSide .allBody .completedContant .eleDeleted .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .completed .rightSide .allBody .completedContant .eleDeleted .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.completed .rightSide .allBody .completedContant .eleDeleted .middle .list, .completed .rightSide .allBody .completedContant .eleDeleted .middle .tag {
+.completed .rightSide .allBody .completedContant .eleDeleted .middle .list,
+.completed .rightSide .allBody .completedContant .eleDeleted .middle .tag {
   color: rgba(134, 43, 13, 0.92);
   border-radius: 15px;
   border: 1px solid rgba(134, 43, 13, 0.92);
@@ -5856,7 +6362,7 @@
 }
 
 .trash {
-  background-color: #F0EDDD;
+  background-color: #f0eddd;
   display: flex;
   align-items: normal;
   justify-content: space-between;
@@ -5888,7 +6394,9 @@
   width: 100%;
   height: 100%;
 }
-.trash .side .first, .trash .side .third, .trash .side .logout {
+.trash .side .first,
+.trash .side .third,
+.trash .side .logout {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -5898,7 +6406,12 @@
   margin-bottom: 20px;
   gap: 12px;
 }
-.trash .side .first .ladelList, .trash .side .first .ladelTag, .trash .side .third .ladelList, .trash .side .third .ladelTag, .trash .side .logout .ladelList, .trash .side .logout .ladelTag {
+.trash .side .first .ladelList,
+.trash .side .first .ladelTag,
+.trash .side .third .ladelList,
+.trash .side .third .ladelTag,
+.trash .side .logout .ladelList,
+.trash .side .logout .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -5908,43 +6421,65 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.trash .side .first .ladelList .addShow, .trash .side .first .ladelTag .addShow, .trash .side .third .ladelList .addShow, .trash .side .third .ladelTag .addShow, .trash .side .logout .ladelList .addShow, .trash .side .logout .ladelTag .addShow {
+.trash .side .first .ladelList .addShow,
+.trash .side .first .ladelTag .addShow,
+.trash .side .third .ladelList .addShow,
+.trash .side .third .ladelTag .addShow,
+.trash .side .logout .ladelList .addShow,
+.trash .side .logout .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.trash .side .first .ladelList .addShow img, .trash .side .first .ladelTag .addShow img, .trash .side .third .ladelList .addShow img, .trash .side .third .ladelTag .addShow img, .trash .side .logout .ladelList .addShow img, .trash .side .logout .ladelTag .addShow img {
+.trash .side .first .ladelList .addShow img,
+.trash .side .first .ladelTag .addShow img,
+.trash .side .third .ladelList .addShow img,
+.trash .side .third .ladelTag .addShow img,
+.trash .side .logout .ladelList .addShow img,
+.trash .side .logout .ladelTag .addShow img {
   width: 13px;
 }
-.trash .side .first .fullLink, .trash .side .third .fullLink, .trash .side .logout .fullLink {
+.trash .side .first .fullLink,
+.trash .side .third .fullLink,
+.trash .side .logout .fullLink {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
 }
-.trash .side .first .fullLink .right, .trash .side .third .fullLink .right, .trash .side .logout .fullLink .right {
+.trash .side .first .fullLink .right,
+.trash .side .third .fullLink .right,
+.trash .side .logout .fullLink .right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 20px;
 }
-.trash .side .first .fullLink .right .icon, .trash .side .third .fullLink .right .icon, .trash .side .logout .fullLink .right .icon {
+.trash .side .first .fullLink .right .icon,
+.trash .side .third .fullLink .right .icon,
+.trash .side .logout .fullLink .right .icon {
   width: 25px;
   height: 25px;
 }
-.trash .side .first .fullLink .right .icon i, .trash .side .third .fullLink .right .icon i, .trash .side .logout .fullLink .right .icon i {
+.trash .side .first .fullLink .right .icon i,
+.trash .side .third .fullLink .right .icon i,
+.trash .side .logout .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
-.trash .side .first .fullLink .right .link a, .trash .side .third .fullLink .right .link a, .trash .side .logout .fullLink .right .link a {
+.trash .side .first .fullLink .right .link a,
+.trash .side .third .fullLink .right .link a,
+.trash .side .logout .fullLink .right .link a {
   position: relative;
   text-decoration: none;
   color: #7F7A63;
   overflow: hidden;
   padding-bottom: 8px;
 }
-.trash .side .first .fullLink .right .link a::after, .trash .side .third .fullLink .right .link a::after, .trash .side .logout .fullLink .right .link a::after {
+.trash .side .first .fullLink .right .link a::after,
+.trash .side .third .fullLink .right .link a::after,
+.trash .side .logout .fullLink .right .link a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -5954,7 +6489,9 @@
   background-color: #7F7A63;
   transition: width 2s ease-in-out; /* Transition for width change */
 }
-.trash .side .first .fullLink .right .link a:hover::after, .trash .side .third .fullLink .right .link a:hover::after, .trash .side .logout .fullLink .right .link a:hover::after {
+.trash .side .first .fullLink .right .link a:hover::after,
+.trash .side .third .fullLink .right .link a:hover::after,
+.trash .side .logout .fullLink .right .link a:hover::after {
   width: 70%; /* Expand width on hover */
   animation: borderAnimation 1s forwards; /* Apply animation on hover */
 }
@@ -5966,10 +6503,14 @@
     width: 70%; /* Gradually expand to full width */
   }
 }
-.trash .side .first .fullLink .left, .trash .side .third .fullLink .left, .trash .side .logout .fullLink .left {
+.trash .side .first .fullLink .left,
+.trash .side .third .fullLink .left,
+.trash .side .logout .fullLink .left {
   margin-right: 10px;
 }
-.trash .side .first .fullLink .left .num p, .trash .side .third .fullLink .left .num p, .trash .side .logout .fullLink .left .num p {
+.trash .side .first .fullLink .left .num p,
+.trash .side .third .fullLink .left .num p,
+.trash .side .logout .fullLink .left .num p {
   color: rgba(127, 122, 99, 0.5);
 }
 .trash .side .first {
@@ -5986,7 +6527,8 @@
   margin-bottom: 15px;
   gap: 12px;
 }
-.trash .side .second .ladelList, .trash .side .second .ladelTag {
+.trash .side .second .ladelList,
+.trash .side .second .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -5996,11 +6538,13 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.trash .side .second .ladelList .addShow, .trash .side .second .ladelTag .addShow {
+.trash .side .second .ladelList .addShow,
+.trash .side .second .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.trash .side .second .ladelList .addShow img, .trash .side .second .ladelTag .addShow img {
+.trash .side .second .ladelList .addShow img,
+.trash .side .second .ladelTag .addShow img {
   width: 13px;
 }
 .trash .side .second .fullLink {
@@ -6023,7 +6567,7 @@
 }
 .trash .side .second .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .trash .side .second .fullLink .right .link a {
   position: relative;
@@ -6069,7 +6613,7 @@
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  border-bottom: 0.1px solid #7F7A63;
+  border-bottom: 0.1px solid #7f7a63;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -6105,7 +6649,7 @@
   width: 64px;
   height: 64px;
   border-radius: 15px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6146,12 +6690,24 @@
   font-size: 60px;
   color: #433E26;
 }
+.trash .rightSide .allBody .head .inbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 .trash .rightSide .allBody .head .addTaskForm {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   margin-right: 30px;
+  gap: 20px;
+}
+.trash .rightSide .allBody .head .addTaskForm a {
+  font-size: 20px;
+  color: #7f7a63;
+  text-decoration: none;
 }
 .trash .rightSide .allBody .head .addTaskForm .vis {
   display: none;
@@ -6178,7 +6734,7 @@
 }
 .trash .rightSide .allBody .head .addTaskForm button i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .trash .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -6193,7 +6749,7 @@
 }
 .trash .rightSide .allBody .head .addTaskForm .clickToAdd i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .trash .rightSide .allBody .trashContant {
   display: flex;
@@ -6239,14 +6795,17 @@
   flex-direction: row;
   gap: 20px;
 }
-.trash .rightSide .allBody .trashContant .ele .top .cName h1 {
+.trash .rightSide .allBody .trashContant .ele .top .cName a {
+  text-decoration: none;
+}
+.trash .rightSide .allBody .trashContant .ele .top .cName a h1 {
   color: rgba(134, 43, 13, 0.92);
 }
 .trash .rightSide .allBody .trashContant .ele .top .cName form .cheack {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   background-color: rgba(134, 43, 13, 0.92);
   cursor: pointer;
 }
@@ -6260,7 +6819,7 @@
 }
 .trash .rightSide .allBody .trashContant .ele .top form .delete i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .trash .rightSide .allBody .trashContant .ele .middle {
   display: flex;
@@ -6270,14 +6829,17 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-.trash .rightSide .allBody .trashContant .ele .middle .time, .trash .rightSide .allBody .trashContant .ele .middle .list, .trash .rightSide .allBody .trashContant .ele .middle .tag {
+.trash .rightSide .allBody .trashContant .ele .middle .time,
+.trash .rightSide .allBody .trashContant .ele .middle .list,
+.trash .rightSide .allBody .trashContant .ele .middle .tag {
   text-decoration: none;
   font-size: 12px;
 }
 .trash .rightSide .allBody .trashContant .ele .middle .time {
   color: rgba(134, 43, 13, 0.5);
 }
-.trash .rightSide .allBody .trashContant .ele .middle .list, .trash .rightSide .allBody .trashContant .ele .middle .tag {
+.trash .rightSide .allBody .trashContant .ele .middle .list,
+.trash .rightSide .allBody .trashContant .ele .middle .tag {
   color: rgba(134, 43, 13, 0.92);
   border-radius: 15px;
   border: 1px solid rgba(134, 43, 13, 0.92);
@@ -6330,7 +6892,7 @@
 }
 
 .oneTask {
-  background-color: #F0EDDD;
+  background-color: #f0eddd;
   display: flex;
   align-items: normal;
   justify-content: space-between;
@@ -6362,7 +6924,9 @@
   width: 100%;
   height: 100%;
 }
-.oneTask .side .first, .oneTask .side .third, .oneTask .side .logout {
+.oneTask .side .first,
+.oneTask .side .third,
+.oneTask .side .logout {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -6372,7 +6936,12 @@
   margin-bottom: 20px;
   gap: 12px;
 }
-.oneTask .side .first .ladelList, .oneTask .side .first .ladelTag, .oneTask .side .third .ladelList, .oneTask .side .third .ladelTag, .oneTask .side .logout .ladelList, .oneTask .side .logout .ladelTag {
+.oneTask .side .first .ladelList,
+.oneTask .side .first .ladelTag,
+.oneTask .side .third .ladelList,
+.oneTask .side .third .ladelTag,
+.oneTask .side .logout .ladelList,
+.oneTask .side .logout .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -6382,43 +6951,65 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.oneTask .side .first .ladelList .addShow, .oneTask .side .first .ladelTag .addShow, .oneTask .side .third .ladelList .addShow, .oneTask .side .third .ladelTag .addShow, .oneTask .side .logout .ladelList .addShow, .oneTask .side .logout .ladelTag .addShow {
+.oneTask .side .first .ladelList .addShow,
+.oneTask .side .first .ladelTag .addShow,
+.oneTask .side .third .ladelList .addShow,
+.oneTask .side .third .ladelTag .addShow,
+.oneTask .side .logout .ladelList .addShow,
+.oneTask .side .logout .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.oneTask .side .first .ladelList .addShow img, .oneTask .side .first .ladelTag .addShow img, .oneTask .side .third .ladelList .addShow img, .oneTask .side .third .ladelTag .addShow img, .oneTask .side .logout .ladelList .addShow img, .oneTask .side .logout .ladelTag .addShow img {
+.oneTask .side .first .ladelList .addShow img,
+.oneTask .side .first .ladelTag .addShow img,
+.oneTask .side .third .ladelList .addShow img,
+.oneTask .side .third .ladelTag .addShow img,
+.oneTask .side .logout .ladelList .addShow img,
+.oneTask .side .logout .ladelTag .addShow img {
   width: 13px;
 }
-.oneTask .side .first .fullLink, .oneTask .side .third .fullLink, .oneTask .side .logout .fullLink {
+.oneTask .side .first .fullLink,
+.oneTask .side .third .fullLink,
+.oneTask .side .logout .fullLink {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
 }
-.oneTask .side .first .fullLink .right, .oneTask .side .third .fullLink .right, .oneTask .side .logout .fullLink .right {
+.oneTask .side .first .fullLink .right,
+.oneTask .side .third .fullLink .right,
+.oneTask .side .logout .fullLink .right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 20px;
 }
-.oneTask .side .first .fullLink .right .icon, .oneTask .side .third .fullLink .right .icon, .oneTask .side .logout .fullLink .right .icon {
+.oneTask .side .first .fullLink .right .icon,
+.oneTask .side .third .fullLink .right .icon,
+.oneTask .side .logout .fullLink .right .icon {
   width: 25px;
   height: 25px;
 }
-.oneTask .side .first .fullLink .right .icon i, .oneTask .side .third .fullLink .right .icon i, .oneTask .side .logout .fullLink .right .icon i {
+.oneTask .side .first .fullLink .right .icon i,
+.oneTask .side .third .fullLink .right .icon i,
+.oneTask .side .logout .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
-.oneTask .side .first .fullLink .right .link a, .oneTask .side .third .fullLink .right .link a, .oneTask .side .logout .fullLink .right .link a {
+.oneTask .side .first .fullLink .right .link a,
+.oneTask .side .third .fullLink .right .link a,
+.oneTask .side .logout .fullLink .right .link a {
   position: relative;
   text-decoration: none;
   color: #7F7A63;
   overflow: hidden;
   padding-bottom: 8px;
 }
-.oneTask .side .first .fullLink .right .link a::after, .oneTask .side .third .fullLink .right .link a::after, .oneTask .side .logout .fullLink .right .link a::after {
+.oneTask .side .first .fullLink .right .link a::after,
+.oneTask .side .third .fullLink .right .link a::after,
+.oneTask .side .logout .fullLink .right .link a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -6428,7 +7019,9 @@
   background-color: #7F7A63;
   transition: width 2s ease-in-out; /* Transition for width change */
 }
-.oneTask .side .first .fullLink .right .link a:hover::after, .oneTask .side .third .fullLink .right .link a:hover::after, .oneTask .side .logout .fullLink .right .link a:hover::after {
+.oneTask .side .first .fullLink .right .link a:hover::after,
+.oneTask .side .third .fullLink .right .link a:hover::after,
+.oneTask .side .logout .fullLink .right .link a:hover::after {
   width: 70%; /* Expand width on hover */
   animation: borderAnimation 1s forwards; /* Apply animation on hover */
 }
@@ -6440,10 +7033,14 @@
     width: 70%; /* Gradually expand to full width */
   }
 }
-.oneTask .side .first .fullLink .left, .oneTask .side .third .fullLink .left, .oneTask .side .logout .fullLink .left {
+.oneTask .side .first .fullLink .left,
+.oneTask .side .third .fullLink .left,
+.oneTask .side .logout .fullLink .left {
   margin-right: 10px;
 }
-.oneTask .side .first .fullLink .left .num p, .oneTask .side .third .fullLink .left .num p, .oneTask .side .logout .fullLink .left .num p {
+.oneTask .side .first .fullLink .left .num p,
+.oneTask .side .third .fullLink .left .num p,
+.oneTask .side .logout .fullLink .left .num p {
   color: rgba(127, 122, 99, 0.5);
 }
 .oneTask .side .first {
@@ -6460,7 +7057,8 @@
   margin-bottom: 15px;
   gap: 12px;
 }
-.oneTask .side .second .ladelList, .oneTask .side .second .ladelTag {
+.oneTask .side .second .ladelList,
+.oneTask .side .second .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -6470,11 +7068,13 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.oneTask .side .second .ladelList .addShow, .oneTask .side .second .ladelTag .addShow {
+.oneTask .side .second .ladelList .addShow,
+.oneTask .side .second .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.oneTask .side .second .ladelList .addShow img, .oneTask .side .second .ladelTag .addShow img {
+.oneTask .side .second .ladelList .addShow img,
+.oneTask .side .second .ladelTag .addShow img {
   width: 13px;
 }
 .oneTask .side .second .fullLink {
@@ -6497,7 +7097,7 @@
 }
 .oneTask .side .second .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .oneTask .side .second .fullLink .right .link a {
   position: relative;
@@ -6543,7 +7143,7 @@
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  border-bottom: 0.1px solid #7F7A63;
+  border-bottom: 0.1px solid #7f7a63;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -6579,7 +7179,7 @@
   width: 64px;
   height: 64px;
   border-radius: 15px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6620,12 +7220,24 @@
   font-size: 60px;
   color: #433E26;
 }
+.oneTask .rightSide .allBody .head .inbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 .oneTask .rightSide .allBody .head .addTaskForm {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   margin-right: 30px;
+  gap: 20px;
+}
+.oneTask .rightSide .allBody .head .addTaskForm a {
+  font-size: 20px;
+  color: #7f7a63;
+  text-decoration: none;
 }
 .oneTask .rightSide .allBody .head .addTaskForm .vis {
   display: none;
@@ -6652,7 +7264,7 @@
 }
 .oneTask .rightSide .allBody .head .addTaskForm button i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .oneTask .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -6667,7 +7279,7 @@
 }
 .oneTask .rightSide .allBody .head .addTaskForm .clickToAdd i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .oneTask .rightSide .allBody .infoLinks {
   display: flex;
@@ -6759,7 +7371,7 @@
 }
 
 .editOneTask {
-  background-color: #F0EDDD;
+  background-color: #f0eddd;
   display: flex;
   align-items: normal;
   justify-content: space-between;
@@ -6792,7 +7404,9 @@
   width: 100%;
   height: 100%;
 }
-.editOneTask .side .first, .editOneTask .side .third, .editOneTask .side .logout {
+.editOneTask .side .first,
+.editOneTask .side .third,
+.editOneTask .side .logout {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -6802,7 +7416,12 @@
   margin-bottom: 20px;
   gap: 12px;
 }
-.editOneTask .side .first .ladelList, .editOneTask .side .first .ladelTag, .editOneTask .side .third .ladelList, .editOneTask .side .third .ladelTag, .editOneTask .side .logout .ladelList, .editOneTask .side .logout .ladelTag {
+.editOneTask .side .first .ladelList,
+.editOneTask .side .first .ladelTag,
+.editOneTask .side .third .ladelList,
+.editOneTask .side .third .ladelTag,
+.editOneTask .side .logout .ladelList,
+.editOneTask .side .logout .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -6812,43 +7431,65 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.editOneTask .side .first .ladelList .addShow, .editOneTask .side .first .ladelTag .addShow, .editOneTask .side .third .ladelList .addShow, .editOneTask .side .third .ladelTag .addShow, .editOneTask .side .logout .ladelList .addShow, .editOneTask .side .logout .ladelTag .addShow {
+.editOneTask .side .first .ladelList .addShow,
+.editOneTask .side .first .ladelTag .addShow,
+.editOneTask .side .third .ladelList .addShow,
+.editOneTask .side .third .ladelTag .addShow,
+.editOneTask .side .logout .ladelList .addShow,
+.editOneTask .side .logout .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.editOneTask .side .first .ladelList .addShow img, .editOneTask .side .first .ladelTag .addShow img, .editOneTask .side .third .ladelList .addShow img, .editOneTask .side .third .ladelTag .addShow img, .editOneTask .side .logout .ladelList .addShow img, .editOneTask .side .logout .ladelTag .addShow img {
+.editOneTask .side .first .ladelList .addShow img,
+.editOneTask .side .first .ladelTag .addShow img,
+.editOneTask .side .third .ladelList .addShow img,
+.editOneTask .side .third .ladelTag .addShow img,
+.editOneTask .side .logout .ladelList .addShow img,
+.editOneTask .side .logout .ladelTag .addShow img {
   width: 13px;
 }
-.editOneTask .side .first .fullLink, .editOneTask .side .third .fullLink, .editOneTask .side .logout .fullLink {
+.editOneTask .side .first .fullLink,
+.editOneTask .side .third .fullLink,
+.editOneTask .side .logout .fullLink {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
 }
-.editOneTask .side .first .fullLink .right, .editOneTask .side .third .fullLink .right, .editOneTask .side .logout .fullLink .right {
+.editOneTask .side .first .fullLink .right,
+.editOneTask .side .third .fullLink .right,
+.editOneTask .side .logout .fullLink .right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 20px;
 }
-.editOneTask .side .first .fullLink .right .icon, .editOneTask .side .third .fullLink .right .icon, .editOneTask .side .logout .fullLink .right .icon {
+.editOneTask .side .first .fullLink .right .icon,
+.editOneTask .side .third .fullLink .right .icon,
+.editOneTask .side .logout .fullLink .right .icon {
   width: 25px;
   height: 25px;
 }
-.editOneTask .side .first .fullLink .right .icon i, .editOneTask .side .third .fullLink .right .icon i, .editOneTask .side .logout .fullLink .right .icon i {
+.editOneTask .side .first .fullLink .right .icon i,
+.editOneTask .side .third .fullLink .right .icon i,
+.editOneTask .side .logout .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
-.editOneTask .side .first .fullLink .right .link a, .editOneTask .side .third .fullLink .right .link a, .editOneTask .side .logout .fullLink .right .link a {
+.editOneTask .side .first .fullLink .right .link a,
+.editOneTask .side .third .fullLink .right .link a,
+.editOneTask .side .logout .fullLink .right .link a {
   position: relative;
   text-decoration: none;
   color: #7F7A63;
   overflow: hidden;
   padding-bottom: 8px;
 }
-.editOneTask .side .first .fullLink .right .link a::after, .editOneTask .side .third .fullLink .right .link a::after, .editOneTask .side .logout .fullLink .right .link a::after {
+.editOneTask .side .first .fullLink .right .link a::after,
+.editOneTask .side .third .fullLink .right .link a::after,
+.editOneTask .side .logout .fullLink .right .link a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -6858,7 +7499,9 @@
   background-color: #7F7A63;
   transition: width 2s ease-in-out; /* Transition for width change */
 }
-.editOneTask .side .first .fullLink .right .link a:hover::after, .editOneTask .side .third .fullLink .right .link a:hover::after, .editOneTask .side .logout .fullLink .right .link a:hover::after {
+.editOneTask .side .first .fullLink .right .link a:hover::after,
+.editOneTask .side .third .fullLink .right .link a:hover::after,
+.editOneTask .side .logout .fullLink .right .link a:hover::after {
   width: 70%; /* Expand width on hover */
   animation: borderAnimation 1s forwards; /* Apply animation on hover */
 }
@@ -6870,10 +7513,14 @@
     width: 70%; /* Gradually expand to full width */
   }
 }
-.editOneTask .side .first .fullLink .left, .editOneTask .side .third .fullLink .left, .editOneTask .side .logout .fullLink .left {
+.editOneTask .side .first .fullLink .left,
+.editOneTask .side .third .fullLink .left,
+.editOneTask .side .logout .fullLink .left {
   margin-right: 10px;
 }
-.editOneTask .side .first .fullLink .left .num p, .editOneTask .side .third .fullLink .left .num p, .editOneTask .side .logout .fullLink .left .num p {
+.editOneTask .side .first .fullLink .left .num p,
+.editOneTask .side .third .fullLink .left .num p,
+.editOneTask .side .logout .fullLink .left .num p {
   color: rgba(127, 122, 99, 0.5);
 }
 .editOneTask .side .first {
@@ -6890,7 +7537,8 @@
   margin-bottom: 15px;
   gap: 12px;
 }
-.editOneTask .side .second .ladelList, .editOneTask .side .second .ladelTag {
+.editOneTask .side .second .ladelList,
+.editOneTask .side .second .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -6900,11 +7548,13 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.editOneTask .side .second .ladelList .addShow, .editOneTask .side .second .ladelTag .addShow {
+.editOneTask .side .second .ladelList .addShow,
+.editOneTask .side .second .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.editOneTask .side .second .ladelList .addShow img, .editOneTask .side .second .ladelTag .addShow img {
+.editOneTask .side .second .ladelList .addShow img,
+.editOneTask .side .second .ladelTag .addShow img {
   width: 13px;
 }
 .editOneTask .side .second .fullLink {
@@ -6927,7 +7577,7 @@
 }
 .editOneTask .side .second .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .editOneTask .side .second .fullLink .right .link a {
   position: relative;
@@ -6973,7 +7623,7 @@
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  border-bottom: 0.1px solid #7F7A63;
+  border-bottom: 0.1px solid #7f7a63;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -7009,7 +7659,7 @@
   width: 64px;
   height: 64px;
   border-radius: 15px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7050,12 +7700,24 @@
   font-size: 60px;
   color: #433E26;
 }
+.editOneTask .rightSide .allBody .head .inbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 .editOneTask .rightSide .allBody .head .addTaskForm {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   margin-right: 30px;
+  gap: 20px;
+}
+.editOneTask .rightSide .allBody .head .addTaskForm a {
+  font-size: 20px;
+  color: #7f7a63;
+  text-decoration: none;
 }
 .editOneTask .rightSide .allBody .head .addTaskForm .vis {
   display: none;
@@ -7082,7 +7744,7 @@
 }
 .editOneTask .rightSide .allBody .head .addTaskForm button i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .editOneTask .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -7097,7 +7759,7 @@
 }
 .editOneTask .rightSide .allBody .head .addTaskForm .clickToAdd i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .editOneTask .rightSide .allBody .formAll .first {
   display: flex;
@@ -7274,7 +7936,7 @@
 }
 
 .editSubTask {
-  background-color: #F0EDDD;
+  background-color: #f0eddd;
   display: flex;
   align-items: normal;
   justify-content: space-between;
@@ -7307,7 +7969,9 @@
   width: 100%;
   height: 100%;
 }
-.editSubTask .side .first, .editSubTask .side .third, .editSubTask .side .logout {
+.editSubTask .side .first,
+.editSubTask .side .third,
+.editSubTask .side .logout {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -7317,7 +7981,12 @@
   margin-bottom: 20px;
   gap: 12px;
 }
-.editSubTask .side .first .ladelList, .editSubTask .side .first .ladelTag, .editSubTask .side .third .ladelList, .editSubTask .side .third .ladelTag, .editSubTask .side .logout .ladelList, .editSubTask .side .logout .ladelTag {
+.editSubTask .side .first .ladelList,
+.editSubTask .side .first .ladelTag,
+.editSubTask .side .third .ladelList,
+.editSubTask .side .third .ladelTag,
+.editSubTask .side .logout .ladelList,
+.editSubTask .side .logout .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -7327,43 +7996,65 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.editSubTask .side .first .ladelList .addShow, .editSubTask .side .first .ladelTag .addShow, .editSubTask .side .third .ladelList .addShow, .editSubTask .side .third .ladelTag .addShow, .editSubTask .side .logout .ladelList .addShow, .editSubTask .side .logout .ladelTag .addShow {
+.editSubTask .side .first .ladelList .addShow,
+.editSubTask .side .first .ladelTag .addShow,
+.editSubTask .side .third .ladelList .addShow,
+.editSubTask .side .third .ladelTag .addShow,
+.editSubTask .side .logout .ladelList .addShow,
+.editSubTask .side .logout .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.editSubTask .side .first .ladelList .addShow img, .editSubTask .side .first .ladelTag .addShow img, .editSubTask .side .third .ladelList .addShow img, .editSubTask .side .third .ladelTag .addShow img, .editSubTask .side .logout .ladelList .addShow img, .editSubTask .side .logout .ladelTag .addShow img {
+.editSubTask .side .first .ladelList .addShow img,
+.editSubTask .side .first .ladelTag .addShow img,
+.editSubTask .side .third .ladelList .addShow img,
+.editSubTask .side .third .ladelTag .addShow img,
+.editSubTask .side .logout .ladelList .addShow img,
+.editSubTask .side .logout .ladelTag .addShow img {
   width: 13px;
 }
-.editSubTask .side .first .fullLink, .editSubTask .side .third .fullLink, .editSubTask .side .logout .fullLink {
+.editSubTask .side .first .fullLink,
+.editSubTask .side .third .fullLink,
+.editSubTask .side .logout .fullLink {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
 }
-.editSubTask .side .first .fullLink .right, .editSubTask .side .third .fullLink .right, .editSubTask .side .logout .fullLink .right {
+.editSubTask .side .first .fullLink .right,
+.editSubTask .side .third .fullLink .right,
+.editSubTask .side .logout .fullLink .right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 20px;
 }
-.editSubTask .side .first .fullLink .right .icon, .editSubTask .side .third .fullLink .right .icon, .editSubTask .side .logout .fullLink .right .icon {
+.editSubTask .side .first .fullLink .right .icon,
+.editSubTask .side .third .fullLink .right .icon,
+.editSubTask .side .logout .fullLink .right .icon {
   width: 25px;
   height: 25px;
 }
-.editSubTask .side .first .fullLink .right .icon i, .editSubTask .side .third .fullLink .right .icon i, .editSubTask .side .logout .fullLink .right .icon i {
+.editSubTask .side .first .fullLink .right .icon i,
+.editSubTask .side .third .fullLink .right .icon i,
+.editSubTask .side .logout .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
-.editSubTask .side .first .fullLink .right .link a, .editSubTask .side .third .fullLink .right .link a, .editSubTask .side .logout .fullLink .right .link a {
+.editSubTask .side .first .fullLink .right .link a,
+.editSubTask .side .third .fullLink .right .link a,
+.editSubTask .side .logout .fullLink .right .link a {
   position: relative;
   text-decoration: none;
   color: #7F7A63;
   overflow: hidden;
   padding-bottom: 8px;
 }
-.editSubTask .side .first .fullLink .right .link a::after, .editSubTask .side .third .fullLink .right .link a::after, .editSubTask .side .logout .fullLink .right .link a::after {
+.editSubTask .side .first .fullLink .right .link a::after,
+.editSubTask .side .third .fullLink .right .link a::after,
+.editSubTask .side .logout .fullLink .right .link a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -7373,7 +8064,9 @@
   background-color: #7F7A63;
   transition: width 2s ease-in-out; /* Transition for width change */
 }
-.editSubTask .side .first .fullLink .right .link a:hover::after, .editSubTask .side .third .fullLink .right .link a:hover::after, .editSubTask .side .logout .fullLink .right .link a:hover::after {
+.editSubTask .side .first .fullLink .right .link a:hover::after,
+.editSubTask .side .third .fullLink .right .link a:hover::after,
+.editSubTask .side .logout .fullLink .right .link a:hover::after {
   width: 70%; /* Expand width on hover */
   animation: borderAnimation 1s forwards; /* Apply animation on hover */
 }
@@ -7385,10 +8078,14 @@
     width: 70%; /* Gradually expand to full width */
   }
 }
-.editSubTask .side .first .fullLink .left, .editSubTask .side .third .fullLink .left, .editSubTask .side .logout .fullLink .left {
+.editSubTask .side .first .fullLink .left,
+.editSubTask .side .third .fullLink .left,
+.editSubTask .side .logout .fullLink .left {
   margin-right: 10px;
 }
-.editSubTask .side .first .fullLink .left .num p, .editSubTask .side .third .fullLink .left .num p, .editSubTask .side .logout .fullLink .left .num p {
+.editSubTask .side .first .fullLink .left .num p,
+.editSubTask .side .third .fullLink .left .num p,
+.editSubTask .side .logout .fullLink .left .num p {
   color: rgba(127, 122, 99, 0.5);
 }
 .editSubTask .side .first {
@@ -7405,7 +8102,8 @@
   margin-bottom: 15px;
   gap: 12px;
 }
-.editSubTask .side .second .ladelList, .editSubTask .side .second .ladelTag {
+.editSubTask .side .second .ladelList,
+.editSubTask .side .second .ladelTag {
   color: #7F7A63;
   font-size: 13px;
   align-self: flex-start;
@@ -7415,11 +8113,13 @@
   justify-content: space-between;
   flex-direction: row;
 }
-.editSubTask .side .second .ladelList .addShow, .editSubTask .side .second .ladelTag .addShow {
+.editSubTask .side .second .ladelList .addShow,
+.editSubTask .side .second .ladelTag .addShow {
   margin-right: 10px;
   cursor: pointer;
 }
-.editSubTask .side .second .ladelList .addShow img, .editSubTask .side .second .ladelTag .addShow img {
+.editSubTask .side .second .ladelList .addShow img,
+.editSubTask .side .second .ladelTag .addShow img {
   width: 13px;
 }
 .editSubTask .side .second .fullLink {
@@ -7442,7 +8142,7 @@
 }
 .editSubTask .side .second .fullLink .right .icon i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .editSubTask .side .second .fullLink .right .link a {
   position: relative;
@@ -7488,7 +8188,7 @@
   width: 80%;
   height: 0.3px;
   border-radius: 50px;
-  border-bottom: 0.1px solid #7F7A63;
+  border-bottom: 0.1px solid #7f7a63;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -7524,7 +8224,7 @@
   width: 64px;
   height: 64px;
   border-radius: 15px;
-  border: 1px solid #BEBAA5;
+  border: 1px solid #bebaa5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7581,12 +8281,24 @@
   font-size: 60px;
   color: #433E26;
 }
+.editSubTask .rightSide .allBody .head .inbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 .editSubTask .rightSide .allBody .head .addTaskForm {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   margin-right: 30px;
+  gap: 20px;
+}
+.editSubTask .rightSide .allBody .head .addTaskForm a {
+  font-size: 20px;
+  color: #7f7a63;
+  text-decoration: none;
 }
 .editSubTask .rightSide .allBody .head .addTaskForm .vis {
   display: none;
@@ -7613,7 +8325,7 @@
 }
 .editSubTask .rightSide .allBody .head .addTaskForm button i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .editSubTask .rightSide .allBody .head .addTaskForm .clickToAdd {
   cursor: pointer;
@@ -7628,7 +8340,7 @@
 }
 .editSubTask .rightSide .allBody .head .addTaskForm .clickToAdd i {
   font-size: 20px;
-  color: #7F7A63;
+  color: #7f7a63;
 }
 .editSubTask .rightSide .allBody .formAll .firstSub {
   display: flex;
@@ -7726,6 +8438,64 @@
 }
 .editSubTask .rightSide .allBody .formAll .submit button:hover {
   cursor: pointer;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
+     border-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  height: 100vh;
+  margin-left: 18.5%;
+}
+.empty .icon {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.empty .icon i {
+  grid-row: 1/1;
+  grid-column: 1/1;
+  font-size: 200px;
+  place-self: center;
+  color: rgba(127, 122, 99, 0.8);
+}
+.empty .icon .set_position {
+  color: rgba(127, 122, 99, 0.6);
+  place-self: center;
+  font-size: 120px;
+}
+.empty p {
+  color: #433E26;
+  width: 50%;
+}
+.empty a {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+  border: 1px solid transparent; /* Set a solid border with initial transparency */
+  -o-border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%);
+     border-image: linear-gradient(90deg, #BEBAA5 13.65%, #9B9782 63.12%, rgba(127, 122, 99, 0.7) 100%); /* Apply the linear gradient */
+  border-image-slice: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 8px 20px;
+  transition: 1s ease-in-out;
+  border-radius: 15px;
+  text-transform: capitalize;
+}
+.empty a:hover {
   font-size: 20px;
   background-image: linear-gradient(90deg, rgba(127, 122, 99, 0.7) 0%, #9B9782 63.12%, #BEBAA5 100%);
   -webkit-background-clip: text;
